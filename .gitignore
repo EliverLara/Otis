@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules/
+
+# Sass
+.sass-cache/
+*.css.map
+
+_gnome-shell/
+cinnamon/
+kde/
+metacity-1/
+xfwm4/
+
+install.sh
+*blue.*
+

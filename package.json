@@ -1,0 +1,25 @@
+{
+  "name": "otis",
+  "version": "1.0.0",
+  "description": "An elegant dark theme for gnome",
+  "main": "index.js",
+  "scripts": {
+    "build": "git push && sh install.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliverLara/Otis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliverLara/Otis/issues"
+  },
+  "homepage": "https://github.com/EliverLara/Otis#readme",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-exec": "^5.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

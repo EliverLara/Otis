@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Otis  
+Comment=An elegant dark theme for gnome
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Otis
+MetacityTheme=Otis
+IconTheme=Zafiro-icons
+ButtonLayout=:minimize,maximize,close
