@@ -9,7 +9,6 @@ _gnome-shell/
 cinnamon/
 kde/
 metacity-1/
-xfwm4/
 
 install.sh
 *blue.*
