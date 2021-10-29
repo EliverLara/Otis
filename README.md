@@ -1,5 +1,5 @@
 
-![](Art/otis.jpg)
+![](Art/preview.png)
 
 > An elegant dark theme for gnome
 
