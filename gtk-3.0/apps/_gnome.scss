@@ -55,9 +55,13 @@
   }
 
   notebook {
-    > stack:only-child { // the :not(:only-child) is for "hidden" notebooks
+    > stack {
+      background-image: -gtk-scaled(url("../assets/bg.jpg"));
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      &:backdrop {
         background-color: $base_color;
-        &:backdrop { background-color: $backdrop_base_color; }
+      }
     }
   }
 

@@ -106,15 +106,15 @@ StScrollBar {
   -slider-background-color: $gray; //background of the trough
   -slider-border-color: black; //trough border color
   -slider-active-background-color: $cyan; //active trough fill
-  -slider-active-border-color: $lime; //active trough border
+  -slider-active-border-color: $orange; //active trough border
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
 
   -barlevel-height: 0.1em;
   -barlevel-background-color: $gray;
   -barlevel-border-color: black;
-  -barlevel-active-background-color: $lime;
-  -barlevel-active-border-color: $lime;
+  -barlevel-active-background-color: $orange;
+  -barlevel-active-border-color: $orange;
   -barlevel-border-width: 0;
   -barlevel-handle-radius: 6px; 
   -barlevel-overdrive-color: $cyan;
@@ -610,7 +610,7 @@ StScrollBar {
     border: 1px solid $borders_color;
 
     -barlevel-height: 0.4em;
-    -barlevel-background-color: transparentize(darken($main_dark,15%),0.5);
+    -barlevel-background-color: $gray;
     -barlevel-active-background-color: $selected_bg_color;
     -barlevel-overdrive-color: $red;
     -barlevel-overdrive-separator-width: 0.2em; 
@@ -823,7 +823,7 @@ StScrollBar {
     }
 
     &:hover {
-      box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
+      box-shadow: inset 0 0 0 100px lighten($selected_bg_color, 10%);
       color: lighten($topbar_color, 10%);
       transition-duration: 200ms;
 
@@ -831,7 +831,7 @@ StScrollBar {
         box-shadow: none;
 
         .clock {
-          box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
+          box-shadow: inset 0 0 0 100px lighten($selected_bg_color, 10%);
         }
       }
     }
@@ -839,14 +839,14 @@ StScrollBar {
     &:active, &:overview, &:focus, &:checked {
       // Trick due to St limitations. It needs a background to draw
       // a box-shadow
-      box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
+      box-shadow: inset 0 0 0 100px lighten($selected_bg_color, 10%);
       color: #fff;
 
       &.clock-display {
         box-shadow: none;
 
         .clock {
-          box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
+          box-shadow: inset 0 0 0 100px lighten($selected_bg_color, 10%);
         }
       }
     }
@@ -1429,6 +1429,20 @@ StScrollBar {
 
   //search results
 
+  %search-section-content-item {  
+    &:focus,
+    &:hover,
+    &:selected {
+      background-color: transparentize($osd_fg_color, .9);
+      transition-duration: 200ms;
+    }
+  
+    &:active,
+    &:checked {
+      background-color: transparentize(darken($osd_bg_color, 10%), .1);
+    }
+  }
+
   #searchResultsBin {
     max-width: 1000px;
   }
@@ -1453,7 +1467,7 @@ StScrollBar {
   }
   .list-search-results { spacing: 3px; }
 
-  .search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
+  .search-section-separator { height: 2px; background-color: $gray; }
 
   .list-search-result-content { spacing: 30px; }
   .list-search-result-title { color: lighten($topbar_color,5%); spacing: 12px; }
@@ -1461,6 +1475,12 @@ StScrollBar {
   .list-search-provider-details { width: 150px; color: lighten($topbar_color,5%); margin-top: 0.24em; }
   .list-search-provider-content { spacing: 20px; }
   .search-provider-icon { padding: 15px; }
+
+  //Icon tile
+  .search-provider-icon,
+  .list-search-result {
+    @extend %search-section-content-item;
+  }
 
 
   /* DASHBOARD */
@@ -1513,17 +1533,6 @@ StScrollBar {
     }
     &:last-child {
      border-radius: 0 3px 3px 0;
-    }
-  }
-
-  //Icon tile
-  .search-provider-icon,
-  .list-search-result {
-    @extend %icon_tile;
-    &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
-    &:focus, &:selected, &:hover {
-      background-color: transparentize($bg_color,.7);
-      transition-duration: 200ms;
     }
   }
   .app-well-app,

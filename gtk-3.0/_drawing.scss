@@ -278,7 +278,7 @@
   //
   color: $tc;
   outline-color: transparentize($tc, 0.7);
-  background-image:  linear-gradient(to  right, #f8ab95, #f17dad, #ee73c8);
+  background-image:  linear-gradient(to  right, #7b2cbf, #7b2cbf, #7b2cbf);
   background-color: transparent;
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
@@ -291,7 +291,7 @@
   color: $tc;
   outline-color: transparentize($tc, 0.7);
   background:
-  linear-gradient(to  right, #f8ab95, #f17dad, #ee73c8)
+  linear-gradient(to  right, #7b2cbf, #7b2cbf, #7b2cbf)
   left 
   bottom
   lighten($_sidebar_color, 7%)
