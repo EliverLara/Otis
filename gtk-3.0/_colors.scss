@@ -2,15 +2,15 @@
 // it gets @if ed depending on $variant
 
 // Main definitions
-$base_color: #2e394c;
+$base_color: #1E252C;
 $text_color: #d8dee9;
-$bg_color: #2a3344;
+$bg_color: #1A2026;
 $fg_color: #d8dee9;
 $switch_bg: if($variant == 'light', #ffffff, transparentize(black,1));
 $shadow_color: rgba(162, 162, 165, 0.21);
 
-$main_dark_color: #272F3F;
-$_sidebar_color: darken($main_dark_color, 3%);
+$main_dark_color: darken($bg_color, 2%);
+$_sidebar_color: darken($main_dark_color, 1%);
 
 // Primary colors
 $lime: #8CA1A5;
@@ -25,7 +25,7 @@ $slider: #7b7bbd;
 $teal: #a3be8c;
 
 $selected_fg_color: #fff;
-$selected_bg_color: #cd7ebf;
+$selected_bg_color: #8CA1A5;
 /*$selected_bg_color: #00e8c6;06d6a0*/
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: darken($main_dark_color, 5%);
