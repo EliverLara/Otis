@@ -72,6 +72,66 @@ read if you used those and something break with a version upgrade you're on your
 @define-color budgie_tasklist_indicator_color #cd7ebf;
 @define-color budgie_tasklist_indicator_color_active #cd7ebf;
 @define-color placeholder_text_color #b6bdca;
+@define-color STRAWBERRY_100 #ff8c82;
+@define-color STRAWBERRY_300 #ed5353;
+@define-color STRAWBERRY_500 #c6262e;
+@define-color STRAWBERRY_700 #a10705;
+@define-color STRAWBERRY_900 #7a0000;
+@define-color ORANGE_100 #ffc27d;
+@define-color ORANGE_300 #ffa154;
+@define-color ORANGE_500 #f37329;
+@define-color ORANGE_700 #cc3b02;
+@define-color ORANGE_900 #a62100;
+@define-color BANANA_100 #fff394;
+@define-color BANANA_300 #ffe16b;
+@define-color BANANA_500 #f9c440;
+@define-color BANANA_700 #d48e15;
+@define-color BANANA_900 #ad5f00;
+@define-color LIME_100 #d1ff82;
+@define-color LIME_300 #9bdb4d;
+@define-color LIME_500 #68b723;
+@define-color LIME_700 #3a9104;
+@define-color LIME_900 #206b00;
+@define-color MINT_100 #89ffdd;
+@define-color MINT_300 #43d6b5;
+@define-color MINT_500 #28bca3;
+@define-color MINT_700 #0e9a83;
+@define-color MINT_900 #007367;
+@define-color BLUEBERRY_100 #8cd5ff;
+@define-color BLUEBERRY_300 #64baff;
+@define-color BLUEBERRY_500 #3689e6;
+@define-color BLUEBERRY_700 #0d52bf;
+@define-color BLUEBERRY_900 #002e99;
+@define-color BUBBLEGUM_100 #fe9ab8;
+@define-color BUBBLEGUM_300 #f4679d;
+@define-color BUBBLEGUM_500 #de3e80;
+@define-color BUBBLEGUM_700 #bc245d;
+@define-color BUBBLEGUM_900 #910e38;
+@define-color GRAPE_100 #e4c6fa;
+@define-color GRAPE_300 #cd9ef7;
+@define-color GRAPE_500 #a56de2;
+@define-color GRAPE_700 #7239b3;
+@define-color GRAPE_900 #452981;
+@define-color COCOA_100 #a3907c;
+@define-color COCOA_300 #8a715e;
+@define-color COCOA_500 #715344;
+@define-color COCOA_700 #57392d;
+@define-color COCOA_900 #3d211b;
+@define-color SILVER_100 #fafafa;
+@define-color SILVER_300 #d4d4d4;
+@define-color SILVER_500 #abacae;
+@define-color SILVER_700 #7e8087;
+@define-color SILVER_900 #555761;
+@define-color SLATE_100 #95a3ab;
+@define-color SLATE_300 #667885;
+@define-color SLATE_500 #485a6c;
+@define-color SLATE_700 #273445;
+@define-color SLATE_900 #0e141f;
+@define-color BLACK_100 #666;
+@define-color BLACK_300 #4d4d4d;
+@define-color BLACK_500 #333;
+@define-color BLACK_700 #1a1a1a;
+@define-color BLACK_900 #000;
 /*****************
 * Drawing mixins *
 *****************/
@@ -5646,6 +5706,83 @@ LibraryWindow .the-button-in-the-combobox {
   border: none; }
 .sidebar .source-list.view.fill-block, .sidebar iconview.source-list.fill-block, .sidebar .source-list.view.fill-block:hover, .sidebar iconview.source-list.fill-block:hover, .sidebar .source-list.view.fill-block:selected, .sidebar iconview.source-list.fill-block:selected, .sidebar .source-list.view.fill-block:selected:focus, .sidebar iconview.source-list.fill-block:selected:focus {
   background: linear-gradient(to right, #F3D88E, #F3D88E); }
+
+/**************************
+ * Colors in context menu *
+**************************/
+checkbutton.color-button {
+  border: 1px solid #1d232f;
+  border-radius: 100px;
+  background-clip: border-box;
+  padding: 0;
+  margin: 2px 1px; }
+  checkbutton.color-button > check {
+    -gtk-icon-source: none;
+    background: none;
+    margin-right: 0;
+    padding: 2px; }
+  checkbutton.color-button.none > check {
+    background-color: transparent;
+    border-radius: 100px;
+    -gtk-icon-source: -gtk-icontheme("close-symbolic"); }
+
+radiobutton.color-button > radio {
+  -gtk-icon-source: none;
+  margin-right: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  background-clip: border-box; }
+radiobutton.color-button:active > radio {
+  border: 1px solid rgba(0, 0, 0, 0.35); }
+
+.color-button check,
+.color-button check:checked,
+.color-button radio,
+.color-button radio:checked {
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  box-shadow: inset-shadow();
+  color: #2e394c;
+  -gtk-icon-source: -gtk-icontheme("check-active-symbolic");
+  min-height: rem(12px);
+  min-width: rem(12px);
+  padding: rem(3px); }
+.color-button.red check, .color-button.red radio, .color-button.strawberry check, .color-button.strawberry radio {
+  background-color: @STRAWBERRY_300;
+  -gtk-icon-shadow: 0 1px 1px @STRAWBERRY_500; }
+.color-button.orange check, .color-button.orange radio {
+  background-color: @ORANGE_300;
+  -gtk-icon-shadow: 0 1px 1px @ORANGE_500; }
+.color-button.yellow check, .color-button.yellow radio, .color-button.banana check, .color-button.banana radio {
+  background-color: @BANANA_500;
+  -gtk-icon-shadow: 0 1px 1px @BANANA_700; }
+.color-button.green check, .color-button.green radio, .color-button.lime check, .color-button.lime radio {
+  background-color: @LIME_500;
+  -gtk-icon-shadow: 0 1px 1px @LIME_700; }
+.color-button.blue check, .color-button.blue radio, .color-button.blueberry check, .color-button.blueberry radio {
+  background-color: @BLUEBERRY_500;
+  -gtk-icon-shadow: 0 1px 1px @BLUEBERRY_700; }
+.color-button.purple check, .color-button.purple radio, .color-button.grape check, .color-button.grape radio {
+  background-color: @GRAPE_500;
+  -gtk-icon-shadow: 0 1px 1px @GRAPE_700; }
+.color-button.brown check, .color-button.brown radio, .color-button.cocoa check, .color-button.cocoa radio {
+  background-color: @COCOA_300;
+  -gtk-icon-shadow: 0 1px 1px @COCOA_500; }
+.color-button.mint check, .color-button.mint radio {
+  background-color: @MINT_500;
+  -gtk-icon-shadow: 0 1px 1px @MINT_700; }
+.color-button.pink check, .color-button.pink radio, .color-button.bubblegum check, .color-button.bubblegum radio {
+  background-color: @BUBBLEGUM_500;
+  -gtk-icon-shadow: 0 1px 1px @BUBBLEGUM_700; }
+.color-button.slate check, .color-button.slate radio {
+  background-color: @SLATE_300;
+  -gtk-icon-shadow: 0 1px 1px @SLATE_500; }
+.color-button.auto radio {
+  background-image: url("assets/color-button-auto.png");
+  background-position: -1px -1px;
+  background-repeat: no-repeat;
+  background-size: calc(100% + 2px); }
 
 .xfce4-panel.panel {
   background-color: #272f3f;
