@@ -585,7 +585,7 @@ StScrollBar {
     color: #d8dee9;
     border: 1px solid #151921;
     -barlevel-height: 0.4em;
-    -barlevel-background-color: rgba(0, 0, 0, 0.5);
+    -barlevel-background-color: #3b4a62;
     -barlevel-active-background-color: #cd7ebf;
     -barlevel-overdrive-color: #FF56AC;
     -barlevel-overdrive-separator-width: 0.2em; }
