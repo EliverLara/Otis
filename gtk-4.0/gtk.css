@@ -2740,13 +2740,17 @@ button:visited {
 /*********
  * Lists *
  *********/
-list {
+list, listview {
   color: #d8dee9;
   background-color: #2e394c;
   border-color: #1d232f; }
-  list:backdrop {
+  list:backdrop, listview:backdrop {
     background-color: #303b4f;
     border-color: #1e2531; }
+  list.horizontal row.separator, list.separators.horizontal > row:not(.separator), listview.horizontal row.separator, listview.separators.horizontal > row:not(.separator) {
+    border-left: 1px solid #1d232f; }
+  list:not(.horizontal) row.separator, list.separators:not(.horizontal) > row:not(.separator), listview:not(.horizontal) row.separator, listview.separators:not(.horizontal) > row:not(.separator) {
+    border-bottom: 1px solid #1d232f; }
 
 row {
   padding: 1px 11px;
