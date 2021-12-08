@@ -2632,29 +2632,21 @@ infobar {
       color: rgba(216, 222, 233, 0.5);
       box-shadow: none; }
 
-.info {
-  background-color: #8CA1A5; }
-  .info:backdrop {
-    background-color: #a9b8bb;
-    color: rgba(255, 255, 255, 0.5); }
+.info, .info:backdrop {
+  color: #8CA1A5;
+  background-color: transparent; }
 
-.warning {
-  background-color: #e65b66; }
-  .warning:backdrop {
-    background-color: #ed878f;
-    color: rgba(255, 255, 255, 0.5); }
+.warning, .warning:backdrop {
+  color: #e65b66;
+  background-color: transparent; }
 
-.question {
-  background-color: #79B4B7; }
-  .question:backdrop {
-    background-color: #9ac7c9;
-    color: rgba(255, 255, 255, 0.5); }
+.question, .question:backdrop {
+  color: #79B4B7;
+  background-color: transparent; }
 
-.error {
-  background-color: #ff3d9f; }
-  .error:backdrop {
-    background-color: #ff70b9;
-    color: rgba(255, 255, 255, 0.5); }
+.error, .error:backdrop {
+  color: #ff3d9f;
+  background-color: transparent; }
 
 /*************
  * Level Bar *
