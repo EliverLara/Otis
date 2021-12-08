@@ -4426,31 +4426,31 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
 /**********************
  * Window Decorations *
  *********************/
-decoration {
+decoration, window {
   border-width: 0px;
   border-width: 0px;
   box-shadow: 0 4px 10px 2px rgba(37, 37, 37, 0.7);
   margin: 10px; }
-  decoration:backdrop {
+  decoration:backdrop, window:backdrop {
     box-shadow: 0 4px 10px 2px rgba(33, 26, 30, 0.2);
     transition: 200ms ease-out; }
-  .maximized decoration, .fullscreen decoration, .tiled decoration {
+  .maximized decoration, .fullscreen decoration, .tiled decoration, .maximized window, .fullscreen window, .tiled window {
     border-radius: 0; }
-  .popup decoration {
+  .popup decoration, .popup window {
     box-shadow: none; }
-  .ssd decoration {
+  .ssd decoration, .ssd window {
     box-shadow: none; }
-  .csd.popup decoration {
+  .csd.popup decoration, .csd.popup window {
     border-radius: 7px;
     box-shadow: 0 4px 8px #1d232f;
     border: 1px solid rgba(29, 35, 47, 0.7); }
-  tooltip.csd decoration {
+  tooltip.csd decoration, tooltip.csd window {
     border-radius: 5px;
     box-shadow: none; }
-  messagedialog.csd decoration {
+  messagedialog.csd decoration, messagedialog.csd window {
     border-radius: 7px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(29, 35, 47, 0.8); }
-  .solid-csd decoration {
+  .solid-csd decoration, .solid-csd window {
     border-radius: 0;
     margin: 0px;
     background-color: #2a3344;
