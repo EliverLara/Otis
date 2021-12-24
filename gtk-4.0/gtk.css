@@ -4402,8 +4402,7 @@ window {
   border-width: 0px; }
   window.csd {
     box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.75);
-    margin: 0px;
-    border-radius: 12px 12px 0 0; }
+    margin: 0px; }
     window.csd:backdrop {
       box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.75);
       transition: 200ms ease-out; }
@@ -6191,10 +6190,13 @@ window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > 
     background: #cd7ebf;
     color: #fff; }
 
-.background.csd {
+.background.csd:not(window) {
   border-radius: 0 0 12px 12px; }
 .background.maximized, .background.solid-csd {
   border-radius: 0; }
+
+window {
+  border-radius: 12px; }
 
 .titlebar, headerbar {
   border-radius: 12px 12px 0 0; }
