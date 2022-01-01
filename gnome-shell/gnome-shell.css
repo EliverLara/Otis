@@ -819,7 +819,7 @@ StScrollBar {
 
 .datemenu-calendar-column {
   border: 0 solid transparent;
-  background: #1d232f; }
+  background: #2a3344; }
   .datemenu-calendar-column:ltr {
     border-left-width: 1px; }
   .datemenu-calendar-column:rtl {
@@ -1004,11 +1004,11 @@ StScrollBar {
   background: transparent; }
 
 .message {
-  background: #242c3b;
-  border: 1px solid #151921;
+  background: #2a3344;
+  border: 1px solid transparent;
   border-radius: 5px; }
   .message:hover, .message:focus {
-    background-color: #283141;
+    background-color: #2c3547;
     border-radius: 0px 5px 5px 0px;
     box-shadow: 3px 0px 0px 0px #cd7ebf inset; }
 
