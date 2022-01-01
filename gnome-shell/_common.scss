@@ -1101,12 +1101,6 @@ StScrollBar {
         }
       }
 
-        .message-list-clear-button.button {
-          @include button(normal);
-          &:hover,&:focus { @include button(hover); }
-          margin: 1.5em 1.5em 0;
-        }
-
         .message-list-sections {
           spacing: 1em;
         }
