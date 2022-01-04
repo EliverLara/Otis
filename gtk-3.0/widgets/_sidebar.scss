@@ -33,9 +33,9 @@
   row{
     padding: 8px 12px;
     transition: all .12s ease-in;
-    label{
-      color: #98abb2;
-    }
+    // label{
+    //   color: #98abb2;
+    // }
     &:selected{
       color: $selected_fg_color;
       // border-left: 4px solid $selected_bg_color;
@@ -129,7 +129,7 @@ placessidebar{
 						margin-right: 7px;
 						padding-left: 14px;
 						padding-right: 7px;
-						color: #98abb2;
+						//color: #98abb2;
 					}
 				}
 
@@ -139,15 +139,16 @@ placessidebar{
 				}
 
 				&:selected {
-          border-left: 2px solid #f8ab95;
-          &, & label { color: $selected_fg_color; }
+          border-left: 2px solid $selected_bg_color;
+          &, & label { color: $fg_color;  font-weight: normal;}
           &, &:backdrop {
-            background:linear-gradient(to right,#f8ab95, #ee73c8,
-            lighten($_sidebar_color, 7%) 40px,  lighten($_sidebar_color, 7%) 97%);
+            background:linear-gradient(to right,
+            $selected_bg_color, darken($selected_bg_color, 20%) 40px,
+            darken($_sidebar_color, 5%) 40px,  darken($_sidebar_color, 5%) 97%);
           }
-			
+ 
           &:backdrop {
-            &, & label { color:$backdrop_selected_fg_color; }
+            &, & label { color:$backdrop_fg_color; }
             .sidebar-icon {
               -gtk-icon-shadow: none;  
             }
@@ -155,7 +156,7 @@ placessidebar{
 
 					.sidebar-icon {
 						-gtk-icon-shadow: 0 1px transparentize(#fff, 0.2);
-						color: inherit; 
+						color: $selected_fg_color; 
 					}
         }
         
@@ -180,6 +181,6 @@ placessidebar{
 		}
   }
   
-	list { &, &:backdrop { background-color: $_sidebar_color; } }
+	list { &, &:backdrop { background-color: transparentize($_sidebar_color, 0.7); } }
   
 }

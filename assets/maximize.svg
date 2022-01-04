@@ -7,19 +7,42 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="16"
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="maximize.svg"
-   inkscape:export-filename="/home/lara/github/Nord/assets/maximize.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96">
+   inkscape:export-filename="/home/lara/github/Ant themes/Snow/assets/maximize.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
-     id="defs4" />
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient822">
+      <stop
+         style="stop-color:#0ba360;stop-opacity:1"
+         offset="0"
+         id="stop818" />
+      <stop
+         style="stop-color:#3cba92;stop-opacity:1"
+         offset="1"
+         id="stop820" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient822"
+       id="linearGradient824"
+       x1="49.195396"
+       y1="515.03284"
+       x2="1962.1372"
+       y2="433.61911"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -27,8 +50,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="25.257747"
-     inkscape:cx="4.988687"
+     inkscape:zoom="24.262601"
+     inkscape:cx="9.4229701"
      inkscape:cy="7.9547456"
      inkscape:document-units="px"
      inkscape:current-layer="g4287"
@@ -38,7 +61,7 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1366"
-     inkscape:window-height="706"
+     inkscape:window-height="707"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1" />
@@ -75,18 +98,14 @@
              id="g4287">
             <path
                id="path4289"
-               style="fill:#232831;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.14285719"
-               d="m 563.58759,-119.38766 c 349.0926,0 632.09311,283.00097 632.09311,632.098 0,349.09852 -283.00051,632.09906 -632.09311,632.09906 -349.10297,0 -632.104441,-283.00054 -632.104441,-632.09906 0,-349.09703 283.001471,-632.098 632.104441,-632.098"
-               inkscape:connector-curvature="0"
-               inkscape:export-xdpi="90"
-               inkscape:export-ydpi="90" />
+               style="fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 562.7806,-38.053372 c 305.45604,0 553.0815,247.625852 553.0815,553.085772 0,305.46122 -247.62546,553.0867 -553.0815,553.0867 -305.4651,0 -553.0913989,-247.62548 -553.0913989,-553.0867 0,-305.45992 247.6262989,-553.085772 553.0913989,-553.085772"
+               inkscape:connector-curvature="0" />
             <path
                id="path4291"
-               style="fill:#a3be8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
-               d="m 556.52193,-11.060771 c 283.64075,0 513.57747,229.941751 513.57747,513.582491 0,283.64206 -229.93672,513.57878 -513.57747,513.57878 -283.646,0 -513.583018,-229.93672 -513.583018,-513.57878 0,-283.64074 229.937018,-513.582491 513.583018,-513.582491"
-               inkscape:connector-curvature="0"
-               inkscape:export-xdpi="90"
-               inkscape:export-ydpi="90" />
+               style="fill:url(#linearGradient824);fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 562.77841,1.4521975 c 283.64075,0 513.57749,229.9417425 513.57749,513.5824825 0,283.64206 -229.93674,513.57882 -513.57749,513.57882 -283.646,0 -513.583014,-229.93676 -513.583014,-513.57882 0,-283.64074 229.937014,-513.5824825 513.583014,-513.5824825"
+               inkscape:connector-curvature="0" />
           </g>
         </g>
       </g>

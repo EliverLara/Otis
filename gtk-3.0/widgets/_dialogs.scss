@@ -3,12 +3,12 @@
  ***********/
 messagedialog { // Message Dialog styling
   .titlebar:not(headerbar) {
-    background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+    background-color: transparentize($bg_color, 0.05);
   }
   .titlebar {
     min-height: 20px;
     background-image: none;
-    background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+    background-color: transparentize($bg_color, 0.05);
     border-style: none;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -16,7 +16,7 @@ messagedialog { // Message Dialog styling
 
   &.csd { // rounded bottom border styling for csd version
     &.background {
-      background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+      background-color: transparentize($bg_color, 0.05);
       color: if($variant=='light', $headerbar_fg_color, $fg_color);
 
       // bigger radius for better antialiasing

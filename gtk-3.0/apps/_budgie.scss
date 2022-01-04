@@ -8,11 +8,11 @@ $entry_border: transparent;
 $mpris_overlay_fg: $fg_color;
 $mpris_overlay_bg: transparentize(if($variant=='light',$base_color, darken($bg_color, 10%)), 0.1);
 $mpris_overlay_border: $top_highlight;
-$panel_bg: transparentize( darken($headerbar_color,10%),0.05);
+$panel_bg: transparentize( darken($bg_color,10%),0.05);
 $panel_color: $headerbar_fg_color;
-$panel_border: transparentize(darken($headerbar_color, 7%), 0.08);
+$panel_border: $borders_color;
 $panel_shadow: transparentize(black, 0.7);
-$raven_bg: transparentize($headerbar_color, 0.08);
+$raven_bg: transparentize($bg_color, 0.08);
 $raven_expander_border: transparentize($borders_color, 0.05);
 $raven_border: transparentize($borders_color, 0.08);
 $raven_expander_bg: transparentize(lighten($panel_bg, 15%), 0.5);
@@ -774,7 +774,7 @@ calendar.raven-calendar {
 
 .drop-shadow {
     color: $headerbar_fg_color;
-    background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+    background-color: transparentize($bg_color, 0.05);
     box-shadow: 0 1px 2px 0 transparentize(black, 0.8);
     border-radius: 2px;
 }

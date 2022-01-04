@@ -249,7 +249,10 @@
   text-shadow: none;
   box-shadow: none;
   border: 1px solid $borders_color;
-  background-color: $main_dark_color;       
+  background: if( $variant == 'light', 
+                      linear-gradient(to bottom, $base_color, $bg_color),
+                      linear-gradient(to bottom, lighten($base_color, 12%), darken($bg_color, 2%))
+                  );      
 }
 
   @else if $t==hover-header {
@@ -258,7 +261,7 @@
   //
   color: if($tc==$text_color, $selected_bg_color, $tc);
   text-shadow: none;
-  background-color: transparentize($c, 0.3);
+  background-image: linear-gradient(to bottom, $selected_bg_color, darken($selected_bg_color, 20%));
 }
 
 @else if $t==backdrop-header {
@@ -278,7 +281,7 @@
   //
   color: $tc;
   outline-color: transparentize($tc, 0.7);
-  background-image:  linear-gradient(to  right, #f8ab95, #f17dad, #ee73c8);
+  background-image: linear-gradient(to bottom, $selected_bg_color, darken($selected_bg_color, 20%));
   background-color: transparent;
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
@@ -290,13 +293,8 @@
   //
   color: $tc;
   outline-color: transparentize($tc, 0.7);
-  background:
-  linear-gradient(to  right, #f8ab95, #f17dad, #ee73c8)
-  left 
-  bottom
-  lighten($_sidebar_color, 7%)
-  no-repeat; 
-  background-size: 100% 1.5px;
+  background: linear-gradient(to  right, $selected_bg_color, darken($selected_bg_color, 20%));
+
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
 }
