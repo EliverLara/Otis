@@ -81,7 +81,7 @@
      id="layer1"
      transform="translate(0,-1024.3622)">
     <rect
-       style="opacity:1;fill:#202835;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.56771088;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:478.43673706;stroke-opacity:1"
+       style="opacity:1;fill:#0f1417;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.56771088;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:478.43673706;stroke-opacity:1"
        id="rect4741"
        width="28"
        height="27.999966"
@@ -103,7 +103,7 @@
        y="1020.3622" />
     <path
        id="path4417"
-       style="fill:#232831;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.01446422"
+       style="fill:#0b0e11;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.01446422"
        d="m 13.999998,1046.3622 c 4.418278,0 8.000004,-3.5817 8.000004,-8 0,-4.4182 -3.581726,-7.9999 -8.000004,-7.9999 -4.418262,0 -7.999998,3.5817 -7.999998,7.9999 0,4.4183 3.581736,8 7.999998,8"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="90.000389"
