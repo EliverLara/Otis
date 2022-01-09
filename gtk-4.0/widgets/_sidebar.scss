@@ -139,10 +139,10 @@ placessidebar{
 				}
 
 				&:selected {
-          border-left: 2px solid #f8ab95;
+          border-left: 2px solid #79B4B7;
           &, & label { color: $selected_fg_color; }
           &, &:backdrop {
-            background:linear-gradient(to right,#f8ab95, #ee73c8,
+            background:linear-gradient(to right,#79B4B7, #8CA1A5,
             lighten($_sidebar_color, 7%) 40px,  lighten($_sidebar_color, 7%) 97%);
           }
 			
