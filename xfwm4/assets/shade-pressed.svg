@@ -60,7 +60,7 @@
      id="layer1"
      transform="translate(0,-1020.3622)">
     <rect
-       style="opacity:1;fill:#202835;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.74499989;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:478.43673706;stroke-opacity:1"
+       style="opacity:1;fill:#0f1417;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.74499989;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:478.43673706;stroke-opacity:1"
        id="rect4741"
        width="28"
        height="32"
@@ -78,6 +78,6 @@
        d="m 18,1038.3622 -4,-4 -4,4 z"
        id="path6400"
        sodipodi:nodetypes="cccc"
-       style="display:inline;fill:#cd7ebf;fill-opacity:1;stroke:none" />
+       style="display:inline;fill:#8CA1A5;fill-opacity:1;stroke:none" />
   </g>
 </svg>
