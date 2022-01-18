@@ -2452,48 +2452,28 @@ GraniteWidgetsWelcome {
     headerbar .path-bar-box button:only-child {
       border-radius: 4px;
       border-style: solid; }
-  .titlebar .linked > button:active,
-  .titlebar headerbar .linked > button:active, .titlebar .path-bar-box button:active,
-  headerbar .path-bar-box .titlebar button:active, .titlebar .linked > button:checked,
-  .titlebar headerbar .linked > button:checked, .titlebar .path-bar-box button:checked,
-  headerbar .path-bar-box .titlebar button:checked,
-  headerbar .titlebar .linked > button:active,
-  headerbar .linked > button:active,
-  .titlebar .path-bar-box headerbar button:active,
-  headerbar .path-bar-box button:active,
-  headerbar .titlebar .linked > button:checked,
-  headerbar .linked > button:checked,
-  .titlebar .path-bar-box headerbar button:checked,
-  headerbar .path-bar-box button:checked {
-    color: #d8dee9;
-    outline-color: rgba(216, 222, 233, 0.3);
-    background: linear-gradient(to right, #79B4B7, #8CA1A5) left bottom #222a32 no-repeat;
-    background-size: 100% 1.5px;
-    text-shadow: none; }
-    .titlebar .linked > button:active:backdrop,
-    .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop,
-    headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
-    .titlebar headerbar .linked > button:checked:backdrop, .titlebar .path-bar-box button:checked:backdrop,
-    headerbar .path-bar-box .titlebar button:checked:backdrop,
-    headerbar .titlebar .linked > button:active:backdrop,
-    headerbar .linked > button:active:backdrop,
-    .titlebar .path-bar-box headerbar button:active:backdrop,
-    headerbar .path-bar-box button:active:backdrop,
-    headerbar .titlebar .linked > button:checked:backdrop,
-    headerbar .linked > button:checked:backdrop,
-    .titlebar .path-bar-box headerbar button:checked:backdrop,
-    headerbar .path-bar-box button:checked:backdrop {
-      color: rgba(255, 255, 255, 0.5); }
-      .titlebar .linked > button:active:backdrop label, .titlebar .path-bar-box button:active:backdrop label,
-      headerbar .path-bar-box .titlebar button:active:backdrop label, .titlebar .linked > button:checked:backdrop label, .titlebar .path-bar-box button:checked:backdrop label,
-      headerbar .path-bar-box .titlebar button:checked:backdrop label,
-      headerbar .linked > button:active:backdrop label,
-      .titlebar .path-bar-box headerbar button:active:backdrop label,
-      headerbar .path-bar-box button:active:backdrop label,
-      headerbar .linked > button:checked:backdrop label,
-      .titlebar .path-bar-box headerbar button:checked:backdrop label,
-      headerbar .path-bar-box button:checked:backdrop label {
-        color: rgba(255, 255, 255, 0.5); }
+  .titlebar .linked > button:active:backdrop,
+  .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop,
+  headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:active:backdrop label, .titlebar .path-bar-box button:active:backdrop label,
+  headerbar .path-bar-box .titlebar button:active:backdrop label, .titlebar .linked > button:checked:backdrop,
+  .titlebar headerbar .linked > button:checked:backdrop, .titlebar .path-bar-box button:checked:backdrop,
+  headerbar .path-bar-box .titlebar button:checked:backdrop, .titlebar .linked > button:checked:backdrop label, .titlebar .path-bar-box button:checked:backdrop label,
+  headerbar .path-bar-box .titlebar button:checked:backdrop label,
+  headerbar .titlebar .linked > button:active:backdrop,
+  headerbar .linked > button:active:backdrop,
+  .titlebar .path-bar-box headerbar button:active:backdrop,
+  headerbar .path-bar-box button:active:backdrop,
+  headerbar .linked > button:active:backdrop label,
+  .titlebar .path-bar-box headerbar button:active:backdrop label,
+  headerbar .path-bar-box button:active:backdrop label,
+  headerbar .titlebar .linked > button:checked:backdrop,
+  headerbar .linked > button:checked:backdrop,
+  .titlebar .path-bar-box headerbar button:checked:backdrop,
+  headerbar .path-bar-box button:checked:backdrop,
+  headerbar .linked > button:checked:backdrop label,
+  .titlebar .path-bar-box headerbar button:checked:backdrop label,
+  headerbar .path-bar-box button:checked:backdrop label {
+    color: rgba(255, 255, 255, 0.5); }
   .titlebar .path-bar-box .dim-label, .titlebar .path-bar-box label.separator, .titlebar .path-bar-box .subtitle,
   headerbar .path-bar-box .dim-label,
   headerbar .path-bar-box label.separator,

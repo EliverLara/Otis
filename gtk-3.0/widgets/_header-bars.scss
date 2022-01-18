@@ -155,14 +155,8 @@ headerbar {
   }
   %linked-button {
     @extend %linked-header;
-    &:active, &:checked {
-      @include button(active-header);
-      &:backdrop{
-        color: $backdrop_selected_fg_color;
-        label{
-          color: $backdrop_selected_fg_color;
-        }
-      }
+    &:active:backdrop, &:checked:backdrop {
+      &, label { color: $backdrop_selected_fg_color; }
     }
   }
   .linked > button {
