@@ -208,14 +208,14 @@
   //  border: 1px solid $c;
     color: white;
     border-radius: 4px;
-    background: $suggested_bg_color; }
+    background-color: $suggested_bg_color; }
 
     @if $t==rounded-red {
       box-shadow: none;
     //  border: 1px solid $c;
       color: white;
       border-radius: 4px;
-      background: $destructive_bg_color; 
+      background-color: $destructive_bg_color; 
     }
   
   @if $t==normal {
@@ -308,6 +308,7 @@
   border-color: $insensitive_borders_color;
   background-color: if($c==$base_color, $insensitive_bg_color, $c);
   text-shadow: none;
+  label { color: if($tc==$text_color, $backdrop_text_color, $tc);}
 }
   @else if $t==insensitive-active {
   //

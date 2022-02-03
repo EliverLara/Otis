@@ -434,6 +434,9 @@ button {
     border-color: rgba(29, 35, 47, 0.3);
     background-color: #2c3547;
     text-shadow: none; }
+    notebook > header > tabs > arrow:disabled label,
+    button:disabled label {
+      color: #b6bdca; }
     notebook > header > tabs > arrow:disabled:active, notebook > header > tabs > arrow:disabled:checked,
     button:disabled:active,
     button:disabled:checked {
@@ -641,12 +644,12 @@ button.suggested-action {
   box-shadow: none;
   color: white;
   border-radius: 4px;
-  background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+  background-color: #79B4B7; }
   button.suggested-action.flat {
     box-shadow: none;
     color: white;
     border-radius: 4px;
-    background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+    background-color: #79B4B7; }
   button.suggested-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -693,10 +696,12 @@ button.suggested-action {
     -gtk-icon-shadow: none;
     color: rgba(121, 180, 183, 0.8); }
   button.suggested-action:disabled {
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     border-color: rgba(29, 35, 47, 0.3);
-    background-color: #79B4B7;
+    background-color: rgba(121, 180, 183, 0.5);
     text-shadow: none; }
+    button.suggested-action:disabled label {
+      color: rgba(255, 255, 255, 0.5); }
     button.suggested-action:disabled:active, button.suggested-action:disabled:checked {
       color: rgba(255, 255, 255, 0.7);
       outline-color: rgba(255, 255, 255, 0.3);
@@ -749,12 +754,12 @@ button.destructive-action {
   box-shadow: none;
   color: white;
   border-radius: 4px;
-  background: linear-gradient(to right, #FF56AC, #FF56AC); }
+  background-color: #FF56AC; }
   button.destructive-action.flat {
     box-shadow: none;
     color: white;
     border-radius: 4px;
-    background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+    background-color: #79B4B7; }
   button.destructive-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -801,10 +806,12 @@ button.destructive-action {
     -gtk-icon-shadow: none;
     color: rgba(255, 35, 147, 0.8); }
   button.destructive-action:disabled {
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     border-color: rgba(29, 35, 47, 0.3);
-    background-color: #ff2393;
+    background-color: rgba(255, 35, 147, 0.5);
     text-shadow: none; }
+    button.destructive-action:disabled label {
+      color: rgba(255, 255, 255, 0.5); }
     button.destructive-action:disabled:active, button.destructive-action:disabled:checked {
       color: rgba(255, 255, 255, 0.7);
       outline-color: rgba(255, 255, 255, 0.3);
@@ -951,6 +958,9 @@ entry, .linked > combobox > box > button.combo:dir(ltr), .linked > combobox > bo
     background-color: #2c3547;
     text-shadow: none;
     color: #818997; }
+    .inline-toolbar button:disabled label, .linked > button:disabled label, .linked:not(.vertical) > spinbutton:disabled:not(.vertical) label, .linked:not(.vertical) >
+    entry:disabled label, .linked > combobox > box > button.combo:disabled:dir(ltr) label, .linked > combobox > box > button.combo:disabled:dir(rtl) label {
+      color: #b6bdca; }
 
 .inline-toolbar button:first-child, .linked > button:first-child, combobox.linked button:nth-child(2):dir(rtl), .linked:not(.vertical) > combobox:first-child > box > button.combo, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) >
 entry:first-child {
@@ -2233,29 +2243,6 @@ GraniteWidgetsWelcome {
     .titlebar button.image-button,
     headerbar button.image-button {
       padding: 3px 4px; }
-    .titlebar button.suggested-action,
-    headerbar button.suggested-action {
-      box-shadow: none;
-      border: none;
-      background-image: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
-      .titlebar button.suggested-action:disabled, .titlebar button.suggested-action:disabled:backdrop, .titlebar button.suggested-action:backdrop,
-      headerbar button.suggested-action:disabled,
-      headerbar button.suggested-action:disabled:backdrop,
-      headerbar button.suggested-action:backdrop {
-        border: none;
-        background-image: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
-        .titlebar button.suggested-action:disabled:hover, .titlebar button.suggested-action:disabled:active, .titlebar button.suggested-action:disabled:checked, .titlebar button.suggested-action:disabled:backdrop:hover, .titlebar button.suggested-action:disabled:backdrop:active, .titlebar button.suggested-action:disabled:backdrop:checked, .titlebar button.suggested-action:backdrop:hover, .titlebar button.suggested-action:backdrop:active, .titlebar button.suggested-action:backdrop:checked,
-        headerbar button.suggested-action:disabled:hover,
-        headerbar button.suggested-action:disabled:active,
-        headerbar button.suggested-action:disabled:checked,
-        headerbar button.suggested-action:disabled:backdrop:hover,
-        headerbar button.suggested-action:disabled:backdrop:active,
-        headerbar button.suggested-action:disabled:backdrop:checked,
-        headerbar button.suggested-action:backdrop:hover,
-        headerbar button.suggested-action:backdrop:active,
-        headerbar button.suggested-action:backdrop:checked {
-          border: none;
-          background-image: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
     .titlebar button.appmenu,
     headerbar button.appmenu {
       background: transparent; }
@@ -2298,10 +2285,10 @@ GraniteWidgetsWelcome {
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 4px;
-      font-weight: normal;
+      box-shadow: none;
       color: white;
-      background-color: #333e53;
-      text-shadow: none;
+      border-radius: 4px;
+      background-color: #79B4B7;
       box-shadow: none; }
       .titlebar button.suggested-action:hover,
       headerbar button.suggested-action:hover {
@@ -2322,6 +2309,9 @@ GraniteWidgetsWelcome {
         border-color: rgba(29, 35, 47, 0.3);
         background-color: #79B4B7;
         text-shadow: none; }
+        .titlebar button.suggested-action:disabled label,
+        headerbar button.suggested-action:disabled label {
+          color: white; }
         .titlebar button.suggested-action:disabled label,
         headerbar button.suggested-action:disabled label {
           color: rgba(255, 255, 255, 0.5); }
@@ -2345,10 +2335,10 @@ GraniteWidgetsWelcome {
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 4px;
-      font-weight: normal;
+      box-shadow: none;
       color: white;
-      background-color: #333e53;
-      text-shadow: none;
+      border-radius: 4px;
+      background-color: #79B4B7;
       box-shadow: none; }
       .titlebar button.destructive-action:hover,
       headerbar button.destructive-action:hover {
@@ -2369,6 +2359,9 @@ GraniteWidgetsWelcome {
         border-color: rgba(29, 35, 47, 0.3);
         background-color: #ff2393;
         text-shadow: none; }
+        .titlebar button.destructive-action:disabled label,
+        headerbar button.destructive-action:disabled label {
+          color: white; }
         .titlebar button.destructive-action:disabled label,
         headerbar button.destructive-action:disabled label {
           color: rgba(255, 255, 255, 0.5); }
@@ -2402,7 +2395,7 @@ GraniteWidgetsWelcome {
         text-shadow: none;
         box-shadow: none;
         border: 1px solid #1d232f;
-        background-color: #272F3F; }
+        background-color: #2a3445; }
       .titlebar button.titlebutton.close:hover,
       headerbar button.titlebutton.close:hover {
         color: #FF56AC; }
@@ -4627,7 +4620,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
       box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
     .budgie-menu .category-button:checked {
       color: #fff;
-      background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+      background: #79B4B7; }
       .budgie-menu .category-button:checked:hover {
         color: rgba(255, 255, 255, 0.6); }
     .budgie-menu .category-button:checked:disabled {
@@ -5115,13 +5108,13 @@ button.raven-trigger {
       background: #A572A4;
       color: #fff; }
     .raven .powerstrip button.image-button:first-child {
-      background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+      background: #79B4B7; }
       .raven .powerstrip button.image-button:first-child:hover {
         background: rgba(205, 126, 191, 0.85); }
       .raven .powerstrip button.image-button:first-child:active {
         background: #cd7ebf; }
     .raven .powerstrip button.image-button:last-child {
-      background: linear-gradient(to right, #FF56AC, #FF56AC); }
+      background: #FF56AC; }
       .raven .powerstrip button.image-button:last-child:hover {
         background: rgba(255, 86, 172, 0.85); }
       .raven .powerstrip button.image-button:last-child:active {
@@ -6039,6 +6032,8 @@ ConversationListView {
     border-color: rgba(29, 35, 47, 0.3);
     background-color: #2c3547;
     text-shadow: none; }
+    #content_frame button:disabled label {
+      color: #b6bdca; }
 
 #buttonbox_frame {
   padding-top: 20px;
