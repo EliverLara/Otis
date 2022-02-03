@@ -108,6 +108,6 @@ $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdro
 
 $scale_bg: if($variant == 'light', transparentize(black,0.86) ,transparentize(white,0.86));
 $scale_disabled_bg: if($variant == 'light', transparentize(black, 0.94) ,transparentize(white, 0.94));
-$suggested_bg_color: linear-gradient(to right, $cyan 0%, $cyan 100%);
-$destructive_bg_color: linear-gradient(to right, $red, $red);
+$suggested_bg_color: $cyan;
+$destructive_bg_color: $red;
 $menu_shadow_color: if($variant == 'light', transparentize(rgb(122, 122, 122), 0.6), $borders_color);

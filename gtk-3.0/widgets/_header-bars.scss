@@ -40,22 +40,6 @@ headerbar {
     &.image-button{
        padding: 3px 4px;
     }
-    &.suggested-action{
-      box-shadow: none;
-      border: none;
-      background-image: $suggested_bg_color;
-        &:disabled, &:disabled:backdrop, &:backdrop {
-          border: none;
-          background-image: $suggested_bg_color;
-          &:hover,
-          &:active,
-          &:checked {
-            border: none;
-            background-image: $suggested_bg_color;
-          }
-        }
-        
-      }
       
     &.appmenu{
       background: transparent;
@@ -91,7 +75,7 @@ headerbar {
         margin-top: 5px;
         margin-bottom: 5px;
         border-radius: 4px;
-        @include button(normal, $b_color, white);
+        @include button(rounded, $b_color, white);
         box-shadow: none;
 
         &:hover { @include button(hover, $b_color, white); }
