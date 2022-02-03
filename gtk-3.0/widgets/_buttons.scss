@@ -268,7 +268,7 @@ button {
       }
 
       &:disabled {
-        @include button(insensitive, $b_color, white);
+        @include button(insensitive, transparentize($b_color, 0.5), transparentize(white, 0.5));
 
         &:active,
         &:checked { @include button(insensitive-active, $b_color, white); }
