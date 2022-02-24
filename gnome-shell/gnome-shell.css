@@ -20,7 +20,7 @@ stage {
   padding: 4px 32px; }
   .button:focus, .app-folder-dialog .edit-folder-button:focus {
     color: #fff;
-    background-color: rgba(140, 161, 165, 0.8);
+    background-color: #262f38;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
@@ -40,7 +40,7 @@ stage {
     icon-shadow: none; }
   .button:hover, .app-folder-dialog .edit-folder-button:hover {
     color: #fff;
-    background-color: rgba(140, 161, 165, 0.8);
+    background-color: #262f38;
     border: 1px solid #090c0e;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
@@ -69,21 +69,21 @@ stage {
     icon-shadow: none; }
   .modal-dialog-linked-button:focus {
     color: #fff;
-    background-color: rgba(140, 161, 165, 0.8);
+    background-color: #262f38;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
     border: 1px solid #090c0e; }
     .modal-dialog-linked-button:focus:hover {
       color: #fff;
-      background-color: rgba(140, 161, 165, 0.8);
+      background-color: #262f38;
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black;
       box-shadow: none;
       border: 1px solid #090c0e; }
   .modal-dialog-linked-button:hover {
     color: #fff;
-    background-color: rgba(140, 161, 165, 0.8);
+    background-color: #262f38;
     border: 1px solid #090c0e;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
@@ -1673,14 +1673,14 @@ StScrollBar {
   border-radius: 2px; }
   .keyboard-key:focus {
     color: #fff;
-    background-color: rgba(140, 161, 165, 0.8);
+    background-color: #262f38;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
     border: 1px solid #090c0e; }
   .keyboard-key:hover, .keyboard-key:checked {
     color: #fff;
-    background-color: rgba(140, 161, 165, 0.8);
+    background-color: #262f38;
     border: 1px solid #090c0e;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
@@ -1704,7 +1704,7 @@ StScrollBar {
     border: 1px solid #090c0e; }
     .keyboard-key.default-key:hover, .keyboard-key.default-key:checked {
       color: #fff;
-      background-color: rgba(140, 161, 165, 0.8);
+      background-color: #262f38;
       border: 1px solid #090c0e;
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black; }
@@ -1803,7 +1803,7 @@ StScrollBar {
       border: 1px solid #090c0e; }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
         color: #fff;
-        background-color: rgba(140, 161, 165, 0.8);
+        background-color: #262f38;
         border: 1px solid #090c0e;
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
