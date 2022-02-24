@@ -920,9 +920,9 @@ StScrollBar {
 
     .datemenu-calendar-column {
       border: 0 solid transparent;
-      &:ltr { border-left-width: 1px; }
-      &:rtl { border-right-width: 1px; }
-      background: lighten($bg_color, 3%);
+      background: lighten($bg_color, 2%);
+      box-shadow: 0px 0px 1px 1px  $main_dark inset;
+      border-radius: 7px;
     }
 
     .datemenu-today-button,
@@ -1127,12 +1127,13 @@ StScrollBar {
         .message {
           &:hover,&:focus { 
             background-color: lighten($bg_color, 4%);
-            border-radius: 0px 5px 5px 0px;
+            border-radius: 0px 7px 7px 0px;
             box-shadow: 3px 0px 0px 0px $selected_bg_color inset;
           }
-          background: lighten($bg_color, 3%);
-          border: 1px solid transparent;
-          border-radius: 5px;
+          background: lighten($bg_color, 2%);
+          border: 1px solid $main_dark;
+          border-radius: 7px;
+          box-shadow: none;
         }
 
           .message-icon-bin {
