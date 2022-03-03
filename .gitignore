@@ -8,7 +8,6 @@ node_modules/
 _gnome-shell/
 cinnamon/
 kde/
-metacity-1/
 
 install.sh
 *blue.*
