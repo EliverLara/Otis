@@ -4,10 +4,9 @@
 %titlebar,
 headerbar {
   padding: 0 13px;
-  min-height: 34px;
+  min-height: 36px;
   background: $headerbar_color;
   color: $headerbar_fg_color;
-  border-radius: 0;
   &:backdrop {
     border-color: $backdrop_borders_color;
    // background-image: none;
@@ -29,7 +28,7 @@ headerbar {
     @extend .dim-label;
   }
  
-  entry { min-height: 24px;}  
+  entry { min-height: 26px;}  
   
   button {
     @include button(normal-header);
@@ -38,24 +37,9 @@ headerbar {
     margin-bottom: 5px;
     box-shadow: none;
     &.image-button{
-       padding: 3px 4px;
+       padding: 3px 6px;
     }
-    &.suggested-action{
-      box-shadow: none;
-      border: none;
-      background-image: $suggested_bg_color;
-        &:disabled, &:disabled:backdrop, &:backdrop {
-          border: none;
-          background-image: $suggested_bg_color;
-          &:hover,
-          &:active,
-          &:checked {
-            border: none;
-            background-image: $suggested_bg_color;
-          }
-        }
-        
-      }
+
       
     &.appmenu{
       background: transparent;
@@ -87,10 +71,10 @@ headerbar {
                                (destructive-action, $destructive_color) {
       &.#{$b_type} {
         font-weight: bold;
-        min-height: 14px;
+        min-height: 16px;
         margin-top: 5px;
         margin-bottom: 5px;
-        border-radius: 4px;
+        border-radius: 6px;
         @include button(normal, $b_color, white);
         box-shadow: none;
 
@@ -138,18 +122,18 @@ headerbar {
     margin: 5px 0px;
     min-height: 20px;
     &:first-child {
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
     }
 
     &:last-child {
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
       border-right-style: solid;
     }
 
     &:only-child {
-      border-radius: 4px;
+      border-radius: 6px;
       border-style: solid;
     }
   }
@@ -183,24 +167,24 @@ headerbar {
         margin-left: -1px;
         border-radius: 0px;
         &:active, &:checked {
-          border-radius: 0px 4px 4px 0px;
+          border-radius: 0px 6px 6px 0px;
         }
       }
       &:first-child {
-        border-radius: 4px 0px 0px 4px;
+        border-radius: 6px 0px 0px 6px;
         &:active, &:checked {
-          border-radius: 4px;
+          border-radius: 6px;
         }
       }
     }
     widget > .text-button:last-child{
-      border-radius: 0px 4px 4px 0px;
+      border-radius: 0px 6px 6px 0px;
       @include button(active-header, $tc:$selected_fg_color);
       &:backdrop, &:backdrop label {
         color: $backdrop_selected_fg_color;
       }
       &:only-child{
-        border-radius: 4px;
+        border-radius: 6px;
       } 
     }
   }
@@ -233,7 +217,7 @@ headerbar {
   } // squared corners when the window is maximized or tiled
 
   &.default-decoration {
-    padding: 5px 4px; 
+    padding: 5px 6px; 
     min-height: 20px;
 
     button.titlebutton {
@@ -261,16 +245,12 @@ headerbar {
 }
 
 .background:not(.tiled):not(.maximized) .titlebar {
-  @if $variant == 'light' { box-shadow: inset 0 1px $top_highlight; }
-  @else { box-shadow: inset 0 1px $top_highlight,inset 0 -1px $bottom_highlight; }
+  @if $variant == 'light' { box-shadow: inset 0 -1px $borders_color }
+  @else { box-shadow: inset 0 1px $lime,inset 0 -1px $red; }
 }
-
-// headerbar {
-//   window:not(.tiled):not(.maximized) separator:first-child + &, // tackles the paned container case
-//   window:not(.tiled):not(.maximized) &:first-child { &:backdrop, & { border-top-left-radius: 4px; }}
-
-//   window:not(.tiled):not(.maximized) &:last-child { &:backdrop, & { border-top-right-radius: 4px; }}
-// }
+window {
+  border: 1px solid $borders_color;
+}
 
 .titlebar:not(headerbar) {
   window.csd > & {

@@ -12,7 +12,7 @@
     } 
   }
   paned {
-    > separator { background-image: none; }
+    > separator { background: $borders_color; }
   }
   .sidebar {
     background-color: transparent;

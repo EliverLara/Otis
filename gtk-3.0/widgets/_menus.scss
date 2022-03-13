@@ -3,7 +3,7 @@
  *********/
 menubar,
 .menubar {
-  background-color: $headerbar_color;
+  background: $headerbar_color;
   color: $headerbar_fg_color;
   -GtkWidget-window-dragging: true;
   padding: 0px;

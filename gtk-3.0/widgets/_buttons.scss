@@ -28,8 +28,7 @@ button {
     min-height: 20px;
     min-width: 16px;
     padding: 2px 6px;
-    border: 1px solid $borders_color;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: $button_transition;
 
     @include button(normal);
@@ -58,7 +57,6 @@ button {
     &:active,
     &:checked {
       @include button(active,darken($selected_bg_color,5%),$selected_fg_color);
-
       transition-duration: 50ms;
     }
 
@@ -224,8 +222,7 @@ button {
   @each $b_type, $b_color in (suggested-action, $cyan),
                              (destructive-action, $destructive_color) {
     &.#{$b_type} {
-      border: none;
-      
+      border-radius: 16px;
       @if $b_type ==  suggested-action {
         @include button(rounded, $b_color, white);
       } @else {
