@@ -509,9 +509,9 @@ StScrollBar {
   color: $fg_color;
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
-   
     background-color: lighten($bg_color, 2%);
     box-shadow: $depth6;
+    border: none;
   }
 
   .popup-menu-content { 
