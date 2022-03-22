@@ -46,11 +46,11 @@ headerbar {
       &:backdrop{background: transparent;}
     }
     &:hover {
-      @include button(hover-header, $selected_bg_color, #fff);
+      @include button(hover-header, $selected_bg_color, $selected_fg_color);
     }
     &:active,
     &:checked {
-      @include button(active, transparentize($selected_bg_color, 0.3), #fff);
+      @include button(active, transparentize($selected_bg_color, 0.3), $selected_fg_color);
     }
 
     &:backdrop,
