@@ -6,7 +6,6 @@ node_modules/
 *.css.map
 
 _gnome-shell/
-cinnamon/
 kde/
 
 install.sh
