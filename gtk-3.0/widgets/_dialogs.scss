@@ -10,18 +10,12 @@ messagedialog { // Message Dialog styling
     background-image: none;
     background-color: transparentize($bg_color, 0.05);
     border-style: none;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
   }
 
   &.csd { // rounded bottom border styling for csd version
     &.background {
       background-color: transparentize($bg_color, 0.05);
       color: if($variant=='light', $headerbar_fg_color, $fg_color);
-
-      // bigger radius for better antialiasing
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
     }
 
     .dialog-action-area button {
@@ -35,17 +29,16 @@ messagedialog { // Message Dialog styling
       box-shadow: none;
 
       &:hover {
-        background-color: transparentize($selected_bg_color, 0.1);
-        color: white;
+        background-color: transparentize($selected_bg_color, 0.1);        
       }
 
       &:first-child{
         border-left-style: none;
-        border-bottom-left-radius: 4px;
+        border-bottom-left-radius: 12px;
       }
 
       &:last-child {
-        border-bottom-right-radius: 4px;
+        border-bottom-right-radius: 12px;
       }
       &.destructive-action, &.suggested-action{
         color:white;

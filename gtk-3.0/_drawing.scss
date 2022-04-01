@@ -68,7 +68,7 @@
   @if $t==normal {
     color: $text_color;
     border-color: $borders_color;
-    background-color: #fff;
+    background-color: $btn_bg;
     // for the transition to work the number of shadows in different states needs to match, hence the transparent shadow here.
   }
   @if $t==focus {
@@ -182,7 +182,7 @@
   }
 }
 
-@mixin button($t, $c:$base_color, $tc:$text_color, $edge: none) {
+@mixin button($t, $c:$btn_bg, $tc:$text_color, $edge: none) {
 //
 // Button drawing function
 //
@@ -225,7 +225,7 @@
     font-weight: normal;
     color: $tc;
     border: 1px solid $borders_color;
-    background-color:#fff;
+    background-color: $c;
     text-shadow: none;
   }
 
@@ -235,33 +235,11 @@
   //
     color: $tc;
     outline-color: transparentize($tc, 0.7);
-    background-color: $c;
+    background-color: if($c==$selected_bg_color, $c, lighten($c, 6%));
     text-shadow: none;
-    border: 1px solid $c;
+    border: 1px solid if($c==$selected_bg_color, $selected_borders_color, $c);
     //@include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
   }
-
-  @if $t==normal-header {
-  //
-  // normal button headerbar look
-  //
-  color: if($tc==$text_color, $headerbar_fg_color, $tc);
-  border-radius: 6px;
-  text-shadow: none;
-  box-shadow: none;
-  border: 1px solid $borders_color;
-  background: #fff;     
-}
-
-  @else if $t==hover-header {
-  //
-  // hovered button headerbar look
-  //
-  color: $tc;
-  text-shadow: none;
-  background-color: $selected_bg_color;
-  border: 1px solid $selected_borders_color;
-}
 
 @else if $t==backdrop-header {
 //

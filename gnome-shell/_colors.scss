@@ -1,34 +1,30 @@
-$base_color:#2e394c;
-$bg_color: darken(#2a3344, 3%); //252b2f
-$main_dark: darken($bg_color, 5%);
-$gray: lighten($base_color, 7%);
-$fg_color: #d8dee9;
-$dracula: $bg_color;
-$topbar_color:  lighten($fg_color, 20%);
+$base_color:#efeef3;
+$bg_color: darken( #efeef3, 3%);
+$gray: transparentize(black,0.86);
+$fg_color: #31363D;
+$dracula: darken($bg_color, 2%);
+$topbar_color: #31363D;
+$shadow_color: rgba(49, 47, 47, 0.87);
 
-$lime: #8CA1A5;
-$red: #FF56AC;
-$orange: #ED878F;
-$yellow: #F3D88E;
-$purple: #A572A4;
-$cyan: #89DDFF;
-$teal: #00A9A5;
+$red: #FF044A;
+$purple: #9b59b6;
+$cyan: #00b0ff;
+$lime: #B3E235;
+$blue: #495aff;
 
-$g1: #f8ab95;
-$g2: #ee73c8;
 
-$selected_fg_color: #fff;
-$selected_bg_color: #cd7ebf;
+$selected_fg_color: $fg_color;
+$selected_bg_color: #D0CFD6;
 $selected_borders_color: darken($selected_bg_color, 10%);
-$borders_color: darken($main_dark, 3%);
+$borders_color: transparentize(black,0.85);
 $borders_edge: transparentize(white, 0.9);
-$link_color: #A0C1B9;
+$link_color: #13b1d5;
 $link_visited_color: transparentize($link_color,0.5);
 $top_hilight: $borders_edge;
 $top_highlight: transparentize(white, 0.9);
 $bottom_highlight: transparentize(black, 0.9);
 
-$warning_color: darken($orange,10%);
+$warning_color: darken(#ffb86c,10%);
 $error_color: darken( $red,5%);
 $success_color: darken($cyan,10%);
 $destructive_color: darken( #c72240,10%);

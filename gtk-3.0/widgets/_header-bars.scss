@@ -31,7 +31,7 @@ headerbar {
   entry { min-height: 26px;}  
   
   button {
-    @include button(normal-header);
+    @include button(normal);
     min-height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -46,7 +46,7 @@ headerbar {
       &:backdrop{background: transparent;}
     }
     &:hover {
-      @include button(hover-header, $selected_bg_color, $selected_fg_color);
+      @include button(hover, $selected_bg_color, $selected_fg_color);
     }
     &:active,
     &:checked {
