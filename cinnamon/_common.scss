@@ -146,7 +146,7 @@ StScrollBar {
 .popup-slider-menu-item,
 .slider {
   -slider-height: 0.3em;
-  -slider-background-color: lighten($base_color, 5%);                         //background of the trough
+  -slider-background-color: lighten($base_color, 5%);               //background of the trough
   -slider-border-color: transparentize($bg_color, 0.7);             //trough border color
   -slider-active-background-color: $selected_bg_color;              //active trough fill
   -slider-active-border-color: transparentize($bg_color, 0.7);      //active trough border
@@ -269,23 +269,23 @@ StScrollBar {
 %menu {
   color: $fg_color;
   border: 1px solid $borders_color;
-  border-radius: 3px;
+  border-radius: 6px;
 	background-color: transparentize($bg_color, 0.01);
 
   &.top {
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 6px 6px;
   }
 
   &.bottom {
-    border-radius: 3px 3px 0 0;
+    border-radius: 6px 6px 0 0;
   }
 
   &.left {
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 6px 6px 0;
   }
 
   &.right {
-    border-radius: 3px 0 0 3px;
+    border-radius: 6px 0 0 6px;
   }
   &-arrow { icon-size: 16px; }
 
