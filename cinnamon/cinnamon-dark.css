@@ -238,24 +238,24 @@ StScrollBar {
 .popup-combo-menu {
   color: #d8dee9;
   border: 1px solid #1c222e;
-  border-radius: 3px;
+  border-radius: 6px;
   background-color: rgba(42, 51, 68, 0.99); }
   .menu.top,
   .popup-menu.top,
   .top.popup-combo-menu {
-    border-radius: 0 0 3px 3px; }
+    border-radius: 0 0 6px 6px; }
   .menu.bottom,
   .popup-menu.bottom,
   .bottom.popup-combo-menu {
-    border-radius: 3px 3px 0 0; }
+    border-radius: 6px 6px 0 0; }
   .menu.left,
   .popup-menu.left,
   .left.popup-combo-menu {
-    border-radius: 0 3px 3px 0; }
+    border-radius: 0 6px 6px 0; }
   .menu.right,
   .popup-menu.right,
   .right.popup-combo-menu {
-    border-radius: 3px 0 0 3px; }
+    border-radius: 6px 0 0 6px; }
   .menu-arrow,
   .popup-menu-arrow {
     icon-size: 16px; }
