@@ -6,7 +6,7 @@ $font-size: 11;
 $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
-$_bubble_transparent: transparentize($osd_bg_color, 0.35);
+$_bubble_transparent: transparentize($osd_bg_color, 0.08);
 
 stage {
   @include fontsize($font-size);
@@ -33,11 +33,7 @@ stage {
   margin: 5px 0px;
   border: 1px solid $borders_color;
   color: $fg_color;
-  @include gradient(#f8f8f8, #eeeeee);
-  font-weight: bold;
-  box-shadow: none;
-  text-shadow: none;
-  icon-shadow: none;
+  @include button(normal);
   &:insensitive { @include button(insensitive); }
   &:active {
    // @include button(active);
@@ -68,11 +64,10 @@ stage {
 /* Entries */
 StEntry {
   @include entry(normal);
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 4px;
-  border-width: 0;
   color: $fg_color !important;
-  //&:hover { @include entry(hover);}
+  &:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
   &:insensitive { @include entry(insensitive);}
   selection-background-color: $selected_bg_color;
@@ -82,6 +77,8 @@ StEntry {
     warning-color: $warning_color;
     padding: 0 4px;
   }
+  StLabel.hint-text { color: transparentize($fg_color, 0.3); }
+
 }
 
 
@@ -120,10 +117,10 @@ StScrollBar {
 $slider_size: 16px;
 
 .slider {
-  color:#fff;
+  color: $blue;
   // slider trough
-  -barlevel-height: 4px;
-  -barlevel-background-color: $gray; //background of the trough
+  -barlevel-height: 3px;
+  -barlevel-background-color: transparentize($blue, 0.7); //background of the trough
   -barlevel-border-width: 2px; 
   -barlevel-border-color: transparent; // trough border color
   // fill style
@@ -186,7 +183,7 @@ $slider_size: 16px;
   border: none;
   border-radius: 10px;
   color: $osd_fg_color;
-  @include gradient();
+  background-color: $base_color;
 
   .modal-dialog-content-box { padding: 24px; }
   .run-dialog-entry {
@@ -204,6 +201,10 @@ $slider_size: 16px;
     font-weight: bold;
     color: darken($osd_fg_color,10%);
     padding-bottom: .4em;
+  }
+
+  .run-dialog-description {
+    color: $fg_color;
   }
 
 }
@@ -251,12 +252,13 @@ $slider_size: 16px;
   }
   & .modal-dialog-linked-button:last-child {
     margin-right: 5px;
-    @include gradient(#ee0979, #ff6a00, horizontal);
+    @include button(normal, $red);
     color: white;
     border-left: none;
     &:hover, &:focus {
       border-left: none;
-      background: #d10869;
+      @include button(hover, $red);
+      color: white;
     }
 
   }
@@ -397,8 +399,8 @@ $slider_size: 16px;
 .prompt-dialog {
   //this is the width of the entire modal popup
   width: 34em;
-  border: none;
-  border-radius: 2px;
+  border: 1px solid $borders_color;
+  border-radius: 10px;
 
   .message-dialog-main-layout { spacing: 24px; padding: 10px; }
   .message-dialog-content { spacing: 16px; }
@@ -533,40 +535,39 @@ $slider_size: 16px;
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
     margin: 0 8px;
-    background-color: lighten($selected_bg_color, 2%);
-    box-shadow: 0px 0px 1px 1px $borders_color inset;
-    border-radius: 7px;
-    border-color: $borders_color;
+    background-color: lighten($selected_bg_color, 8%);
+     box-shadow: none;
+    border-radius: 0 0 8px 8px;
+     border: none;
   }
 
   .popup-menu-content { 
      padding: 16px 0; 
     border-radius: 10px;
-   // background: rgba(255, 255, 255, 0.808);
-   background-color: $bg_color;
-    // border: 1px solid $borders_color
+    background: rgba(255, 255, 255, 0.808);
   }
   .popup-menu-item {
     spacing: 6px;
     padding: 6px;
-    border-radius: 7px;
+    border-radius: 8px;
+    margin: 0 8px;
     &:ltr { padding-right: 1.75em; padding-left: 0; }
     &:rtl { padding-right: 0; padding-left: 1.75em; }
     
     &:checked {
-      margin:  8px;
-      background-color: #fff;
+      background-color: $selected_bg_color;
       color: $selected_fg_color;
-     border: 1px solid $borders_color;
-      font-weight: bold;
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.096);
+      border-radius: 8px 8px 0 0;
+
+      // border: 1px solid $borders_color;
+      // box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.096);
 
       &:hover{
         background-color: transparentize($selected_bg_color,0.1);
         color: $selected_fg_color;
       }
     }
-    &.selected { background-color: transparentize($fg_color,0.9); color: $fg_color; }
+    &.selected { background-color: transparentize($selected_bg_color, 0.5); color: $fg_color; }
     &:active { background-color: $selected_bg_color; color: $selected_fg_color; }
     &:insensitive { color: transparentize($fg_color,.5); }
   }
@@ -639,19 +640,19 @@ $slider_size: 16px;
 
   .osd-monitor-label { font-size: 3em; }
   .level {
-    height: 0.6em;
+    height: 0.4em;
     border-radius: 0.3em;
-    background-color: transparentize(darken($osd_bg_color,40%),0.5);
+    background-color: transparentize($blue, 0.8);
     color: $osd_fg_color;
 
-    -barlevel-height: 0.6em;
-    -barlevel-background-color: transparentize(darken($osd_bg_color,40%),0.5);
-    -barlevel-active-background-color: $selected_bg_color;
+    -barlevel-height: 0.3em;
+    -barlevel-background-color: transparentize($blue, 0.8);
+    -barlevel-active-background-color: $blue;
     -barlevel-overdrive-color: $red;
     -barlevel-overdrive-separator-width: 0.2em; 
   }
   .level-bar {
-    background-color: $selected_bg_color;
+    background-color: $blue;
     border-radius: 0.3em;
   }
 }
@@ -685,7 +686,7 @@ $slider_size: 16px;
 
   .switcher-list .item-box {
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 8px;
   }
 
   .switcher-list .item-box:outlined {
@@ -767,9 +768,9 @@ $slider_size: 16px;
 
 %osd-panel {
   color: $_bubble_fg_color;
-  background-color: rgb(233, 233, 233);
+  background-color: $white;
   border: 1px solid $borders_color;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 0px 8px $borders_color;
   padding: 12px;
 }
@@ -1146,13 +1147,11 @@ $slider_size: 16px;
 
         .message {
           &:hover,&:focus { 
-            background-color: lighten($bg_color,2%);
-            box-shadow: 3px 0px 0px 0px $blue inset;
-            border-radius: 0px 6px 6px 0px;
+            background-color: transparentize($selected_bg_color, 0.5);
            }
           border: 1px solid $borders_color;
-          border-radius: 6px;
-          background: darken($bg_color, 1.7%);
+          border-radius: 8px;
+          background: $white;
           box-shadow: none;
         }
 
@@ -1194,6 +1193,9 @@ $slider_size: 16px;
             *:focus > StIcon, {
               color: $red;
             }
+          }
+          .message-content, .message-body {
+            color: $fg_color;
           }
 
           .message-close-button {
@@ -1418,7 +1420,7 @@ $slider_size: 16px;
   }
 
   .window-clone-border {
-    border: 4px solid transparentize($selected_bg_color,.7);
+    border: 4px solid transparentize($blue,.7);
     border-radius: 0px;
     // For window decorations with round corners we can't match
     // the exact shape when the window is scaled. So apply a shadow
@@ -1428,8 +1430,8 @@ $slider_size: 16px;
   .window-caption {
     spacing: 20px;
     color: $fg_color;
-    background-color: transparentize($osd_bg_color,.3);
-    border-radius: 2px;
+    background-color: transparentize($white, .1);
+    border-radius: 4px;
     padding: 4px 8px;
   }
 
@@ -1438,28 +1440,24 @@ $slider_size: 16px;
     width: 320px;
     padding: 7px 9px;
     border-radius: 10px;
-    border: 2px solid $borders_color;
-    color: $fg_color;
-    background-color: transparentize($bg_color, 0.4);
-    box-shadow: none;
-    * {color: $fg_color; }
-    &:focus {
-      border-color: $blue;
-      color: $fg_color;
-      background-color: transparentize(#fefefe, 0.2);
-      box-shadow: none;
-    }
-
-    .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
-
-    &:hover, &:focus {
-      background-color: transparentize(#fefefe, 0.2);
-      .search-entry-icon { color: $fg_color; }
-      border-color: $blue;
-    }
+     border: 1px solid $borders_color;
   }
 
   //search results
+
+  %search-section-content-item {  
+    &:focus,
+    &:hover,
+    &:selected {
+      background-color: transparentize($osd_fg_color, .9);
+      transition-duration: 200ms;
+    }
+  
+    &:active,
+    &:checked {
+      background-color: transparentize(darken($osd_bg_color, 10%), .1);
+    }
+  }
 
   #searchResultsBin {
     max-width: 1000px;
@@ -1473,9 +1471,9 @@ $slider_size: 16px;
 
   .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
   .search-section-content { 
-    background-color: transparent;
-    border-radius: 0;
-    border: none;
+    background-color: transparentize($selected_bg_color, 0.5);
+    border-radius: 10px;
+    border: 1px solid $borders_color;
     box-shadow: none;
     // This is the space between the provider icon and the results container
     spacing: 32px; 
@@ -1485,17 +1483,23 @@ $slider_size: 16px;
   }
   .list-search-results { spacing: 3px; }
 
-  .search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
+  .search-section-separator { height: 2px; background-color: transparent; }
 
   .list-search-result-content { spacing: 30px; }
-  .list-search-result-title { color: lighten($selected_fg_color,5%); spacing: 12px; }
+  .list-search-result-title { color: $fg_color; spacing: 12px; }
   .list-search-result-description { color: transparentize(lighten($selected_fg_color,15%), 0.5); }
   .list-search-provider-details { width: 150px; color: lighten($osd_fg_color,5%); margin-top: 0.24em; }
   .list-search-provider-content { spacing: 20px; }
   .search-provider-icon { padding: 15px; }
 
+  //Icon tile
+  .search-provider-icon,
+  .list-search-result {
+    @extend %search-section-content-item;
+  }
+  
 
-  /* DASHBOARD */
+  /* DASHBOARD */   
 
   .dash-background {
     background-color: $_bubble_transparent;
@@ -1510,7 +1514,7 @@ $slider_size: 16px;
     border-radius: 7px;
     padding: 4px 12px;
     color: black;
-    background-color: transparentize($osd_bg_color,0.25);
+    background-color: transparentize($white, 0.1);
     text-align: center;
     -x-offset: 8px;
   }
@@ -1548,54 +1552,44 @@ $slider_size: 16px;
     }
   }
 
-  //Icon tile
-  .search-provider-icon,
-  .list-search-result {
-    @extend %icon_tile;
-    &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
-    &:focus, &:selected, &:hover {
-      background-color: transparentize($bg_color,.7);
-      transition-duration: 200ms;
-    }
-  }
   .app-well-app,
   .app-well-app.app-folder,
   .show-apps,
   .grid-search-result {
     
-    border: none;
     & .overview-icon {
       @extend %icon_tile;
     }
     &:active .overview-icon,
     &:checked .overview-icon {
-      background-color: transparentize(darken($osd_bg_color,7%),.1);
+      background-color: $selected_bg_color;
       box-shadow: inset $depth2;
       color: black;
     }
     &:hover .overview-icon,
     &:focus .overview-icon,
     &:selected .overview-icon {
-      background-color: transparentize($osd_bg_color,.5);
+      background-color: $selected_bg_color;
       transition-duration: 0ms;
       border-image: none;
       background-image: none;
+      border: 1px solid $borders_color;
     }
 
   }
 
   .app-well-app-running-dot { //running apps indicator
-    width: 4px; height: 4px;
+    width: 5px; height: 5px;
     background-color: black;
-    border-radius: 10px !important;
+    border-radius: 20px !important;
     box-shadow: 0px 0px 5px 4px transparentize(black,0.2);
-    margin-bottom: 2px;
+    margin-bottom: 0px;
   }
 
   %icon_tile {
     color: $selected_fg_color;
     padding: 7px 6px;
-    border: none;
+    border: 1px solid transparent;
     transition-duration: 100ms;
     text-align: center;
     box-shadow: none;
@@ -1603,14 +1597,19 @@ $slider_size: 16px;
 
   /* App Folders */
 .app-well-app.app-folder {
-  background-color: transparentize($osd_bg_color, 0.9);
+  background-color: darken($selected_bg_color, 5%);
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
-  background-color:   transparentize(darken($bg_color, 30%), 0.2);
+  background-color: transparentize($white, 0.1);
+
+  & .folder-name-label,
+  & .folder-name-entry {
+    color: $fg_color;
+  }
+
   .edit-folder-button {
     @extend %button;
-
     padding: 0;
     width: 36px;
     height: 36px;

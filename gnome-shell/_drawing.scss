@@ -56,14 +56,18 @@
 //
 
   @if $t==normal {
-    background-color: #fff;
+    background-color: $white;
     border-color: $borders_color;
- 
-    @include _shadows($depth);
-
   }
-  @if $t==focus { @include _shadows($depth); }
-  @if $t==hover { }
+  @if $t==focus { 
+ 
+    border: 1px solid $blue;
+    box-shadow: inset 0px 0px 1px 1px $blue;
+  }
+  @if $t==hover { 
+    border: 1px solid $blue;
+    box-shadow: inset 0px 0px 1px 1px $blue;
+  }
   @if $t==insensitive {
     color: $insensitive_fg_color;
     box-shadow: $depth;
@@ -122,7 +126,7 @@
   }
 }
 
-@mixin button($t, $c:$osd_bg_color, $tc:$fg_color, $edge: $borders_edge) {
+@mixin button($t, $c:$white, $tc:$fg_color, $edge: $borders_edge) {
 //
 // Button drawing function
 //
@@ -149,7 +153,8 @@
   //
 
     color: $fg_color;
-    background-color: #fff;
+    background-color: if($c!=$white, $c,
+    $white);
     box-shadow: none;
     border: 1px solid $borders_color;
     text-shadow: 0 1px black;
@@ -159,28 +164,28 @@
   //
   // focused button
   //
-    $_bg: if($c!=$osd_bg_color, transparentize($c, 0.5),
-                          $osd_bg_color);
+    $_bg: if($c!=$white, transparentize($c, 0.5),
+                          $white);
 
-    color: $osd_fg_color;
+    color: $selected_fg_color;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
-    border: 1px solid  transparentize($selected_bg_color, 0.5);
-    background: mix(#f8f8f8, #EEEEEE, 20%);
+    border: 1px solid  $selected_borders_color;
+    background-color: transparentize($blue, 0.8);
   }
 
   @else if $t==hover {
   //
   // active osd button
   //
-    $_bg: if($c!=$osd_bg_color, transparentize($c, 0.3),
-                            lighten($osd_bg_color,10%));
+    $_bg: if($c!=$white, transparentize($c, 0.3),
+                            $selected_bg_color);
 
-    color: $selected_bg_color;
-    @include gradient(#f8f8f8, #eeeeee);
+    color: $selected_fg_color;
+    background-color: $_bg;
     box-shadow: none;
-   // border: none;
+    border: 1px solid $borders_color;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
 
@@ -192,7 +197,7 @@
     $_bg: if($c!=$bg_color, $c, $selected_bg_color);
 
     color: $selected_fg_color;
-    @include gradient($selected_bg_color, $selected_bg_color);
+    background-color: $selected_bg_color;
     // This should be none, but it's creating some issues with borders, so to
     // workaround it for now, use inset wich goes through a different code path.
     // see https://bugzilla.gnome.org/show_bug.cgi?id=752934
@@ -205,7 +210,7 @@
   //
   // insensitive osd button
   //
-    $_bg: transparentize(mix($insensitive_fg_color,$osd_bg_color,20%),0.3);
+    $_bg: transparentize(mix($insensitive_fg_color,$white,20%),0.3);
 
     color: $insensitive_fg_color;
     background-color: $_bg;
