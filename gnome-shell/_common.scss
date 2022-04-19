@@ -48,11 +48,11 @@ stage {
 /* Entries */
 StEntry {
   @include entry(normal);
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 4px;
-  border-width: 0;
+  border-width: 1px;
   color: $fg_color;
-  //&:hover { @include entry(hover);}
+  &:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
   &:insensitive { @include entry(insensitive);}
   selection-background-color: $selected_bg_color;
@@ -62,6 +62,8 @@ StEntry {
     warning-color: $warning_color;
     padding: 0 4px;
   }
+  
+  StLabel.hint-text { color: transparentize($fg_color, 0.3); }
 }
 
 
