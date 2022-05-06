@@ -930,7 +930,8 @@ StScrollBar {
   .calendar-day-base:active, .calendar-day-base:selected {
     color: #fff;
     background-color: #cd7ebf;
-    border-color: transparent; }
+    border-color: transparent;
+    box-shadow: none; }
   .calendar-day-base.calendar-day-heading {
     color: #b7c2d7;
     margin-top: 1em;
