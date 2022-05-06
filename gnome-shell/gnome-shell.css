@@ -1422,7 +1422,8 @@ StScrollBar {
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: #3b4a62; }
+  background-color: #3b4a62;
+  border-radius: 10px; }
 
 .app-folder-dialog {
   background-color: rgba(36, 44, 59, 0.95); }
