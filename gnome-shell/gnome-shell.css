@@ -1423,10 +1423,11 @@ StScrollBar {
 /* App Folders */
 .app-well-app.app-folder {
   background-color: #2c3741;
-  border-radius: 10px; }
+  border-radius: 12px; }
 
 .app-folder-dialog {
-  background-color: rgba(26, 32, 38, 0.95); }
+  background-color: rgba(26, 32, 38, 0.95);
+  border: none; }
   .app-folder-dialog .edit-folder-button {
     padding: 0;
     width: 36px;
