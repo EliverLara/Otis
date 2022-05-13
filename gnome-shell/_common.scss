@@ -1585,14 +1585,15 @@ StScrollBar {
     box-shadow: none;
   }
 
-    /* App Folders */
+/* App Folders */
 .app-well-app.app-folder {
   background-color:  lighten($base_color, 7%);
-  border-radius: 10px;
+  border-radius: 12px;
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
   background-color:  $_bubble_bg_color;
+  border: none;
   .edit-folder-button {
     @extend %button;
 
