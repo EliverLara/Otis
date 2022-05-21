@@ -802,12 +802,6 @@ StScrollBar {
     #panel.solid .popup-menu-arrow {
       icon-shadow: none; }
 
-#calendarArea {
-  padding: 0.75em 1.0em; }
-
-.calendar {
-  margin-bottom: 1em; }
-
 .calendar, .world-clocks-button, .weather-button, .events-button {
   background: transparent;
   border: none;
@@ -816,9 +810,8 @@ StScrollBar {
 
 .calendar,
 .datemenu-today-button,
-.datemenu-displays-box,
-.message-list-sections {
-  margin: 0 1.5em; }
+.datemenu-displays-box {
+  margin: 0 6px; }
 
 .datemenu-calendar-column {
   spacing: 0.5em; }
@@ -844,12 +837,6 @@ StScrollBar {
   border-radius: 4px;
   color: #d8dee9;
   padding: .4em; }
-
-.message-list-section-list:ltr {
-  padding-left: .4em; }
-
-.message-list-section-list:rtl {
-  padding-right: .4em; }
 
 .datemenu-today-button:hover, .datemenu-today-button:focus,
 .world-clocks-button:hover,
