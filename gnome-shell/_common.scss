@@ -922,6 +922,11 @@ StScrollBar {
 }
 
   // calendar popover
+  .calendar {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
   .world-clocks-button, .weather-button, .events-button {
     background: lighten($bg_color, 2%);
     border-radius: 7px;

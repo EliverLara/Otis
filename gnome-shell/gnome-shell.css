@@ -802,6 +802,11 @@ StScrollBar {
     #panel.solid .popup-menu-arrow {
       icon-shadow: none; }
 
+.calendar {
+  background: transparent;
+  border: none;
+  box-shadow: none; }
+
 .world-clocks-button, .weather-button, .events-button {
   background: #1e252c;
   border-radius: 7px; }
