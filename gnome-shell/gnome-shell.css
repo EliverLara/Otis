@@ -534,6 +534,7 @@ StScrollBar {
     color: #d8dee9; }
   .popup-menu-item:checked {
     background-color: #323c51 !important;
+    color: #fff !important;
     border-radius: 6px 6px 0px 0px;
     box-shadow: none; }
   .popup-menu-item:insensitive {
@@ -809,7 +810,8 @@ StScrollBar {
 
 .world-clocks-button, .weather-button, .events-button {
   background: #283141;
-  border-radius: 7px; }
+  border-radius: 7px;
+  color: #d8dee9; }
 
 .datemenu-calendar-column {
   border: 0 solid transparent; }
@@ -929,7 +931,7 @@ StScrollBar {
   border: 1px solid rgba(21, 25, 33, 0.5);
   border: 1px solid #cd7ebf;
   background-color: transparent;
-  color: #fff; }
+  color: #fff !important; }
   .calendar-today:hover, .calendar-today:focus {
     background-color: #d189c4;
     color: #fff; }
