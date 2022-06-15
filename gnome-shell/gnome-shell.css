@@ -1481,7 +1481,7 @@ StScrollBar {
   color: white;
   background-color: #1A2026;
   border: 1px solid #090c0e;
-  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.342); }
   .notification-banner:hover, .notification-banner:focus {
     background-color: #222a32;
     box-shadow: none;
@@ -1498,9 +1498,10 @@ StScrollBar {
   .notification-banner .notification-actions {
     background-color: #161b20;
     padding-top: 2px;
-    spacing: 1px; }
+    spacing: 1px;
+    border-radius: 0px 0px 12px 12px; }
   .notification-banner .notification-button {
-    padding: 5px;
+    padding: 7px;
     background-color: #1A2026;
     box-shadow: none;
     border: none; }
@@ -1509,8 +1510,12 @@ StScrollBar {
     .notification-banner .notification-button:last-child {
       border-radius: 0 0 12px 0; }
     .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
-      background-color: #161b20;
-      color: #8CA1A5; }
+      color: #fff;
+      background-color: #262f38;
+      border: 1px solid #090c0e;
+      text-shadow: 0 1px black;
+      icon-shadow: 0 1px black;
+      border: none; }
 
 .summary-source-counter {
   font-size: 10pt;
