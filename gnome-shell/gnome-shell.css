@@ -1012,17 +1012,17 @@ StScrollBar {
   .message-content *:focus > StIcon {
     color: #FF56AC; }
 
+/* Media Controls */
 .message-media-control {
-  padding: 12px;
-  color: #97a7c4; }
-  .message-media-control:last-child:ltr {
-    padding-right: 18px; }
-  .message-media-control:last-child:rtl {
-    padding-left: 18px; }
+  color: #d8dee9; }
   .message-media-control:hover {
-    color: #d8dee9; }
+    background-color: #343f54;
+    color: #fff; }
+  .message-media-control:active {
+    background-color: #3c4860;
+    color: #fff; }
   .message-media-control:insensitive {
-    color: #58709d; }
+    color: #8c929e; }
 
 .media-message-cover-icon {
   icon-size: 48px !important; }
