@@ -1016,13 +1016,13 @@ StScrollBar {
 .message-media-control {
   color: #d8dee9; }
   .message-media-control:hover {
-    background-color: #343f54;
+    background-color: #2b343e;
     color: #fff; }
   .message-media-control:active {
-    background-color: #3c4860;
+    background-color: #333f4a;
     color: #fff; }
   .message-media-control:insensitive {
-    color: #8c929e; }
+    color: #878c94; }
 
 .media-message-cover-icon {
   icon-size: 48px !important; }
