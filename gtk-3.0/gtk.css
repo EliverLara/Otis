@@ -214,6 +214,10 @@ read if you used those and something break with a version upgrade you're on your
    or better, just don't.
    Everytime a wildcard is used a kitten dies, painfully.
 */
+selection {
+  background-color: #cd7ebf;
+  color: #fff; }
+
 *:disabled {
   -gtk-icon-effect: dim; }
 
