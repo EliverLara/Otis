@@ -524,7 +524,8 @@ StScrollBar {
 
 .popup-menu-item {
   spacing: 6px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  background-gradient-direction: none; }
   .popup-menu-item:ltr {
     padding-left: 6px; }
   .popup-menu-item:rtl {
@@ -932,7 +933,8 @@ StScrollBar {
   border: 1px solid rgba(9, 12, 14, 0.5);
   border: 1px solid #8CA1A5;
   background-color: transparent;
-  color: #fff !important; }
+  color: #fff !important;
+  background-gradient-direction: none; }
   .calendar-today:hover, .calendar-today:focus {
     background-color: #95a8ac;
     color: #fff; }

@@ -549,6 +549,7 @@ StScrollBar {
 .popup-menu-item {
   spacing: 6px;
   border-radius: 6px;
+  background-gradient-direction: none;
 
   &:ltr {padding-left: 6px;}
   &:rtl {padding-right: 6px;}
@@ -1061,6 +1062,7 @@ StScrollBar {
         border: 1px solid $selected_bg_color;
         background-color: transparent;
         color: $selected_fg_color !important;
+        background-gradient-direction: none;
 
         &:hover,&:focus {
           background-color:lighten($selected_bg_color, 3%);
