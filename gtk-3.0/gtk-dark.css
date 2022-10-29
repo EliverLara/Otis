@@ -5378,7 +5378,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .nautilus-window.background:backdrop {
     background-color: rgba(13, 13, 31, 0.95); }
 .nautilus-window notebook > stack {
-  background-image: -gtk-scaled(url("../assets/bg.jpg"));
+  background-image: -gtk-scaled(url("../assets/pumpkin.jpg"));
   background-repeat: no-repeat;
   background-position: bottom right; }
   .nautilus-window notebook > stack:backdrop {
