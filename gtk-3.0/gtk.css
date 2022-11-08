@@ -2519,8 +2519,8 @@ GraniteWidgetsWelcome {
       border-radius: 4px; }
   .titlebar .path-buttons-box,
   headerbar .path-buttons-box {
-    background-color: #2a3344;
-    border: 1px solid #1d232f;
+    background-color: #1A2026;
+    border: 1px solid #0b0e11;
     min-height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -2528,8 +2528,8 @@ GraniteWidgetsWelcome {
     border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
-    border: 1px solid #1d232f;
-    background-color: #2a3445;
+    border: 1px solid #0b0e11;
+    background-color: #192126;
     border-radius: 4px 0px 0px 4px; }
     .titlebar .path-buttons-box .dim-label, .titlebar .path-buttons-box label.separator, .titlebar .path-buttons-box .subtitle,
     headerbar .path-buttons-box .dim-label,
@@ -2544,7 +2544,7 @@ GraniteWidgetsWelcome {
       color: #d8dee9;
       padding: 3px 12px;
       margin: 0;
-      border-right: 1px solid #1d232f; }
+      border-right: 1px solid #0b0e11; }
     .titlebar .path-buttons-box button > .horizontal > image.dim-label, .titlebar .path-buttons-box button > .horizontal > image.subtitle,
     headerbar .path-buttons-box button > .horizontal > image.dim-label,
     headerbar .path-buttons-box button > .horizontal > image.subtitle {
@@ -2564,7 +2564,7 @@ GraniteWidgetsWelcome {
     headerbar .path-buttons-box .current-dir image {
       color: #d8dee9;
       outline-color: rgba(216, 222, 233, 0.3);
-      background: linear-gradient(to right, #f8ab95, #f17dad, #ee73c8) left bottom #2f384c no-repeat;
+      background: linear-gradient(to right, #79B4B7, #8CA1A5) left bottom #222a32 no-repeat;
       background-size: 100% 1.5px;
       text-shadow: none; }
     .titlebar .path-buttons-box button.current-dir:only-child image,
