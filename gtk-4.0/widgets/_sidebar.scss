@@ -117,11 +117,10 @@ stacksidebar {
 /*                  PLACESSIDEBAR                                  */
 /*******************************************************************/
 
-placessidebar{
-	&.sidebar {
+placessidebar.sidebar, .nautilus-window .navigation-sidebar {
+  background-color: $_sidebar_color;
 		row {
 			&.sidebar-row {
-        margin: 0 15px;
         border-radius: 5px;
 				&.sidebar-row {
 					.sidebar-icon {
@@ -134,7 +133,6 @@ placessidebar{
 				}
 
 				&:hover {
-					transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 					background: lighten($_sidebar_color, 7%);
 				}
 
@@ -178,7 +176,6 @@ placessidebar{
         }
 			}
 		}
-  }
   
 	list { &, &:backdrop { background-color: $_sidebar_color; } }
   
