@@ -634,12 +634,12 @@ button.suggested-action {
   box-shadow: none;
   color: white;
   border-radius: 4px;
-  background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+  background: #79B4B7; }
   .selection-mode windowcontrols button, button.suggested-action.flat {
     box-shadow: none;
     color: white;
     border-radius: 4px;
-    background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+    background: #79B4B7; }
   button.suggested-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -742,12 +742,12 @@ button.destructive-action {
   box-shadow: none;
   color: white;
   border-radius: 4px;
-  background: linear-gradient(to right, #FF56AC, #FF56AC); }
+  background: #FF56AC; }
   button.destructive-action.flat {
     box-shadow: none;
     color: white;
     border-radius: 4px;
-    background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+    background: #79B4B7; }
   button.destructive-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -2208,13 +2208,13 @@ GraniteWidgetsWelcome {
     headerbar button.suggested-action {
       box-shadow: none;
       border: none;
-      background-image: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+      background-image: #79B4B7; }
       .titlebar button.suggested-action:disabled, .titlebar button.suggested-action:disabled:backdrop, .titlebar button.suggested-action:backdrop,
       headerbar button.suggested-action:disabled,
       headerbar button.suggested-action:disabled:backdrop,
       headerbar button.suggested-action:backdrop {
         border: none;
-        background-image: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+        background-image: #79B4B7; }
         .titlebar button.suggested-action:disabled:hover, .titlebar button.suggested-action:disabled:active, .titlebar button.suggested-action:disabled:checked, .titlebar button.suggested-action:disabled:backdrop:hover, .titlebar button.suggested-action:disabled:backdrop:active, .titlebar button.suggested-action:disabled:backdrop:checked, .titlebar button.suggested-action:backdrop:hover, .titlebar button.suggested-action:backdrop:active, .titlebar button.suggested-action:backdrop:checked,
         headerbar button.suggested-action:disabled:hover,
         headerbar button.suggested-action:disabled:active,
@@ -2226,7 +2226,7 @@ GraniteWidgetsWelcome {
         headerbar button.suggested-action:backdrop:active,
         headerbar button.suggested-action:backdrop:checked {
           border: none;
-          background-image: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+          background-image: #79B4B7; }
     .titlebar button.appmenu,
     headerbar button.appmenu {
       background: transparent; }
@@ -3892,43 +3892,43 @@ stacksidebar row {
 /*******************************************************************/
 /*                  PLACESSIDEBAR                                  */
 /*******************************************************************/
-placessidebar.sidebar row.sidebar-row {
-  margin: 0 15px;
-  border-radius: 5px; }
-  placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon {
-    margin-left: -14px;
-    margin-right: 7px;
-    padding-left: 14px;
-    padding-right: 7px;
-    color: #98abb2; }
-  placessidebar.sidebar row.sidebar-row:hover {
-    transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background: #222a32; }
-  placessidebar.sidebar row.sidebar-row:selected {
-    border-left: 2px solid #79B4B7; }
-    placessidebar.sidebar row.sidebar-row:selected, placessidebar.sidebar row.sidebar-row:selected label {
-      color: #fff; }
-    placessidebar.sidebar row.sidebar-row:selected, placessidebar.sidebar row.sidebar-row:selected:backdrop {
-      background: linear-gradient(to right, #79B4B7, #8CA1A5, #222a32 40px, #222a32 97%); }
-    placessidebar.sidebar row.sidebar-row:selected:backdrop, placessidebar.sidebar row.sidebar-row:selected:backdrop label {
-      color: rgba(255, 255, 255, 0.5); }
-    placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon {
-      -gtk-icon-shadow: none; }
-    placessidebar.sidebar row.sidebar-row:selected .sidebar-icon {
-      -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.8);
-      color: inherit; }
-  placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row, placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row label, placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon {
-    color: #F3D88E; }
-  placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) {
-    box-shadow: inset 0 1px #a3be8c, inset 0 -1px #a3be8c; }
-    placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) image {
-      color: #a3be8c; }
-    placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected {
-      background: #a3be8c; }
-      placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected image {
-        color: #fff; }
-placessidebar list, placessidebar list:backdrop {
+placessidebar.sidebar, .nautilus-window .navigation-sidebar {
   background-color: #14181d; }
+  placessidebar.sidebar row.sidebar-row, .nautilus-window .navigation-sidebar row.sidebar-row {
+    border-radius: 5px; }
+    placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row .sidebar-icon {
+      margin-left: -14px;
+      margin-right: 7px;
+      padding-left: 14px;
+      padding-right: 7px;
+      color: #98abb2; }
+    placessidebar.sidebar row.sidebar-row:hover, .nautilus-window .navigation-sidebar row.sidebar-row:hover {
+      background: #222a32; }
+    placessidebar.sidebar row.sidebar-row:selected, .nautilus-window .navigation-sidebar row.sidebar-row:selected {
+      border-left: 2px solid #79B4B7; }
+      placessidebar.sidebar row.sidebar-row:selected, placessidebar.sidebar row.sidebar-row:selected label, .nautilus-window .navigation-sidebar row.sidebar-row:selected, .nautilus-window .navigation-sidebar row.sidebar-row:selected label {
+        color: #fff; }
+      placessidebar.sidebar row.sidebar-row:selected, placessidebar.sidebar row.sidebar-row:selected:backdrop, .nautilus-window .navigation-sidebar row.sidebar-row:selected, .nautilus-window .navigation-sidebar row.sidebar-row:selected:backdrop {
+        background: linear-gradient(to right, #79B4B7, #8CA1A5, #222a32 40px, #222a32 97%); }
+      placessidebar.sidebar row.sidebar-row:selected:backdrop, placessidebar.sidebar row.sidebar-row:selected:backdrop label, .nautilus-window .navigation-sidebar row.sidebar-row:selected:backdrop, .nautilus-window .navigation-sidebar row.sidebar-row:selected:backdrop label {
+        color: rgba(255, 255, 255, 0.5); }
+      placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row:selected:backdrop .sidebar-icon {
+        -gtk-icon-shadow: none; }
+      placessidebar.sidebar row.sidebar-row:selected .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row:selected .sidebar-icon {
+        -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.8);
+        color: inherit; }
+    placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row, placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row label, placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-new-bookmark-row, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-new-bookmark-row label, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon {
+      color: #F3D88E; }
+    placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled) {
+      box-shadow: inset 0 1px #a3be8c, inset 0 -1px #a3be8c; }
+      placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) image, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled), .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled) label, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled) image {
+        color: #a3be8c; }
+      placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected {
+        background: #a3be8c; }
+        placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected image, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected label, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected image {
+          color: #fff; }
+  placessidebar.sidebar list, placessidebar.sidebar list:backdrop, .nautilus-window .navigation-sidebar list, .nautilus-window .navigation-sidebar list:backdrop {
+    background-color: #14181d; }
 
 /*****************
  * GtkSpinButton *
@@ -4609,7 +4609,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
       box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
     .budgie-menu .category-button:checked {
       color: #fff;
-      background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+      background: #79B4B7; }
       .budgie-menu .category-button:checked:hover {
         color: rgba(255, 255, 255, 0.6); }
     .budgie-menu .category-button:checked:disabled {
@@ -5097,13 +5097,13 @@ button.raven-trigger {
       background: #A572A4;
       color: #fff; }
     .raven .powerstrip button.image-button:first-child {
-      background: linear-gradient(to right, #79B4B7 0%, #79B4B7 100%); }
+      background: #79B4B7; }
       .raven .powerstrip button.image-button:first-child:hover {
         background: rgba(140, 161, 165, 0.85); }
       .raven .powerstrip button.image-button:first-child:active {
         background: #8CA1A5; }
     .raven .powerstrip button.image-button:last-child {
-      background: linear-gradient(to right, #FF56AC, #FF56AC); }
+      background: #FF56AC; }
       .raven .powerstrip button.image-button:last-child:hover {
         background: rgba(255, 86, 172, 0.85); }
       .raven .powerstrip button.image-button:last-child:active {
