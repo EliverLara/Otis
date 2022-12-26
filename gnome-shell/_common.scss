@@ -1310,14 +1310,24 @@ $slider_size: 16px;
 //close buttons
 
 .window-close {
-  background-color: transparent;
-  background-image: url("assets/close-window.svg");
-  background-size: 32px;
-  border: none;
-  box-shadow: none;
-  color: transparent;
-  height: 32px;
-  width: 32px;
+  background-color: $orange;
+  color: $topbar_color;
+  border-radius: 30px * 0.5 + 3px * 2;
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  border: 2px solid darken($orange, 4%);
+  transition-duration: 300ms;
+
+  & StIcon { icon-size: 23px; }
+
+  &:hover {
+    background-color: lighten($orange, 3%);
+  }
+
+  &:active {
+    background-color: darken($orange, 5%);
+  }
 }
   .window-close {
     -shell-close-overlap: 16px;
