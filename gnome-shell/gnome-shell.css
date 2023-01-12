@@ -1216,17 +1216,17 @@ StScrollBar {
 .search-entry {
   width: 320px;
   padding: 9px;
-  border-radius: 7px;
-  border: 2px solid #161b20;
+  border-radius: 8px;
+  border: 2px solid #242d35;
   color: #d8dee9;
-  background-color: #161b20;
+  background-color: #242d35;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   .search-entry .search-entry-icon {
     icon-size: 1em;
     padding: 0 4px;
     color: rgba(216, 222, 233, 0.7); }
   .search-entry:hover, .search-entry:focus {
-    background-color: #1A2026;
+    background-color: #242d35;
     border-color: rgba(140, 161, 165, 0.5); }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #d8dee9; }

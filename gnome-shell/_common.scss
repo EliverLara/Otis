@@ -1417,17 +1417,17 @@ $slider_size: 16px;
   .search-entry {
     width: 320px;
     padding: 9px;
-    border-radius: 7px;
-    border: 2px solid darken($bg_color, 2%);
+    border-radius: 8px;
+    border: 2px solid lighten($bg_color, 5%);
     color: $fg_color;
-    background-color: darken($bg_color, 2%);
+    background-color: lighten($bg_color, 5%);
     box-shadow: $depth;
 
 
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
     &:hover, &:focus {
-      background-color: $bg_color;
+      background-color: lighten($bg_color, 5%);
       border-color: transparentize($selected_bg_color, 0.5);
       .search-entry-icon { color: $fg_color; }
     }
