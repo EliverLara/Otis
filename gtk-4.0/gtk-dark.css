@@ -3259,16 +3259,16 @@ popover.menu {
       outline: none;
       transition: none; }
       popover.menu box.inline-buttons button.image-button.model:selected {
-        background: image(#343f54); }
+        background: image(#242d35); }
   popover.menu box.circular-buttons {
     padding: 12px 12px 6px; }
     popover.menu box.circular-buttons button.circular.image-button.model {
       padding: 11px; }
       popover.menu box.circular-buttons button.circular.image-button.model:focus {
-        background-color: #343f54;
-        border-color: #343f54; }
+        background-color: #242d35;
+        border-color: #242d35; }
   popover.menu > arrow, popover.menu.background > contents {
-    background-color: #272F3F;
+    background-color: #161b20;
     padding: 5px; }
   popover.menu.background separator {
     margin: 6px 0; }
@@ -3283,9 +3283,9 @@ popover.menu {
   popover.menu radio:active {
     background-color: transparent; }
   popover.menu radio {
-    border-color: #1d232f; }
+    border-color: #0b0e11; }
     popover.menu radio:active {
-      border-color: rgba(29, 35, 47, 0.5); }
+      border-color: rgba(11, 14, 17, 0.5); }
   popover.menu arrow.left,
   popover.menu radio.left,
   popover.menu check.left {
@@ -3303,9 +3303,9 @@ popover.menu {
     border-radius: 5px; }
     popover.menu modelbutton:selected {
       color: #d8dee9;
-      background-color: #343f54; }
+      background-color: #242d35; }
     popover.menu modelbutton:selected:active {
-      background-color: #475673; }
+      background-color: #394653; }
   popover.menu label.title {
     font-weight: bold;
     padding: 4px 32px; }
