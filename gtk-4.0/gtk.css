@@ -2824,7 +2824,6 @@ menu, .menu, .context-menu {
   margin: 4px;
   padding: 2px 0px;
   background: #272F3F;
-  border: 1px solid #1d232f;
   border-radius: 5px;
   font: initial; }
   .csd menu,
