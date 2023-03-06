@@ -2058,7 +2058,7 @@ StScrollBar {
   border-radius: 99px;
   min-height: 40px;
   /* Move padding into the box; this is to allow menu arrows
-     to extend to the border */ }
+      to extend to the border */ }
   .quick-toggle:checked {
     color: #8CA1A5;
     background-color: #28323b;
@@ -2113,6 +2113,13 @@ StScrollBar {
   spacing: 12px; }
 .quick-settings-system-item .icon-button {
   border-radius: 50px; }
+
+.quick-slider .icon-button:hover {
+  color: #fff;
+  background-color: #364359;
+  border: 1px solid #151921;
+  text-shadow: 0 1px black;
+  icon-shadow: 0 1px black; }
 
 .openweather-current-summarybox,
 .openweather-forecast-icon,
