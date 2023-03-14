@@ -3131,13 +3131,13 @@ tabbar:backdrop .box > .start-action,
 tabbar:backdrop .box > .end-action {
   filter: opacity(1); }
 tabbar tabbox {
-  background-color: #14181d;
+  background-color: #242d3c;
   padding: 0px;
   color: #d8dee9; }
   tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
   tabbar tabbox > tabboxchild > tab:checked,
   tabbar tabbox > tabboxchild > tab:selected {
-    background-color: #1E252C; }
+    background-color: #2e394c; }
 
 /*********
  * Paned *
