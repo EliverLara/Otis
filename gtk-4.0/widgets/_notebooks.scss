@@ -295,3 +295,23 @@
     &:backdrop { background-color: $backdrop_base_color; }
   }
 }
+
+tabbar {
+  &:backdrop .box {
+    > scrolledwindow,
+    > .start-action,
+    > .end-action {
+      filter: opacity(1);
+    }
+  }
+  tabbox {
+    background-color: darken($base_color, 5%);
+    padding: 0px;
+    color: $fg_color;
+
+    > tab,
+    > tabboxchild > tab {
+      &:checked, &:selected { background-color: $base_color; }
+    }
+  }
+}
