@@ -3126,6 +3126,19 @@ notebook > stack:not(:only-child) {
   notebook > stack:not(:only-child):backdrop {
     background-color: #20282f; }
 
+tabbar:backdrop .box > scrolledwindow,
+tabbar:backdrop .box > .start-action,
+tabbar:backdrop .box > .end-action {
+  filter: opacity(1); }
+tabbar tabbox {
+  background-color: #14181d;
+  padding: 0px;
+  color: #d8dee9; }
+  tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
+  tabbar tabbox > tabboxchild > tab:checked,
+  tabbar tabbox > tabboxchild > tab:selected {
+    background-color: #1E252C; }
+
 /*********
  * Paned *
  *********/
