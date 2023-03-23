@@ -1918,66 +1918,66 @@ actionbar > revealer > box {
 scrolledwindow viewport.frame {
   border-style: none; }
 scrolledwindow overshoot.top {
-  background-image: radial-gradient(farthest-side at top, #242d35 85%, rgba(36, 45, 53, 0)), radial-gradient(farthest-side at top, #242d35, rgba(36, 45, 53, 0));
-  background-size: 100% 5%, 100% 100%;
+  background-image: radial-gradient(farthest-side at top, #20282f 85%, rgba(32, 40, 47, 0)), radial-gradient(farthest-side at top, rgba(216, 222, 233, 0.15), rgba(216, 222, 233, 0));
+  background-size: 100% 3%, 100% 50%;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: top;
   background-color: transparent;
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.top:backdrop {
-    background-image: radial-gradient(farthest-side at top, #242d35 85%, rgba(36, 45, 53, 0));
-    background-size: 100% 5%;
+    background-image: radial-gradient(farthest-side at top, #0d1013 85%, rgba(13, 16, 19, 0));
+    background-size: 100% 3%;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: top;
     background-color: transparent;
     border: none;
     box-shadow: none; }
 scrolledwindow overshoot.bottom {
-  background-image: radial-gradient(farthest-side at bottom, #242d35 85%, rgba(36, 45, 53, 0)), radial-gradient(farthest-side at bottom, #242d35, rgba(36, 45, 53, 0));
-  background-size: 100% 5%, 100% 100%;
+  background-image: radial-gradient(farthest-side at bottom, #20282f 85%, rgba(32, 40, 47, 0)), radial-gradient(farthest-side at bottom, rgba(216, 222, 233, 0.15), rgba(216, 222, 233, 0));
+  background-size: 100% 3%, 100% 50%;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: bottom;
   background-color: transparent;
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.bottom:backdrop {
-    background-image: radial-gradient(farthest-side at bottom, #242d35 85%, rgba(36, 45, 53, 0));
-    background-size: 100% 5%;
+    background-image: radial-gradient(farthest-side at bottom, #0d1013 85%, rgba(13, 16, 19, 0));
+    background-size: 100% 3%;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: bottom;
     background-color: transparent;
     border: none;
     box-shadow: none; }
 scrolledwindow overshoot.left {
-  background-image: radial-gradient(farthest-side at left, #242d35 85%, rgba(36, 45, 53, 0)), radial-gradient(farthest-side at left, #242d35, rgba(36, 45, 53, 0));
-  background-size: 5% 100%, 100% 100%;
+  background-image: radial-gradient(farthest-side at left, #20282f 85%, rgba(32, 40, 47, 0)), radial-gradient(farthest-side at left, rgba(216, 222, 233, 0.15), rgba(216, 222, 233, 0));
+  background-size: 3% 100%, 50% 100%;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left;
   background-color: transparent;
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.left:backdrop {
-    background-image: radial-gradient(farthest-side at left, #242d35 85%, rgba(36, 45, 53, 0));
-    background-size: 5% 100%;
+    background-image: radial-gradient(farthest-side at left, #0d1013 85%, rgba(13, 16, 19, 0));
+    background-size: 3% 100%;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left;
     background-color: transparent;
     border: none;
     box-shadow: none; }
 scrolledwindow overshoot.right {
-  background-image: radial-gradient(farthest-side at right, #242d35 85%, rgba(36, 45, 53, 0)), radial-gradient(farthest-side at right, #242d35, rgba(36, 45, 53, 0));
-  background-size: 5% 100%, 100% 100%;
+  background-image: radial-gradient(farthest-side at right, #20282f 85%, rgba(32, 40, 47, 0)), radial-gradient(farthest-side at right, rgba(216, 222, 233, 0.15), rgba(216, 222, 233, 0));
+  background-size: 3% 100%, 50% 100%;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right;
   background-color: transparent;
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.right:backdrop {
-    background-image: radial-gradient(farthest-side at right, #242d35 85%, rgba(36, 45, 53, 0));
-    background-size: 5% 100%;
+    background-image: radial-gradient(farthest-side at right, #0d1013 85%, rgba(13, 16, 19, 0));
+    background-size: 3% 100%;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right;
     background-color: transparent;
     border: none;
     box-shadow: none; }
