@@ -128,7 +128,6 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
 						margin-right: 7px;
 						padding-left: 14px;
 						padding-right: 7px;
-						color: #98abb2;
 					}
 				}
 
@@ -137,10 +136,10 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
 				}
 
 				&:selected {
-          border-left: 2px solid #79B4B7;
+          border-left: 2px solid #1FB8FF;
           &, & label { color: $selected_fg_color; }
           &, &:backdrop {
-            background:linear-gradient(to right,#79B4B7, #8CA1A5,
+            background:linear-gradient(to right,transparentize(#1FB8FF, 0.5), transparentize($selected_bg_color, 0.5),
             lighten($_sidebar_color, 7%) 40px,  lighten($_sidebar_color, 7%) 97%);
           }
 			

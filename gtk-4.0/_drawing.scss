@@ -207,14 +207,14 @@
     box-shadow: none;
   //  border: 1px solid $c;
     color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     background: $suggested_bg_color; }
 
     @if $t==rounded-red {
       box-shadow: none;
     //  border: 1px solid $c;
       color: white;
-      border-radius: 4px;
+      border-radius: 6px;
       background: $destructive_bg_color; 
     }
   
@@ -245,7 +245,7 @@
   // normal button headerbar look
   //
   color: if($tc==$text_color, $headerbar_fg_color, $tc);
-  border-radius: 4px;
+  border-radius: 6px;
   text-shadow: none;
   box-shadow: none;
   border: 1px solid $borders_color;
@@ -278,8 +278,7 @@
   //
   color: $tc;
   outline-color: transparentize($tc, 0.7);
-  background-image:  linear-gradient(to  right,#79B4B7, #8CA1A5);
-  background-color: transparent;
+  background-color: $selected_bg_color;
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
 }
@@ -291,10 +290,10 @@
   color: $tc;
   outline-color: transparentize($tc, 0.7);
   background:
-  linear-gradient(to  right, #79B4B7, #8CA1A5)
+  linear-gradient(to  right, #882ae9, #34eceb)
   left 
   bottom
-  lighten($_sidebar_color, 7%)
+  lighten($headerbar_color, 12%)
   no-repeat; 
   background-size: 100% 1.5px;
   text-shadow: none;
