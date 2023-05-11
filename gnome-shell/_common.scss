@@ -548,6 +548,7 @@ $slider_size: 16px;
   spacing: 6px;
   border-radius: 6px;
   background-gradient-direction: none;
+  color: $fg_color !important;
 
   &:ltr {padding-left: 6px;}
   &:rtl {padding-right: 6px;}
