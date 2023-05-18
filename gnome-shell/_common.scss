@@ -99,13 +99,15 @@ StScrollBar {
 
 /* Slider */
 
-$slider_size: 16px;
+$slider_size: 15px;
 
 .slider {
   color: $fg_color;
+  height: 15px;
+  border-radius: 16px;
   // slider trough
-  -barlevel-height: 2px;
-  -barlevel-background-color: transparentize($fg_color, 0.8); //background of the trough
+  -barlevel-height: 14px;
+  -barlevel-background-color: lighten($bg_color, 7%); //background of the trough
   -barlevel-border-width: 2px; 
   -barlevel-border-color: transparent; // trough border color
   // fill style

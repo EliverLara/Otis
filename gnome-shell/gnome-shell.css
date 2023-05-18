@@ -121,8 +121,10 @@ StScrollBar {
 /* Slider */
 .slider {
   color: #fefefe;
-  -barlevel-height: 2px;
-  -barlevel-background-color: rgba(254, 254, 254, 0.2);
+  height: 15px;
+  border-radius: 16px;
+  -barlevel-height: 14px;
+  -barlevel-background-color: #292e37;
   -barlevel-border-width: 2px;
   -barlevel-border-color: transparent;
   -barlevel-active-background-color: #00e8c6;
@@ -130,7 +132,7 @@ StScrollBar {
   -barlevel-overdrive-color: #9b1b32;
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 0px;
-  -slider-handle-radius: 8px;
+  -slider-handle-radius: 7.5px;
   -slider-handle-border-width: 0;
   -slider-handle-border-color: transparent; }
 
