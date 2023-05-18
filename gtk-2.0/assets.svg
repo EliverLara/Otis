@@ -6,7 +6,7 @@
    height="480px"
    id="svg3032"
    version="1.1"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="assets.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -457,17 +457,17 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="19.047579"
-     inkscape:cx="478.85352"
-     inkscape:cy="7.061265"
-     inkscape:current-layer="treeview-separator-rtl"
+     inkscape:zoom="13.468672"
+     inkscape:cx="21.531447"
+     inkscape:cy="35.229902"
+     inkscape:current-layer="g5371"
      inkscape:document-units="px"
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:snap-global="true"
      inkscape:snap-nodes="true"
-     inkscape:window-width="1536"
-     inkscape:window-height="806"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -485,7 +485,9 @@
      inkscape:snap-to-guides="true"
      inkscape:snap-others="false"
      guidetolerance="25"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#1a2026">
     <inkscape:grid
        type="xygrid"
        id="grid3076"
@@ -1620,36 +1622,22 @@
       <g
          id="g5358">
         <rect
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#262f38;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#2b2f38;fill-opacity:1;stroke:none;stroke-width:1.20199;marker:none;enable-background:accumulate"
            id="rect5360"
-           width="7"
-           height="29"
-           x="1.5"
-           y="1.5"
-           rx="1.4999995"
-           ry="1.5" />
+           width="10.88306"
+           height="26.948906"
+           x="-0.5"
+           y="-30.5"
+           rx="2.3320835"
+           ry="6.9082251"
+           transform="scale(1,-1)" />
         <path
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:none;stroke:#262f38;stroke-width:0.984457;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
-           d="M 1.4922287,11.492229 V 5.4922287 c 0,-1.662 1.338,-3 3,-3 h 1 c 1.662,0 3,1.338 3,3 v 6.0000003"
-           id="rect5362"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cssssc" />
-        <path
-           inkscape:connector-curvature="0"
-           id="path5228-6"
-           d="M 3,2 C 2.169,2 1.5,2.669 1.5,3.5 v 1 C 1.5,3.669 2.169,3 3,3 h 4 c 0.831,0 1.5,0.669 1.5,1.5 v -1 C 8.5,2.669 7.831,2 7,2 Z"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#262f38;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
-        <path
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#262f38;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-           d="M 3,30 C 2.169,30 1.5,29.331 1.5,28.5 v -1 C 1.5,28.331 2.169,29 3,29 h 4 c 0.831,0 1.5,-0.669 1.5,-1.5 v 1 C 8.5,29.331 7.831,30 7,30 Z"
-           id="path5275"
-           inkscape:connector-curvature="0" />
-        <path
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:#0b0e11;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
-           d="m 13,11.5 c -0.831,0 -1.5,0.669 -1.5,1.5 v 26 c 0,0.831 0.669,1.5 1.5,1.5 h 4 c 0.831,0 1.5,-0.669 1.5,-1.5 V 13 c 0,-0.831 -0.669,-1.5 -1.5,-1.5 z"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:#2b2f38;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
+           d="m 13,13.5 c -0.831,0 -3.5,1.538886 -3.5,5.5 v 16 c 0,3.965164 2.669,5.5 3.5,5.5 h 4 c 0.831,0 3.5,-1.551601 3.5,-5.5 V 19 c 0,-3.958448 -2.669,-5.5 -3.5,-5.5 z"
            transform="translate(-10,-10)"
            id="rect5365"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssssssss" />
       </g>
     </g>
     <g
@@ -1668,24 +1656,14 @@
       <g
          id="g5371">
         <rect
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#8ca1a5;fill-opacity:1;stroke:none;stroke-width:0.83666;marker:none;enable-background:accumulate"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#00b0ff;fill-opacity:1;stroke:none;stroke-width:1.17579;marker:none;enable-background:accumulate"
            id="rect5373"
-           width="6"
-           height="28"
-           x="12"
-           y="2"
-           rx="1"
-           ry="0.99999946" />
-        <path
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:0.15;stroke:none;stroke-width:0.83666;marker:none;enable-background:accumulate"
-           d="m 13,2 c -0.554,0 -1,0.446 -1,1 v 1 c 0,-0.554 0.446,-1 1,-1 h 4 c 0.554,0 1,0.446 1,1 V 3 C 18,2.446 17.554,2 17,2 Z"
-           id="rect5261-7"
-           inkscape:connector-curvature="0" />
-        <path
-           inkscape:connector-curvature="0"
-           id="path5266-5"
-           d="m 13,30 c -0.554,0 -1,-0.446 -1,-1 v -1 c 0,0.554 0.446,1 1,1 h 4 c 0.554,0 1,-0.446 1,-1 v 1 c 0,0.554 -0.446,1 -1,1 z"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:0.15;stroke:none;stroke-width:0.83666;marker:none;enable-background:accumulate" />
+           width="11.682274"
+           height="28.401749"
+           x="9.5553579"
+           y="2.5700412"
+           rx="5.5956116"
+           ry="5.3927965" />
       </g>
     </g>
     <g
