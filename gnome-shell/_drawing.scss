@@ -141,26 +141,20 @@
   //
   // normal button
   //
-    $_bg: if($c!=$osd_bg_color, $c,  mix($bg_color, $base_color, 15%));
+    $_bg: if($c!=$osd_bg_color, $c,  lighten($bg_color, 4%));
 
     color: $fg_color;
     background-color: $_bg;
     box-shadow: none;
-    border: 1px solid $borders_color;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
-    border: 1px solid $borders_color;
+
   }
   @if $t==focus {
   //
   // focused button
   //
     color: $selected_fg_color;
-    background-color: lighten($base_color, 4%);
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
+    background-color: lighten($bg_color, 8%);
     box-shadow: none;
-    border: 1px solid $borders_color;
   }
 
   @else if $t==hover {
@@ -170,11 +164,7 @@
     
 
     color: $selected_fg_color;
-    background-color: lighten($base_color, 4%);
-    border: 1px solid $borders_color;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
-
+    background-color: lighten($bg_color, 8%);
   }
   @else if $t==active {
   //
@@ -187,7 +177,6 @@
     // This should be none, but it's creating some issues with borders, so to
     // workaround it for now, use inset wich goes through a different code path.
     // see https://bugzilla.gnome.org/show_bug.cgi?id=752934
-    border: 1px solid $borders_color;
     text-shadow: none;
     icon-shadow: none;
   }

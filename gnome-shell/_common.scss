@@ -19,8 +19,8 @@ stage {
 /* Buttons */
 .button, %button {
   @include button(normal);
-  border-radius: 4px;
-  padding: 4px 32px;
+  border-radius: 6px;
+  padding: 5px 32px;
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
   &:active { @include button(active); }
@@ -109,7 +109,7 @@ $slider_size: 16px;
   -barlevel-border-width: 2px; 
   -barlevel-border-color: transparent; // trough border color
   // fill style
-  -barlevel-active-background-color: $lime;
+  -barlevel-active-background-color: $teal;
   -barlevel-active-border-color: transparent;
   // overfill style (red in this case)
   -barlevel-overdrive-color: $destructive_color;
@@ -166,9 +166,9 @@ $slider_size: 16px;
 
 .modal-dialog {
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   color: $osd_fg_color;
-  background-color: darken($osd_bg_color,5%);
+  background-color: $osd_bg_color;
   box-shadow: $depth6;
 
   .modal-dialog-content-box { padding: 24px; }
@@ -929,8 +929,8 @@ $slider_size: 16px;
     box-shadow: none;
   }
   .world-clocks-button, .weather-button, .events-button {
-    background: lighten($bg_color, 2%);
-    border-radius: 7px;
+    @include button(normal);
+    border-radius: 10px;
     color: $fg_color;
   }
   
@@ -953,7 +953,7 @@ $slider_size: 16px;
     .events-section-title,
     .message-list-section-title,
     .events-button {
-      &:hover,&:focus { background-color: lighten($bg_color,5%); }
+      &:hover,&:focus { @include button(hover); }
       &:active {
         color: lighten($selected_fg_color,5%);
         background-color: $selected_bg_color;
@@ -1132,11 +1132,10 @@ $slider_size: 16px;
 
         .message {
           &:hover,&:focus { 
-            background-color: lighten($bg_color, 6%);
+            background-color: lighten($bg_color, 8%);
           }
-          background: lighten($bg_color, 2%);
-          border: 1px solid $main_dark;
-          border-radius: 7px;
+         @include button(normal);
+          border-radius: 10px;
           box-shadow: none;
         }
 
