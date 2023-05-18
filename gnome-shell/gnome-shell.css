@@ -2013,7 +2013,7 @@ StScrollBar {
      to extend to the border */ }
   .quick-toggle:checked {
     color: #00a9f5;
-    background-color: #28323b;
+    background-color: #343a46;
     text-shadow: none;
     icon-shadow: none;
     color: #fefefe; }
@@ -2048,7 +2048,7 @@ StScrollBar {
   .quick-menu-toggle .quick-toggle:rtl:last-child {
     border-radius: 99px; }
 .quick-menu-toggle .quick-toggle-arrow {
-  background-color: rgba(254, 254, 254, 0.1);
+  background-color: rgba(35, 39, 47, 0.7);
   padding: 6px 10.5px;
   border-width: 0; }
   .quick-menu-toggle .quick-toggle-arrow:checked {
