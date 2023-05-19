@@ -6,7 +6,7 @@
    height="21"
    id="svg2857"
    version="1.1"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="toggle-on.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -18,6 +18,18 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2859">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1252">
+      <stop
+         style="stop-color:#882ae9;stop-opacity:1;"
+         offset="0"
+         id="stop1248" />
+      <stop
+         style="stop-color:#34eceb;stop-opacity:1;"
+         offset="1"
+         id="stop1250" />
+    </linearGradient>
     <linearGradient
        id="linearGradient3864">
       <stop
@@ -98,6 +110,24 @@
          stdDeviation="0.225"
          id="feGaussianBlur932" />
     </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1252"
+       id="linearGradient1254"
+       x1="462.64286"
+       y1="792.36218"
+       x2="499.64286"
+       y2="792.36218"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1252"
+       id="linearGradient2011"
+       x1="462.64285"
+       y1="792.36218"
+       x2="499.64285"
+       y2="792.36218"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -106,14 +136,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.8153926"
-     inkscape:cx="2.9073434"
-     inkscape:cy="9.2411987"
+     inkscape:zoom="9.6307852"
+     inkscape:cx="29.956021"
+     inkscape:cy="20.403321"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1536"
-     inkscape:window-height="806"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -127,7 +157,8 @@
      showguides="true"
      inkscape:guide-bbox="true"
      showborder="true"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#37474f">
     <inkscape:grid
        type="xygrid"
        id="grid3078"
@@ -160,7 +191,7 @@
        id="path900"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#8ca1a5;fill-opacity:1;stroke:#8ca1a5;stroke-opacity:1"
+       style="fill:url(#linearGradient1254);fill-opacity:1;stroke:url(#linearGradient2011);stroke-opacity:1"
        d="m 472.64286,782.86218 a 9.5,9.5 0 0 0 -9.5,9.5 9.5,9.5 0 0 0 9.5,9.5 h 7.5 2 7.5 a 9.5,9.5 0 0 0 9.5,-9.5 9.5,9.5 0 0 0 -9.5,-9.5 h -7.5 -2 z"
        id="path872"
        inkscape:connector-curvature="0" />
@@ -181,7 +212,7 @@
        id="rect912"
        style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:0.2;fill-rule:nonzero;stroke:none;stroke-width:1.76471;stroke-opacity:1;marker:none;filter:url(#filter930);enable-background:new" />
     <rect
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#1e252c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76471;stroke-opacity:1;marker:none;enable-background:new"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:0.80000001;fill-rule:nonzero;stroke:none;stroke-width:1.76471;stroke-opacity:1;marker:none;enable-background:new"
        id="rect3872"
        width="15"
        height="15"
