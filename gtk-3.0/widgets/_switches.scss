@@ -32,7 +32,11 @@ switch {
 
   &:active,
   &:checked {
-    background-color: $selected_bg_color;
+    background:  linear-gradient(to right, #882ae9 10%, #34eceb 100%);
+
+    slider {
+      background-color: transparentize(#fff, 0.2);
+    }
 
     &:backdrop {
       background-color: $backdrop_selected_bg_color;
