@@ -1094,17 +1094,20 @@ StScrollBar {
 
 .window-close {
   background-color: #f39c12;
+  background-gradient-start: #882ae9;
+  background-gradient-end: #34eceb;
+  background-gradient-direction: horizontal;
   color: white;
   border-radius: 21px;
   padding: 2px;
   height: 30px;
   width: 30px;
-  border: 2px solid #e5910c;
-  transition-duration: 300ms; }
+  transition-duration: 300ms;
+  box-shadow: 0px 0px 10px #090a0c; }
   .window-close StIcon {
     icon-size: 23px; }
   .window-close:hover {
-    background-color: #f4a221; }
+    background-color: #ff0f82; }
   .window-close:active {
     background-color: #e08e0b; }
 

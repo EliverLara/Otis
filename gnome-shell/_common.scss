@@ -1313,18 +1313,20 @@ $slider_size: 15px;
 
 .window-close {
   background-color: $orange;
+  @include gradient(#882ae9,#34eceb);
   color: $topbar_color;
   border-radius: 30px * 0.5 + 3px * 2;
   padding: 2px;
   height: 30px;
   width: 30px;
-  border: 2px solid darken($orange, 4%);
+  //border: 2px solid darken($borders_color, 4%);
   transition-duration: 300ms;
+  box-shadow: 0px 0px 10px $borders_color;
 
   & StIcon { icon-size: 23px; }
 
   &:hover {
-    background-color: lighten($orange, 3%);
+    background-color: lighten($red, 3%);
   }
 
   &:active {
