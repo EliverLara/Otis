@@ -5780,10 +5780,12 @@ radiobutton.color-button:active > radio {
   background-repeat: no-repeat;
   background-size: calc(100% + 2px); }
 
-.xfce4-panel.panel {
-  background-color: #272f3f;
-  text-shadow: none;
-  -gtk-icon-shadow: none; }
+.xfce4-panel {
+  border-radius: 0; }
+  .xfce4-panel .panel {
+    background-color: #272f3f;
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
 
 #tasklist-button {
   color: rgba(216, 222, 233, 0.8);
@@ -5798,19 +5800,19 @@ radiobutton.color-button:active > radio {
     background-color: rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 -2px #cd7ebf; }
 
-.xfce4-panel.panel button.flat {
+.xfce4-panel .panel button.flat {
   color: #d8dee9;
   border-radius: 0;
   border: none;
   background-color: rgba(39, 47, 63, 0); }
-  .xfce4-panel.panel button.flat:hover {
+  .xfce4-panel .panel button.flat:hover {
     border: none;
     background-color: #3b475f; }
-  .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
+  .xfce4-panel .panel button.flat:active, .xfce4-panel .panel button.flat:checked {
     color: #fff;
     border: none;
     background-color: #cd7ebf; }
-    .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
+    .xfce4-panel .panel button.flat:active label, .xfce4-panel .panel button.flat:active image, .xfce4-panel .panel button.flat:checked label, .xfce4-panel .panel button.flat:checked image {
       color: inherit; }
 
 #whiskermenu-window button {
