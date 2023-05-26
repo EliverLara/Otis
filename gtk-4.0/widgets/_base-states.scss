@@ -45,35 +45,10 @@
   }
 }
 
-dnd {
-  color: $fg-color;
-}
-
-.normal-icons {
-  -gtk-icon-size: 16px;
-}
-
-.large-icons {
-  -gtk-icon-size: 32px;
-}
-
-image:disabled {
-  -gtk-icon-filter: opacity(0.5);
-}
-
-picture:disabled {
-  opacity: 0.5;
-}
-
 .view,
 %view {
   color: $text_color;
   background-color: $base_color;
-
-  &:disabled {
-    color: $insensitive_fg_color;
-    background-color: $insensitive_bg_color;
-  }
 
   &:backdrop {
     color: $backdrop_text_color;
@@ -89,23 +64,12 @@ picture:disabled {
   }
 }
 
+.view,
 textview {
-  > text {
+  text {
     @extend %view;
 
-    background-color: transparent;
-
-    > selection {
-      background-color: $backdrop_selected_bg_color;
-
-      &:focus-within {
-         background-color: $selected_bg_color;
-      }
-    }
-  }
-
-  &:drop(active) {
-    caret-color: $drop_target_color;
+    selection { &:focus, & { @extend %selected_items; }}
   }
 }
 
@@ -113,6 +77,7 @@ textview border { background-color: mix($bg_color, $base_color, 50%); }
 
 iconview { @extend .view; }
 
+.rubberband,
 rubberband {
   border: 1px solid darken($selected_bg_color, 10%);
   background-color: transparentize(darken($selected_bg_color, 10%), 0.8);
@@ -133,32 +98,6 @@ flowbox {
   }
 }
 
-gridview {
-  > rubberband { @extend rubberband; }
-
-  > child {
-    padding: 3px;
-
-    &:selected {
-      outline-color: $borders_color;
-
-      @extend %selected_items;
-
-    }
-
-    box { //cells
-      border-spacing: 8px; //label separation
-      margin: 12px;
-    }
-  }
-}
-
-coverflow cover {
-  color: $text_color;
-  background-color: $base_color;
-  border: 1px solid black;
-}
-
 label {
   caret-color: currentColor; // this shouldn't be needed.
 
@@ -170,20 +109,18 @@ label {
     &:backdrop { color: $backdrop_fg_color; }
   }
 
+  row:selected &,
   &:selected { @extend %nobg_selected_items; }
 
-  > selection {
-    background-color: $backdrop_selected_bg_color;
-    color: transparent;
-    &:focus-within {
-       background-color: $selected_bg_color;
-    }
+  selection {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
   }
 
   &:disabled {
     color: $insensitive_fg_color;
 
-    > selection { @extend %selected_items:disabled; }
+    selection { @extend %selected_items:disabled; }
 
     &:backdrop { color: $backdrop_insensitive_color; }
   }
@@ -193,11 +130,6 @@ label {
 
     selection { @extend %selected_items:backdrop; }
   }
-
-  &.error {
-    color: $error_color;
-    &:disabled { color: transparentize($error_color,0.5); }
-   }
 }
 
 .dim-label {
@@ -205,7 +137,7 @@ label {
   text-shadow: none;
 }
 
-window.assistant {
+assistant {
   .sidebar {
     background-color: $base_color;
     border-top: 1px solid $borders_color;
@@ -236,4 +168,9 @@ window.assistant {
     text-shadow: none;
     -gtk-icon-shadow: none;
   }
+}
+
+*:selected {
+  background: $selected_bg_color;
+  color: $selected_fg_color;
 }
