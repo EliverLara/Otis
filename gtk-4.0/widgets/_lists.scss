@@ -7,9 +7,15 @@ list, listview {
   border-color: $borders_color;
 
   &:backdrop {
+    color: $backdrop_text_color;
     background-color: $backdrop_base_color;
     border-color: $backdrop_borders_color;
   }
+
+  > row { padding: 2px; }
+  > row.expander { padding: 0px; }
+  > row.expander .row-header { padding: 2px; }
+  
   &.horizontal row.separator,
   &.separators.horizontal > row:not(.separator) {
     border-left: 1px solid $borders_color;
@@ -21,16 +27,6 @@ list, listview {
 }
 
 row {
-  padding: 1px 11px;
-  transition: all 150ms $ease-out-quad;
-
-  label {
-    padding-left: 8px;
-  }
-
-  &:hover { transition: none; }
-
-  &:backdrop { transition: $backdrop_transition; }
 
   &.activatable {
     &.has-open-popup, // this is for indicathing which row generated a popover see https://bugzilla.gnome.org/show_bug.cgi?id=754411
