@@ -220,51 +220,35 @@ read if you used those and something break with a version upgrade you're on your
     color: #fff;
     background-color: #cd7ebf; }
 
-dnd {
-  color: #d8dee9; }
-
-.normal-icons {
-  -gtk-icon-size: 16px; }
-
-.large-icons {
-  -gtk-icon-size: 32px; }
-
-image:disabled {
-  -gtk-icon-filter: opacity(0.5); }
-
-picture:disabled {
-  opacity: 0.5; }
-
 .view, iconview,
-textview > text {
+.view text,
+iconview text,
+textview text {
   color: #d8dee9;
   background-color: #2e394c; }
-  .view:disabled, iconview:disabled,
-  textview > text:disabled {
-    color: #818997;
-    background-color: #2c3547; }
   .view:backdrop, iconview:backdrop,
-  textview > text:backdrop {
+  .view text:backdrop,
+  iconview text:backdrop,
+  textview text:backdrop {
     color: #b6bdca;
     background-color: #303b4f; }
   .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
-  textview > text:selected:focus,
-  textview > text:selected {
+  .view text:selected:focus,
+  iconview text:selected:focus,
+  textview text:selected:focus,
+  .view text:selected,
+  iconview text:selected,
+  textview text:selected {
     border-radius: 3px; }
-
-textview > text {
-  background-color: transparent; }
-  textview > text > selection {
-    background-color: rgba(205, 126, 191, 0.6); }
-    textview > text > selection:focus-within {
-      background-color: #cd7ebf; }
-textview:drop(active) {
-  caret-color: #a3be8c; }
 
 textview border {
   background-color: #2c3648; }
 
-rubberband, flowbox rubberband, gridview > rubberband, .content-view rubberband, columnview.view > rubberband,
+.rubberband,
+rubberband,
+flowbox rubberband,
+.content-view rubberband,
+columnview.view > rubberband,
 treeview.view > rubberband {
   border: 1px solid #bf59ad;
   background-color: rgba(191, 89, 173, 0.2); }
@@ -275,57 +259,38 @@ flowbox flowboxchild {
   flowbox flowboxchild:selected {
     outline-offset: -2px; }
 
-gridview > child {
-  padding: 3px; }
-  gridview > child:selected {
-    outline-color: #1d232f; }
-  gridview > child box {
-    border-spacing: 8px;
-    margin: 12px; }
-
-coverflow cover {
-  color: #d8dee9;
-  background-color: #2e394c;
-  border: 1px solid black; }
-
 label {
   caret-color: currentColor; }
   label.separator {
     color: #d8dee9; }
     label.separator:backdrop {
       color: #818997; }
-  label > selection {
-    background-color: rgba(205, 126, 191, 0.6);
-    color: transparent; }
-    label > selection:focus-within {
-      background-color: #cd7ebf; }
+  label selection {
+    background-color: #cd7ebf;
+    color: #fff; }
   label:disabled {
     color: #818997; }
     label:disabled:backdrop {
       color: #475673; }
   label:backdrop {
     color: #818997; }
-  label.error {
-    color: #ff3d9f; }
-    label.error:disabled {
-      color: rgba(255, 61, 159, 0.5); }
 
 .dim-label, label.separator, .titlebar .subtitle,
 headerbar .subtitle {
   opacity: 0.55;
   text-shadow: none; }
 
-window.assistant .sidebar {
+assistant .sidebar {
   background-color: #2e394c;
   border-top: 1px solid #1d232f; }
-  window.assistant .sidebar:backdrop {
+  assistant .sidebar:backdrop {
     background-color: #303b4f;
     border-color: #1e2531; }
-window.assistant.csd .sidebar {
+assistant.csd .sidebar {
   border-top-style: none; }
-window.assistant .sidebar label {
+assistant .sidebar label {
   padding: 6px 12px; }
-window.assistant .sidebar label.highlight {
+assistant .sidebar label.highlight {
   background-color: #4d5565; }
 
 .app-notification,
@@ -346,6 +311,10 @@ popover.background.magnifier > contents, .osd {
   popover.background.magnifier > contents:backdrop, .osd:backdrop {
     text-shadow: none;
     -gtk-icon-shadow: none; }
+
+*:selected {
+  background: #cd7ebf;
+  color: #fff; }
 
 /***********
  * Buttons *
@@ -494,7 +463,6 @@ button {
     button.text-button.image-button label {
       padding-left: 8px;
       padding-right: 8px; }
-  dropdown:drop(active) button.combo,
   combobox:drop(active) button.combo, notebook > header > tabs > arrow:drop(active),
   button:drop(active) {
     color: #a3be8c;
@@ -978,13 +946,11 @@ entry, .linked > combobox > box > button.combo:dir(ltr), .linked > combobox > bo
     text-shadow: none;
     color: #818997; }
 
-.inline-toolbar button:first-child, .linked > button:first-child, dropdown.linked button:nth-child(2):dir(rtl),
-combobox.linked button:nth-child(2):dir(rtl), .linked:not(.vertical) > combobox:first-child > box > button.combo, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) >
+.inline-toolbar button:first-child, .linked > button:first-child, combobox.linked button:nth-child(2):dir(rtl), .linked:not(.vertical) > combobox:first-child > box > button.combo, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) >
 entry:first-child {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px; }
-.inline-toolbar button:last-child, .linked > button:last-child, dropdown.linked button:nth-child(2):dir(ltr),
-combobox.linked button:nth-child(2):dir(ltr), .linked:not(.vertical) > combobox:last-child > box > button.combo, .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) >
+.inline-toolbar button:last-child, .linked > button:last-child, combobox.linked button:nth-child(2):dir(ltr), .linked:not(.vertical) > combobox:last-child > box > button.combo, .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) >
 entry:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -1595,49 +1561,12 @@ colorchooser .popover.osd {
 /**************
  * ComboBoxes *
  **************/
-dropdown > popover.menu.background > contents {
-  padding: 0; }
-
-dropdown > button > box {
-  border-spacing: 6px; }
-  dropdown > button > box > stack > row.activatable:hover {
-    background: none;
-    box-shadow: none; }
-
-dropdown arrow,
 combobox arrow {
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   min-height: 16px;
   min-width: 16px; }
-dropdown > popover.menu > contents modelbutton,
-combobox > popover.menu > contents modelbutton {
-  padding-left: 9px;
-  padding-right: 9px; }
-dropdown:drop(active),
 combobox:drop(active) {
   box-shadow: none; }
-dropdown popover,
-combobox popover {
-  margin-top: 6px;
-  padding: 0; }
-  dropdown popover listview,
-  combobox popover listview {
-    margin: 8px; }
-    dropdown popover listview > row.activatable,
-    combobox popover listview > row.activatable {
-      padding: 8px; }
-      dropdown popover listview > row.activatable:selected, dropdown popover listview > row.activatable:selected:hover,
-      combobox popover listview > row.activatable:selected,
-      combobox popover listview > row.activatable:selected:hover {
-        outline-color: #FF56AC;
-        color: #d8dee9;
-        background-color: #8CA1A5;
-        box-shadow: none;
-        border-radius: 5px; }
-  dropdown popover .dropdown-searchbar,
-  combobox popover .dropdown-searchbar {
-    padding: 6px;
-    border-bottom: 1px solid #1d232f; }
 
 /***********
  * Dialogs *
@@ -2783,34 +2712,36 @@ list, listview {
   background-color: #2e394c;
   border-color: #1d232f; }
   list:backdrop, listview:backdrop {
-    color: #b6bdca;
     background-color: #303b4f;
     border-color: #1e2531; }
-  list > row, listview > row {
-    padding: 2px; }
-  list > row.expander, listview > row.expander {
-    padding: 0px; }
-  list > row.expander .row-header, listview > row.expander .row-header {
-    padding: 2px; }
   list.horizontal row.separator, list.separators.horizontal > row:not(.separator), listview.horizontal row.separator, listview.separators.horizontal > row:not(.separator) {
     border-left: 1px solid #1d232f; }
   list:not(.horizontal) row.separator, list.separators:not(.horizontal) > row:not(.separator), listview:not(.horizontal) row.separator, listview.separators:not(.horizontal) > row:not(.separator) {
     border-bottom: 1px solid #1d232f; }
 
-row.activatable.has-open-popup, row.activatable:hover {
-  background-color: rgba(216, 222, 233, 0.05); }
-row.activatable:active {
-  box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
-row.activatable:backdrop:hover {
-  background-color: transparent; }
-row.activatable button.flat {
-  background-color: transparent; }
-row.activatable:selected:active {
-  box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
-row.activatable:selected.has-open-popup, row.activatable:selected:hover {
-  background-color: rgba(205, 126, 191, 0.5); }
-row.activatable:selected:backdrop {
-  background-color: rgba(205, 126, 191, 0.6); }
+row {
+  padding: 1px 11px;
+  transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  row label {
+    padding-left: 8px; }
+  row:hover {
+    transition: none; }
+  row:backdrop {
+    transition: 200ms ease-out; }
+  row.activatable.has-open-popup, row.activatable:hover {
+    background-color: rgba(216, 222, 233, 0.05); }
+  row.activatable:active {
+    box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
+  row.activatable:backdrop:hover {
+    background-color: transparent; }
+  row.activatable button.flat {
+    background-color: transparent; }
+  row.activatable:selected:active {
+    box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
+  row.activatable:selected.has-open-popup, row.activatable:selected:hover {
+    background-color: rgba(205, 126, 191, 0.5); }
+  row.activatable:selected:backdrop {
+    background-color: rgba(205, 126, 191, 0.6); }
 
 columnview > listview > row {
   padding: 0; }
@@ -4704,17 +4635,29 @@ headerbar.selection-mode button.titlebutton,
     -gtk-icon-shadow: none; }
 
 .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
-textview > text:selected:focus,
-textview > text:selected, flowbox flowboxchild:selected, gridview > child:selected, modelbutton.flat:selected,
+.view text:selected:focus,
+iconview text:selected:focus,
+textview text:selected:focus,
+.view text:selected,
+iconview text:selected,
+textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
+textview text selection:focus,
+textview text selection, flowbox flowboxchild:selected, modelbutton.flat:selected,
 .menuitem.button.flat:selected, calendar:selected, spinbutton:not(.vertical) selection:focus, spinbutton:not(.vertical) selection,
 entry selection:focus,
 entry selection, row:selected, columnview.view:selected:focus, columnview.view:selected,
 treeview.view:selected:focus,
 treeview.view:selected {
   background-color: #cd7ebf; }
-  label:selected, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
-  textview > text:selected:focus,
-  textview > text:selected, flowbox flowboxchild:selected, gridview > child:selected, modelbutton.flat:selected,
+  row:selected label, label:selected, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
+  .view text:selected:focus,
+  iconview text:selected:focus,
+  textview text:selected:focus,
+  .view text:selected,
+  iconview text:selected,
+  textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
+  textview text selection:focus,
+  textview text selection, flowbox flowboxchild:selected, modelbutton.flat:selected,
   .menuitem.button.flat:selected, calendar:selected, spinbutton:not(.vertical) selection:focus, spinbutton:not(.vertical) selection,
   entry selection:focus,
   entry selection, row:selected, columnview.view:selected:focus, columnview.view:selected,
@@ -4722,20 +4665,31 @@ treeview.view:selected {
   treeview.view:selected {
     color: #fff;
     font-weight: normal; }
-    label:disabled:selected, iconview:disabled:selected:focus, .view:disabled:selected, iconview:disabled:selected,
-    textview > text:disabled:selected:focus,
-    textview > text:disabled:selected, flowbox flowboxchild:disabled:selected, gridview > child:disabled:selected, label:disabled > selection, modelbutton.flat:disabled:selected,
+    row:selected label:disabled, label:disabled:selected, iconview:disabled:selected:focus, .view:disabled:selected, iconview:disabled:selected,
+    iconview text:disabled:selected:focus,
+    textview text:disabled:selected:focus,
+    .view text:disabled:selected,
+    iconview text:disabled:selected,
+    textview text:disabled:selected, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
+    textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, modelbutton.flat:disabled:selected,
     .menuitem.button.flat:disabled:selected, calendar:disabled:selected, spinbutton:not(.vertical) selection:disabled,
     entry selection:disabled, row:disabled:selected {
       color: #e6bfdf; }
-    label:backdrop:selected, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected,
-    textview > text:backdrop:selected:focus,
-    textview > text:backdrop:selected, flowbox flowboxchild:backdrop:selected, gridview > child:backdrop:selected, label:backdrop selection, modelbutton.flat:backdrop:selected,
+    row:selected label:backdrop, label:backdrop:selected, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected,
+    iconview text:backdrop:selected:focus,
+    textview text:backdrop:selected:focus,
+    .view text:backdrop:selected,
+    iconview text:backdrop:selected,
+    textview text:backdrop:selected, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
+    textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, label:backdrop selection, modelbutton.flat:backdrop:selected,
     .menuitem.button.flat:backdrop:selected, calendar:backdrop:selected, spinbutton:not(.vertical) selection:backdrop,
     entry selection:backdrop, row:backdrop:selected {
       color: rgba(255, 255, 255, 0.5); }
-      label:backdrop:disabled:selected, .view:backdrop:disabled:selected, iconview:backdrop:disabled:selected,
-      textview > text:backdrop:disabled:selected, flowbox flowboxchild:backdrop:disabled:selected, gridview > child:backdrop:disabled:selected, label:disabled > selection:backdrop, label:backdrop selection:disabled, modelbutton.flat:backdrop:disabled:selected,
+      row:selected label:backdrop:disabled, label:backdrop:disabled:selected, .view:backdrop:disabled:selected, iconview:backdrop:disabled:selected,
+      .view text:backdrop:disabled:selected,
+      iconview text:backdrop:disabled:selected,
+      textview text:backdrop:disabled:selected, .view text selection:backdrop:disabled, iconview text selection:backdrop:disabled,
+      textview text selection:backdrop:disabled, flowbox flowboxchild:backdrop:disabled:selected, label:disabled selection:backdrop, label:backdrop selection:disabled, modelbutton.flat:backdrop:disabled:selected,
       .menuitem.button.flat:backdrop:disabled:selected, calendar:backdrop:disabled:selected, spinbutton:not(.vertical) selection:backdrop:disabled,
       entry selection:backdrop:disabled, row:backdrop:disabled:selected {
         color: rgba(211, 142, 199, 0.85); }
