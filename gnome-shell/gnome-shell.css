@@ -1367,7 +1367,8 @@ StScrollBar {
   border: none;
   transition-duration: 100ms;
   text-align: center;
-  box-shadow: none; }
+  box-shadow: none;
+  border-radius: 12px; }
 
 /* App Folders */
 .app-well-app.app-folder {
@@ -1376,7 +1377,8 @@ StScrollBar {
 
 .app-folder-dialog {
   background-color: rgba(26, 29, 35, 0.95);
-  border: none; }
+  border: none;
+  box-shadow: none; }
   .app-folder-dialog .folder-name-label {
     color: #fefefe; }
   .app-folder-dialog .edit-folder-button {

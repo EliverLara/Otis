@@ -1589,6 +1589,7 @@ $slider_size: 15px;
     transition-duration: 100ms;
     text-align: center;
     box-shadow: none;
+    border-radius: 12px;
   }
 
 /* App Folders */
@@ -1600,6 +1601,7 @@ $slider_size: 15px;
 .app-folder-dialog { //style like the dash
   background-color:  $_bubble_bg_color;
   border: none;
+  box-shadow: none;
   
   & .folder-name-label { color: $fg_color; }
   
