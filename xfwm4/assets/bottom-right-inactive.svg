@@ -15,7 +15,7 @@
    version="1.1"
    id="svg2283"
    inkscape:version="0.92.4 (unknown)"
-   sodipodi:docname="bottom-right-active.svg">
+   sodipodi:docname="bottom-right-inactive.svg">
   <defs
      id="defs2277" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="100.03745"
-     inkscape:cx="0.54862144"
-     inkscape:cy="1.1912315"
+     inkscape:zoom="135.25"
+     inkscape:cx="0.69038373"
+     inkscape:cy="0.0082370453"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,7 +56,7 @@
      transform="translate(0,-296.20623)">
     <path
        inkscape:connector-curvature="0"
-       style="opacity:1;fill:#0f1417;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#111216;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 0,296.20623 v 0.79375 H 0.52916667 V 296.7354 H 0.79375 v -0.52917 z"
        id="bottom-right-active" />
   </g>
