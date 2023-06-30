@@ -10,7 +10,7 @@ stage {
 /* Buttons */
 .button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button {
   color: #d8dee9;
-  background-color: #1d242b;
+  background-color: #262f38;
   box-shadow: none;
   border: 1px solid #090c0e;
   text-shadow: 0 1px black;
@@ -20,7 +20,7 @@ stage {
   padding: 4px 32px; }
   .button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus {
     color: #fff;
-    background-color: #262f38;
+    background-color: #313c47;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
@@ -40,7 +40,7 @@ stage {
     icon-shadow: none; }
   .button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover {
     color: #fff;
-    background-color: #262f38;
+    background-color: #313c47;
     border: 1px solid #090c0e;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
@@ -48,7 +48,7 @@ stage {
 .modal-dialog-linked-button {
   padding: 10px;
   color: #d8dee9;
-  background-color: #1d242b;
+  background-color: #262f38;
   box-shadow: none;
   border: 1px solid #090c0e;
   text-shadow: 0 1px black;
@@ -69,21 +69,21 @@ stage {
     icon-shadow: none; }
   .modal-dialog-linked-button:focus {
     color: #fff;
-    background-color: #262f38;
+    background-color: #313c47;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
     border: 1px solid #090c0e; }
     .modal-dialog-linked-button:focus:hover {
       color: #fff;
-      background-color: #262f38;
+      background-color: #313c47;
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black;
       box-shadow: none;
       border: 1px solid #090c0e; }
   .modal-dialog-linked-button:hover {
     color: #fff;
-    background-color: #262f38;
+    background-color: #313c47;
     border: 1px solid #090c0e;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
@@ -986,12 +986,25 @@ StScrollBar {
   background: transparent; }
 
 .message {
-  background: #1e252c;
-  border: 1px solid #101317;
-  border-radius: 7px;
-  box-shadow: none; }
+  color: #d8dee9;
+  background-color: #262f38;
+  box-shadow: none;
+  border: 1px solid #090c0e;
+  text-shadow: 0 1px black;
+  icon-shadow: 0 1px black;
+  border: 1px solid #090c0e;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+  text-shadow: none; }
   .message:hover, .message:focus {
-    background-color: #262f38; }
+    color: #fff;
+    background-color: #313c47;
+    border: 1px solid #090c0e;
+    text-shadow: 0 1px black;
+    icon-shadow: 0 1px black;
+    border: none;
+    text-shadow: none; }
 
 .message-secondary-bin > .event-time {
   color: #a7b5cd;
@@ -1005,9 +1018,9 @@ StScrollBar {
 
 .message-content {
   padding: 10px; }
-  .message-content *:hover > StIcon,
-  .message-content *:focus > StIcon {
-    color: #FF56AC; }
+
+.message-close-button:hover {
+  background-color: #FF56AC; }
 
 /* Media Controls */
 .message-media-control {
@@ -1536,7 +1549,7 @@ StScrollBar {
       border-radius: 0 0 12px 0; }
     .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
       color: #fff;
-      background-color: #262f38;
+      background-color: #313c47;
       border: 1px solid #090c0e;
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black;
@@ -1654,7 +1667,7 @@ StScrollBar {
 
 .keyboard-key {
   color: #d8dee9;
-  background-color: #1d242b;
+  background-color: #262f38;
   box-shadow: none;
   border: 1px solid #090c0e;
   text-shadow: 0 1px black;
@@ -1667,14 +1680,14 @@ StScrollBar {
   border-radius: 2px; }
   .keyboard-key:focus {
     color: #fff;
-    background-color: #262f38;
+    background-color: #313c47;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
     border: 1px solid #090c0e; }
   .keyboard-key:hover, .keyboard-key:checked {
     color: #fff;
-    background-color: #262f38;
+    background-color: #313c47;
     border: 1px solid #090c0e;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
@@ -1698,7 +1711,7 @@ StScrollBar {
     border: 1px solid #090c0e; }
     .keyboard-key.default-key:hover, .keyboard-key.default-key:checked {
       color: #fff;
-      background-color: #262f38;
+      background-color: #313c47;
       border: 1px solid #090c0e;
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black; }
@@ -1797,7 +1810,7 @@ StScrollBar {
       border: 1px solid #090c0e; }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
         color: #fff;
-        background-color: #262f38;
+        background-color: #313c47;
         border: 1px solid #090c0e;
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
@@ -2066,13 +2079,13 @@ StScrollBar {
      to extend to the border */ }
   .quick-toggle:checked {
     color: #8CA1A5;
-    background-color: #28323b;
+    background-color: #374450;
     border: 1px solid #090c0e;
     text-shadow: none;
     icon-shadow: none; }
     .quick-toggle:checked:hover {
       color: #8CA1A5;
-      background-color: #2f3944;
+      background-color: #3b4956;
       border: 1px solid #090c0e;
       text-shadow: none;
       icon-shadow: none; }
@@ -2109,18 +2122,18 @@ StScrollBar {
   .quick-menu-toggle .quick-toggle:rtl:last-child {
     border-radius: 99px; }
 .quick-menu-toggle .quick-toggle-arrow {
-  background-color: rgba(216, 222, 233, 0.1);
+  background-color: #2a343e;
   padding: 6px 10.5px;
   border-width: 0; }
   .quick-menu-toggle .quick-toggle-arrow:checked {
     color: #8CA1A5;
-    background-color: #242d35;
+    background-color: #374450;
     border: 1px solid #090c0e;
     text-shadow: none;
     icon-shadow: none; }
     .quick-menu-toggle .quick-toggle-arrow:checked:hover {
       color: #8CA1A5;
-      background-color: #2f3944;
+      background-color: #3b4956;
       border: 1px solid #090c0e;
       text-shadow: none;
       icon-shadow: none; }
@@ -2161,7 +2174,7 @@ StScrollBar {
 
 .quick-slider .icon-button:hover {
   color: #fff;
-  background-color: #262f38;
+  background-color: #313c47;
   border: 1px solid #090c0e;
   text-shadow: 0 1px black;
   icon-shadow: 0 1px black; }

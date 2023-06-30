@@ -1133,12 +1133,15 @@ $slider_size: 16px;
 
         .message {
           &:hover,&:focus { 
-            background-color: lighten($bg_color, 6%);
+           @include button(hover);
+           border: none;
+           text-shadow: none;
           }
-          background: lighten($bg_color, 2%);
-          border: 1px solid $main_dark;
-          border-radius: 7px;
+          @include button(normal);
+          border: none;
           box-shadow: none;
+          border-radius: 10px;
+          text-shadow: none;
         }
 
           .message-secondary-bin > .event-time {
@@ -1162,11 +1165,12 @@ $slider_size: 16px;
           .message-content {
           //  color: darken($fg_color,20%);
             padding: 10px;
-            *:hover > StIcon,
-            *:focus > StIcon, {
-              color: $red;
-            }
           }
+  // close button
+  .message-close-button:hover {
+    background-color: $red;
+  }
+
 
 /* Media Controls */
 .message-media-control {
@@ -2262,8 +2266,8 @@ $base_padding: 6px;
   border-radius: 99px;
 
   &:checked { 
-    @include button(active, lighten($base_color, 5%));
-    &:hover { @include button(active, lighten($base_color, 8%)); }
+    @include button(active, lighten($base_color, 12%));
+    &:hover { @include button(active, lighten($base_color, 14%)); }
     &, &:hover { color: $selected_fg_color; }
   }
 
@@ -2299,12 +2303,12 @@ $base_padding: 6px;
 
 
   & .quick-toggle-arrow {
-    background-color: transparentize($fg_color, 0.9);
+    background-color: lighten($base_color, 6%);
     padding: $base_padding $base_padding*1.75;
     border-width: 0;
     &:checked { 
-      @include button(active, lighten($base_color, 3%));
-      &:hover { @include button(active, lighten($base_color, 8%)); }
+      @include button(active, lighten($base_color, 12%));
+      &:hover { @include button(active, lighten($base_color, 14%)); }
       &, &:hover {
         color: $selected_fg_color;
         border-width: 0;
