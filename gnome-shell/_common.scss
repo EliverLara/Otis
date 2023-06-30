@@ -1133,12 +1133,15 @@ $slider_size: 16px;
 
         .message {
           &:hover,&:focus { 
-            background-color: lighten($bg_color, 6%);
+           @include button(hover);
+           border: none;
+           text-shadow: none;
           }
-          background: lighten($bg_color, 2%);
-          border: 1px solid $main_dark;
-          border-radius: 7px;
+          @include button(normal);
+          border: none;
           box-shadow: none;
+          border-radius: 10px;
+          text-shadow: none;
         }
 
           .message-secondary-bin > .event-time {
@@ -1162,11 +1165,12 @@ $slider_size: 16px;
           .message-content {
           //  color: darken($fg_color,20%);
             padding: 10px;
-            *:hover > StIcon,
-            *:focus > StIcon, {
-              color: $red;
-            }
           }
+  // close button
+  .message-close-button:hover {
+    background-color: $red;
+  }
+
 
 /* Media Controls */
 .message-media-control {

@@ -986,12 +986,25 @@ StScrollBar {
   background: transparent; }
 
 .message {
-  background: #283141;
-  border: 1px solid #1a202b;
-  border-radius: 7px;
-  box-shadow: none; }
+  color: #d8dee9;
+  background-color: #2d3749;
+  box-shadow: none;
+  border: 1px solid #151921;
+  text-shadow: 0 1px black;
+  icon-shadow: 0 1px black;
+  border: 1px solid #151921;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+  text-shadow: none; }
   .message:hover, .message:focus {
-    background-color: #303a4d; }
+    color: #fff;
+    background-color: #364359;
+    border: 1px solid #151921;
+    text-shadow: 0 1px black;
+    icon-shadow: 0 1px black;
+    border: none;
+    text-shadow: none; }
 
 .message-secondary-bin > .event-time {
   color: #a7b5cd;
@@ -1005,9 +1018,9 @@ StScrollBar {
 
 .message-content {
   padding: 10px; }
-  .message-content *:hover > StIcon,
-  .message-content *:focus > StIcon {
-    color: #FF56AC; }
+
+.message-close-button:hover {
+  background-color: #FF56AC; }
 
 /* Media Controls */
 .message-media-control {
