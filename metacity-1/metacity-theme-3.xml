@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Otis-forest</name>
+	<name>Andromeda</name>
 	<author>Eliver Lara &lt;eliverlara@gmail&gt;</author>
 	<copyright>&#194;Eliver Lara, 2022</copyright>
 	<date>2022</date>
-	<description>Otis forest Window Theme</description>
+	<description>Andromeda Window Theme</description>
 </info>
 
 
 <!-- CONSTANTS -->
-<constant name="C_titlebar" value="#0f1417" />
-<constant name="C_titlebar_unfocused" value="#0f1417" />
-<constant name="C_border_focused" value="#0f1417" />
-<constant name="C_border_unfocused" value="#0f1417" />
+<constant name="C_titlebar" value="#111216" />
+<constant name="C_titlebar_unfocused" value="#111216" />
+<constant name="C_border_focused" value="#111216" />
+<constant name="C_border_unfocused" value="#111216" />
 <constant name="C_title_focused" value="#d8dee9" />
 <constant name="C_title_unfocused" value="#93979f" />
 
