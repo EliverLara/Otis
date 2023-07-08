@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="add-workspace-active.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    version="1.1"
    id="svg2"
    height="200"
-   width="35">
+   width="35"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4">
     <linearGradient
-       osb:paint="solid"
-       id="selected_fg_color">
+       id="selected_fg_color"
+       inkscape:swatch="solid">
       <stop
          id="stop4147"
          offset="0"
          style="stop-color:#ffffff;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
-       osb:paint="solid"
-       id="selected_bg_color">
+       id="selected_bg_color"
+       inkscape:swatch="solid">
       <stop
          id="stop4144"
          offset="0"
@@ -51,23 +50,26 @@
      inkscape:snap-bbox="true"
      inkscape:guide-bbox="true"
      showguides="true"
-     inkscape:window-maximized="1"
-     inkscape:window-y="0"
-     inkscape:window-x="0"
-     inkscape:window-height="712"
-     inkscape:window-width="1366"
+     inkscape:window-maximized="0"
+     inkscape:window-y="118"
+     inkscape:window-x="50"
+     inkscape:window-height="756"
+     inkscape:window-width="1547"
      showgrid="true"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="95.511861"
-     inkscape:cx="1.6114609"
+     inkscape:cy="95.54242"
+     inkscape:cx="1.6124223"
      inkscape:zoom="19.535825"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
      bordercolor="#666666"
      pagecolor="#ffffff"
-     id="base">
+     id="base"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        snapvisiblegridlinesonly="true"
        enabled="true"
@@ -78,11 +80,13 @@
     <sodipodi:guide
        id="guide3893"
        position="20,100"
-       orientation="0,1" />
+       orientation="0,1"
+       inkscape:locked="false" />
     <sodipodi:guide
        id="guide3895"
        position="18,190"
-       orientation="1,0" />
+       orientation="1,0"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -117,7 +121,7 @@
        height="198"
        width="37"
        id="rect3812"
-       style="opacity:0.5;fill:#8CA1A5;fill-opacity:1;stroke:#8CA1A5;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:0.5;fill:#007db8;fill-opacity:1;stroke:#8CA1A5;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        rx="2" />
     <g
        style="fill:url(#linearGradient4149);fill-opacity:1"

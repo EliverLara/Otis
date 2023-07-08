@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    sodipodi:docname="switch-off-selected.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    version="1.1"
    id="svg7539"
    height="20"
@@ -112,11 +112,11 @@
      inkscape:guide-bbox="true"
      showguides="true"
      inkscape:snap-bbox="true"
-     inkscape:window-maximized="1"
-     inkscape:window-y="25"
-     inkscape:window-x="0"
-     inkscape:window-height="1025"
-     inkscape:window-width="1920"
+     inkscape:window-maximized="0"
+     inkscape:window-y="118"
+     inkscape:window-x="50"
+     inkscape:window-height="756"
+     inkscape:window-width="1547"
      fit-margin-bottom="0"
      fit-margin-right="0"
      fit-margin-left="0"
@@ -125,8 +125,8 @@
      inkscape:grid-bbox="true"
      showgrid="true"
      inkscape:current-layer="layer1"
-     inkscape:cy="10.722108"
-     inkscape:cx="3.8718724"
+     inkscape:cy="10.672469"
+     inkscape:cx="3.9711512"
      inkscape:zoom="10.072646"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -134,7 +134,9 @@
      bordercolor="#666666"
      pagecolor="#ffffff"
      id="base"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        originy="2.6171874e-06"
        originx="-4"
@@ -167,7 +169,7 @@
        d="m 127.85953,-77.245935 a 9.5,9.5 0 0 0 -0.0195,0.585938 9.5,9.5 0 0 0 9.5,9.5 h 7.5 2 7.5 a 9.5,9.5 0 0 0 9.5,-9.5 9.5,9.5 0 0 0 -0.0195,-0.414062 9.5,9.5 0 0 1 -9.48053,8.914062 h -7.5 -2 -7.5 a 9.5,9.5 0 0 1 -9.48047,-9.085938 z"
        id="path900" />
     <path
-       style="fill:#3d4b59;fill-opacity:1;stroke:#3d4b59;stroke-opacity:1"
+       style="fill:#444a59;fill-opacity:1;stroke:#3d4b59;stroke-opacity:1"
        d="m 137.34,-87.159997 a 9.5,9.5 0 0 0 -9.5,9.5 9.5,9.5 0 0 0 9.5,9.5 h 7.5 2 7.5 a 9.5,9.5 0 0 0 9.5,-9.5 9.5,9.5 0 0 0 -9.5,-9.5 h -7.5 -2 z"
        id="path872"
        inkscape:connector-curvature="0" />
@@ -188,7 +190,7 @@
        id="rect912"
        style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:0.2;fill-rule:nonzero;stroke:none;stroke-width:1.76471;stroke-opacity:1;marker:none;filter:url(#filter930);enable-background:new" />
     <rect
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#1e252c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76471;stroke-opacity:1;marker:none;enable-background:new"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#23262e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76471;stroke-opacity:1;marker:none;enable-background:new"
        id="rect3872"
        width="15"
        height="15"

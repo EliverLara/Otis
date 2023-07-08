@@ -4,14 +4,13 @@
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="checkbox-checked-focused.svg"
    inkscape:export-filename="/home/steffen/.local/share/themes/neu2/gtk-3.0/assets/dark/checkbox-unchecked.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -19,18 +18,6 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient852">
-      <stop
-         style="stop-color:#79b4b7;stop-opacity:1"
-         offset="0"
-         id="stop848" />
-      <stop
-         style="stop-color:#8ca1a5;stop-opacity:1"
-         offset="1"
-         id="stop850" />
-    </linearGradient>
     <linearGradient
        id="selected_bg_color"
        inkscape:swatch="solid">
@@ -58,15 +45,6 @@
          offset="1"
          id="stop3776-1" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient852"
-       id="linearGradient854"
-       x1="18.000005"
-       y1="38.362191"
-       x2="31.999995"
-       y2="38.362191"
-       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -76,8 +54,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="41.564188"
-     inkscape:cx="4.9561897"
-     inkscape:cy="8.9500125"
+     inkscape:cx="4.7877755"
+     inkscape:cy="8.962042"
      inkscape:document-units="px"
      inkscape:current-layer="g5400-6-68"
      showgrid="true"
@@ -86,16 +64,17 @@
      inkscape:guide-bbox="true"
      inkscape:showpageshadow="false"
      showborder="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1025"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1547"
+     inkscape:window-height="756"
+     inkscape:window-x="50"
+     inkscape:window-y="118"
+     inkscape:window-maximized="0"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:document-rotation="0"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid2985"
@@ -166,7 +145,7 @@
                  height="13.99999"
                  width="13.999989"
                  id="rect5147-9-1-5-7-6-7-4"
-                 style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#linearGradient854);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+                 style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#005ed1;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
                  ry="1.9999917" />
             </g>
           </g>
