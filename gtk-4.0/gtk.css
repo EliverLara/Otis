@@ -2272,16 +2272,16 @@ GraniteWidgetsWelcome {
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 6px;
-      font-weight: normal;
+      box-shadow: none;
       color: white;
-      background-color: #2b2f38;
-      text-shadow: none;
+      border-radius: 6px;
+      background: #00cfb0;
       box-shadow: none; }
       .titlebar button.suggested-action:hover,
       headerbar button.suggested-action:hover {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #00cfb0;
+        background-color: #00b096;
         text-shadow: none; }
       .titlebar button.suggested-action:active,
       headerbar button.suggested-action:active {
@@ -2318,16 +2318,16 @@ GraniteWidgetsWelcome {
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 6px;
-      font-weight: normal;
+      box-shadow: none;
       color: white;
-      background-color: #2b2f38;
-      text-shadow: none;
+      border-radius: 6px;
+      background: #00cfb0;
       box-shadow: none; }
       .titlebar button.destructive-action:hover,
       headerbar button.destructive-action:hover {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #cc0062;
+        background-color: #ad0053;
         text-shadow: none; }
       .titlebar button.destructive-action:active,
       headerbar button.destructive-action:active {

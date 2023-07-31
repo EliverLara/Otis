@@ -91,10 +91,10 @@ headerbar {
         margin-top: 5px;
         margin-bottom: 5px;
         border-radius: 6px;
-        @include button(normal, $b_color, white);
+        @include button(rounded, $b_color, white);
         box-shadow: none;
 
-        &:hover { @include button(hover, $b_color, white); }
+        &:hover { @include button(hover, darken($b_color, 6%), white); }
 
         &:active { @include button(active, $b_color, white); }
 
