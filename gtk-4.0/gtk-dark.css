@@ -2211,29 +2211,6 @@ GraniteWidgetsWelcome {
     .titlebar button.image-button,
     headerbar button.image-button {
       padding: 3px 4px; }
-    .titlebar button.suggested-action,
-    headerbar button.suggested-action {
-      box-shadow: none;
-      border: none;
-      background-color: #79B4B7; }
-      .titlebar button.suggested-action:disabled, .titlebar button.suggested-action:disabled:backdrop, .titlebar button.suggested-action:backdrop,
-      headerbar button.suggested-action:disabled,
-      headerbar button.suggested-action:disabled:backdrop,
-      headerbar button.suggested-action:backdrop {
-        border: none;
-        background-color: #79B4B7; }
-        .titlebar button.suggested-action:disabled:hover, .titlebar button.suggested-action:disabled:active, .titlebar button.suggested-action:disabled:checked, .titlebar button.suggested-action:disabled:backdrop:hover, .titlebar button.suggested-action:disabled:backdrop:active, .titlebar button.suggested-action:disabled:backdrop:checked, .titlebar button.suggested-action:backdrop:hover, .titlebar button.suggested-action:backdrop:active, .titlebar button.suggested-action:backdrop:checked,
-        headerbar button.suggested-action:disabled:hover,
-        headerbar button.suggested-action:disabled:active,
-        headerbar button.suggested-action:disabled:checked,
-        headerbar button.suggested-action:disabled:backdrop:hover,
-        headerbar button.suggested-action:disabled:backdrop:active,
-        headerbar button.suggested-action:disabled:backdrop:checked,
-        headerbar button.suggested-action:backdrop:hover,
-        headerbar button.suggested-action:backdrop:active,
-        headerbar button.suggested-action:backdrop:checked {
-          border: none;
-          background-color: #79B4B7; }
     .titlebar button.appmenu,
     headerbar button.appmenu {
       background: transparent; }
@@ -2276,16 +2253,16 @@ GraniteWidgetsWelcome {
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 4px;
-      font-weight: normal;
+      box-shadow: none;
       color: white;
-      background-color: #333e53;
-      text-shadow: none;
+      border-radius: 4px;
+      background: #79B4B7;
       box-shadow: none; }
       .titlebar button.suggested-action:hover,
       headerbar button.suggested-action:hover {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #79B4B7;
+        background-color: #65a9ac;
         text-shadow: none; }
       .titlebar button.suggested-action:active,
       headerbar button.suggested-action:active {
@@ -2323,16 +2300,16 @@ GraniteWidgetsWelcome {
       margin-top: 5px;
       margin-bottom: 5px;
       border-radius: 4px;
-      font-weight: normal;
+      box-shadow: none;
       color: white;
-      background-color: #333e53;
-      text-shadow: none;
+      border-radius: 4px;
+      background: #79B4B7;
       box-shadow: none; }
       .titlebar button.destructive-action:hover,
       headerbar button.destructive-action:hover {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #ff2393;
+        background-color: #ff0484;
         text-shadow: none; }
       .titlebar button.destructive-action:active,
       headerbar button.destructive-action:active {
