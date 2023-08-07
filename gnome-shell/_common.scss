@@ -171,7 +171,11 @@ $slider_size: 16px;
   background-color: darken($osd_bg_color,5%);
   box-shadow: $depth6;
 
-  .modal-dialog-content-box { padding: 24px; }
+  .modal-dialog-content-box {
+    margin: 32px 40px;
+    spacing: 32px;
+    max-width: 28em;
+  }
   .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px;
@@ -227,7 +231,6 @@ $slider_size: 16px;
 
 /* End Session Dialog */
 .end-session-dialog {
-  spacing: 42px;
   border: none;
   & .modal-dialog-linked-button:last-child {
     @include gradient();
@@ -373,7 +376,7 @@ $slider_size: 16px;
 
 .prompt-dialog {
   //this is the width of the entire modal popup
-  width: 34em;
+  width: 28em;
   border: none;
   border-radius: 10px;
 
