@@ -8,7 +8,7 @@ $entry_border: transparent;
 $mpris_overlay_fg: $fg_color;
 $mpris_overlay_bg: transparentize(if($variant=='light',$base_color, darken($bg_color, 10%)), 0.1);
 $mpris_overlay_border: $top_highlight;
-$panel_bg: darken(#2a3344, 3%);
+$panel_bg: darken(#1A2026, 2%);
 $panel_color: $headerbar_fg_color;
 $panel_border: transparentize(darken($headerbar_color, 7%), 0.08);
 $panel_shadow: transparentize(black, 0.7);
@@ -403,7 +403,7 @@ button.raven-trigger {
     }
 
     &.transparent {
-        background-color: transparentize($panel_bg, 0.55);
+        background-color: transparentize($panel_bg, 0.25);
 
         .top & {
             border-bottom-color: transparent;
