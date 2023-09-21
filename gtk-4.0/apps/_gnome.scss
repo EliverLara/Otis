@@ -134,6 +134,9 @@
       margin: 0;
       -gtk-icon-size: 12px;
       padding: 0 4px;
+      image {
+        color: $selected_fg_color;
+      }
     }
   
     > text, > image { margin: 0; }
