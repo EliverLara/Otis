@@ -122,6 +122,9 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
 		row {
 			&.sidebar-row {
         border-radius: 5px;
+        padding: 1px 11px;
+        label { padding-left: 8px; }
+        
 				&.sidebar-row {
 					.sidebar-icon {
 						margin-left:-14px;
