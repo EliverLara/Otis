@@ -2643,8 +2643,8 @@ levelbar > trough > block {
     border-color: #58a1a5;
     background-color: #58a1a5; }
   levelbar > trough > block.empty {
-    background-color: #3b4a62;
-    border-color: #3b4a62; }
+    background-color: #2c3741;
+    border-color: #2c3741; }
 
 /*********
  * Links *
@@ -2727,7 +2727,7 @@ row.activatable:selected:backdrop {
 columnview > listview > row {
   padding: 0; }
   columnview > listview > row > cell {
-    padding: 8px 6px; }
+    padding: 2px 6px; }
     columnview > listview > row > cell:not(:first-child) {
       border-left: 1px solid transparent; }
 columnview.column-separators > listview > row > cell {
