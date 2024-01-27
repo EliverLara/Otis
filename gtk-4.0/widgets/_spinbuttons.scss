@@ -1,3 +1,6 @@
+/*****************
+ * GtkSpinButton *
+ *****************/
 spinbutton {
   &:not(.vertical) {
     // in this horizontal configuration, the whole spinbutton
@@ -39,13 +42,12 @@ spinbutton {
       border-color: transparentize($borders_color, 0.7);
       border-radius: 0;
       box-shadow: none;
-      background-color: transparent;
 
       &:dir(rtl) { border-style: none solid none none; }
 
       &:hover {
         color: $fg_color;
-        background-color: darken($bg_color, 5%);
+        background-color: lighten($base_color, 10%);
       }
 
       &:disabled {
@@ -54,13 +56,14 @@ spinbutton {
       }
 
       &:active {
-        background-color: transparentize(darken($bg_color, 5%), 0.2);
+        background-color: lighten($base_color, 13%);
         box-shadow: inset 0 2px 3px -1px transparentize(black, 0.8);
+        color: $selected_fg_color;
       }
 
-      &:dir(ltr):last-child { border-radius: 0 4px 4px 0; }
+      &:dir(ltr):last-child { border-radius: 0 3px 3px 0; }
 
-      &:dir(rtl):first-child { border-radius: 4px 0 0 4px; }
+      &:dir(rtl):first-child { border-radius: 3px 0 0 3px; }
     }
   }
 
@@ -102,9 +105,9 @@ spinbutton {
         box-shadow: none;
       }
 
-      &:dir(ltr):last-child { border-radius: 0 4px 4px 0; }
+      &:dir(ltr):last-child { border-radius: 0 3px 3px 0; }
 
-      &:dir(rtl):first-child { border-radius: 4px 0 0 4px; }
+      &:dir(rtl):first-child { border-radius: 3px 0 0 3px; }
     }
   }
 
@@ -135,6 +138,7 @@ spinbutton {
         background-color: $backdrop_selected_bg_color;
         color: transparent;
         &:focus-within {
+          background-color: $selected_bg_color;
           color: $fg_color;
         }
       }
