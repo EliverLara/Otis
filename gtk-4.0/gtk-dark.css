@@ -2626,7 +2626,7 @@ levelbar.vertical trough > block {
   min-width: 5px;
   border-radius: 5px; }
 levelbar.vertical.discrete > trough > block {
-  min-width: -2px;
+  min-width: 2px;
   margin: 1px 0;
   min-height: 32px; }
 levelbar > trough {
@@ -4092,6 +4092,9 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
   placessidebar.sidebar list, placessidebar.sidebar list:backdrop, .nautilus-window .navigation-sidebar list, .nautilus-window .navigation-sidebar list:backdrop {
     background-color: #14181d; }
 
+/*****************
+ * GtkSpinButton *
+ *****************/
 spinbutton {
   font-feature-settings: "tnum"; }
   spinbutton:not(.vertical) {
@@ -4120,29 +4123,29 @@ spinbutton {
       border-style: none none none solid;
       border-color: rgba(11, 14, 17, 0.3);
       border-radius: 0;
-      box-shadow: none;
-      background-color: transparent; }
+      box-shadow: none; }
       spinbutton:not(.vertical) > button.image-button.up:not(.flat):dir(rtl),
       spinbutton:not(.vertical) > button.image-button.down:not(.flat):dir(rtl) {
         border-style: none solid none none; }
       spinbutton:not(.vertical) > button.image-button.up:not(.flat):hover,
       spinbutton:not(.vertical) > button.image-button.down:not(.flat):hover {
         color: #d8dee9;
-        background-color: #101317; }
+        background-color: #333f4a; }
       spinbutton:not(.vertical) > button.image-button.up:not(.flat):disabled,
       spinbutton:not(.vertical) > button.image-button.down:not(.flat):disabled {
         color: rgba(121, 127, 136, 0.3);
         background-color: transparent; }
       spinbutton:not(.vertical) > button.image-button.up:not(.flat):active,
       spinbutton:not(.vertical) > button.image-button.down:not(.flat):active {
-        background-color: rgba(16, 19, 23, 0.8);
-        box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
+        background-color: #394653;
+        box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2);
+        color: #fff; }
       spinbutton:not(.vertical) > button.image-button.up:not(.flat):dir(ltr):last-child,
       spinbutton:not(.vertical) > button.image-button.down:not(.flat):dir(ltr):last-child {
-        border-radius: 0 4px 4px 0; }
+        border-radius: 0 3px 3px 0; }
       spinbutton:not(.vertical) > button.image-button.up:not(.flat):dir(rtl):first-child,
       spinbutton:not(.vertical) > button.image-button.down:not(.flat):dir(rtl):first-child {
-        border-radius: 4px 0 0 4px; }
+        border-radius: 3px 0 0 3px; }
   .osd spinbutton:not(.vertical) > button.image-button.up:not(.flat),
   .osd spinbutton:not(.vertical) > button.image-button.down:not(.flat) {
     border-color: transparent;
@@ -4187,10 +4190,10 @@ spinbutton {
       box-shadow: none; }
     .osd spinbutton:not(.vertical) > button.image-button.up:not(.flat):dir(ltr):last-child,
     .osd spinbutton:not(.vertical) > button.image-button.down:not(.flat):dir(ltr):last-child {
-      border-radius: 0 4px 4px 0; }
+      border-radius: 0 3px 3px 0; }
     .osd spinbutton:not(.vertical) > button.image-button.up:not(.flat):dir(rtl):first-child,
     .osd spinbutton:not(.vertical) > button.image-button.down:not(.flat):dir(rtl):first-child {
-      border-radius: 4px 0 0 4px; }
+      border-radius: 3px 0 0 3px; }
   spinbutton.vertical:disabled {
     color: #797f88; }
   spinbutton.vertical:drop(active) {
@@ -4205,6 +4208,7 @@ spinbutton {
       background-color: rgba(140, 161, 165, 0.6);
       color: transparent; }
       spinbutton.vertical > text > selection:focus-within {
+        background-color: #8CA1A5;
         color: #d8dee9; }
   spinbutton.vertical > button {
     min-height: 32px;
