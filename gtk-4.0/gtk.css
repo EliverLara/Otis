@@ -1665,7 +1665,8 @@ spinbutton:not(.vertical), spinbutton.vertical > text, entry {
     border-radius: 0; }
   spinbutton:focus-within:not(.vertical), spinbutton.vertical > text:focus-within,
   entry:focus-within {
-    border-color: #bf59ad; }
+    border-color: #bf59ad;
+    box-shadow: 0px 0px 1px 1px #cd7ebf inset; }
   spinbutton:disabled:not(.vertical), spinbutton.vertical > text:disabled,
   entry:disabled {
     color: #818997;
@@ -1694,7 +1695,8 @@ spinbutton:not(.vertical), spinbutton.vertical > text, entry {
     border-color: #890046; }
     spinbutton.error:focus-within:not(.vertical), spinbutton.vertical > text.error:focus-within,
     entry.error:focus-within {
-      border-color: #890046; }
+      border-color: #890046;
+      box-shadow: 0px 0px 1px 1px #cd7ebf inset; }
     spinbutton.error:selected:focus:not(.vertical), spinbutton.vertical > text.error:selected:focus, spinbutton.error:selected:not(.vertical), spinbutton.vertical > text.error:selected,
     entry.error:selected:focus,
     entry.error:selected {
@@ -1708,7 +1710,8 @@ spinbutton:not(.vertical), spinbutton.vertical > text, entry {
     border-color: #7c131b; }
     spinbutton.warning:focus-within:not(.vertical), spinbutton.vertical > text.warning:focus-within,
     entry.warning:focus-within {
-      border-color: #7c131b; }
+      border-color: #7c131b;
+      box-shadow: 0px 0px 1px 1px #cd7ebf inset; }
     spinbutton.warning:selected:focus:not(.vertical), spinbutton.vertical > text.warning:selected:focus, spinbutton.warning:selected:not(.vertical), spinbutton.vertical > text.warning:selected,
     entry.warning:selected:focus,
     entry.warning:selected {
