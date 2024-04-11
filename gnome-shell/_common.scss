@@ -687,6 +687,7 @@ $slider_size: 16px;
   .switcher-list .item-box {
     padding: 8px;
     border-radius: 10px;
+    background-color: transparent;
   }
 
   .switcher-list .item-box:outlined {
@@ -1520,6 +1521,13 @@ $slider_size: 16px;
     -x-offset: 8px;
   }
 
+  #dash {
+    // Running app indicator (also shown in app grid)
+    .app-well-app-running-dot, .app-grid-running-dot  {
+      margin-bottom: 14px; // hardcoded
+    }
+  }
+  
   /* App Vault/Grid */
   .icon-grid {
     spacing: 30px;
