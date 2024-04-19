@@ -1005,9 +1005,7 @@ StScrollBar {
     background-color: #313c47;
     border: 1px solid #090c0e;
     text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
-    border: none;
-    text-shadow: none; }
+    icon-shadow: 0 1px black; }
 
 .message-secondary-bin > .event-time {
   color: #a7b5cd;
