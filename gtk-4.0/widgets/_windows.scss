@@ -84,8 +84,10 @@ windowcontrols button{
       color: $headerbar_fg_color;
       border-color: transparent;
       &, &:backdrop, &:backdrop:hover {
-        background-color: transparent;
-        box-shadow: none;
+        &, image {
+          background-color: transparent;
+          box-shadow: none;
+        }
       }
       &:checked,
       &:hover,
