@@ -105,7 +105,7 @@ headerbar {
 
         &:backdrop {
           @include button(backdrop, $b_color, white);
-          border-radius: 3px;
+          border-radius: 4px;
         }
 
         &:backdrop:disabled { @include button(backdrop-insensitive, $b_color, white); }
