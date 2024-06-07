@@ -1139,10 +1139,9 @@ $slider_size: 16px;
         .message {
           &:hover,&:focus { 
            @include button(hover);
+           text-shadow: none;
           }
           @include button(normal);
-          border: none;
-          box-shadow: none;
           border-radius: 10px;
           text-shadow: none;
         }
