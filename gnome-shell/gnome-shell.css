@@ -996,8 +996,6 @@ StScrollBar {
   text-shadow: 0 1px black;
   icon-shadow: 0 1px black;
   border: 1px solid #151921;
-  border: none;
-  box-shadow: none;
   border-radius: 10px;
   text-shadow: none; }
   .message:hover, .message:focus {
@@ -1005,7 +1003,8 @@ StScrollBar {
     background-color: #364359;
     border: 1px solid #151921;
     text-shadow: 0 1px black;
-    icon-shadow: 0 1px black; }
+    icon-shadow: 0 1px black;
+    text-shadow: none; }
 
 .message-secondary-bin > .event-time {
   color: #a7b5cd;
