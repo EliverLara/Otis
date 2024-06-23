@@ -249,9 +249,13 @@
 /*******************
  * Calendar events *
 ********************/
-.color-light{
-  & label, &.timed label {
-    color: #2e3440;
-    opacity:1;
+.color-light {
+  &.timed label, .event-popover label {
+    color: $fg_color;
+    opacity: 1;
+  }
+  & label {
+    color: $bg_color;
+    opacity: 1;
   }
 }
