@@ -2,7 +2,7 @@
 
   border-radius: 0;
 
-  .panel {
+  &.panel {
     background-color: $panel_bg_color;
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -35,6 +35,7 @@
     border-radius: 0;
     border: none;
     background-color: transparentize($panel_bg_color, 1);
+    transition: none;
 
     &:hover {
       border: none;
@@ -43,8 +44,13 @@
     &:active, &:checked {
       color: $selected_fg_color;
       border: none;
-      background-color: $selected_bg_color;
-
+      background:
+      linear-gradient(to right, #f8ab95, #f17dad, #ee73c8)
+      left 
+      bottom
+      lighten($panel_bg_color, 8%)
+      no-repeat; 
+      background-size: 100% 2px; 
       label, image { color: inherit; }
     }
   }
