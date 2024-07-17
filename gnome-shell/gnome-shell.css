@@ -108,9 +108,9 @@ StEntry {
   selection-background-color: #8CA1A5;
   selected-color: #fff; }
   StEntry:hover {
-    border-color: rgba(140, 161, 165, 0.7); }
+    border-color: #8CA1A5; }
   StEntry:focus {
-    border-color: rgba(140, 161, 165, 0.7);
+    border-color: #8CA1A5;
     box-shadow: none !important; }
   StEntry:insensitive {
     color: #797f88;
@@ -1243,7 +1243,7 @@ StScrollBar {
     color: rgba(216, 222, 233, 0.7); }
   .search-entry:hover, .search-entry:focus {
     background-color: #242d35;
-    border-color: rgba(140, 161, 165, 0.5); }
+    border-color: #8CA1A5; }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #d8dee9; }
 
