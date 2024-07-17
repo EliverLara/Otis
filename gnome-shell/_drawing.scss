@@ -57,10 +57,10 @@
 
   }
   @if $t==focus { 
-    border-color: transparentize($selected_bg_color, 0.3);
+    border-color: $selected_bg_color;
     box-shadow: none !important;
   }
-  @if $t==hover { border-color: transparentize($selected_bg_color, 0.3);}
+  @if $t==hover { border-color: $selected_bg_color;}
   @if $t==insensitive {
     color: $insensitive_fg_color;
     box-shadow: $depth;
