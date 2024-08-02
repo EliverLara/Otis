@@ -6148,9 +6148,9 @@ ConversationListView {
       background-color: #272F3F;
       text-shadow: none;
       box-shadow: none; }
-.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
+.nemo-window .nemo-inactive-pane .view:not(:selected), .nemo-window .nemo-inactive-pane iconview:not(:selected),
 .nemo-window .nemo-inactive-pane iconview {
-  background-color: #283242; }
+  background-color: #212836; }
 
 /* thunar */
 .thunar toolbar {
