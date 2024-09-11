@@ -4,17 +4,18 @@
  $_switch_bg: if($variant == 'light', transparentize(black, 0.9), lighten($base_color, 15%));
  $_switch_slider_bg: $base_color;
 
- switch {
+switch {
   font-size: 1px;
   min-width: 45px;
   min-height: 27px;
+  background-color: transparent;
   background-size: 45px 27px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: -gtk-scaled(url("../assets/switch-off.svg"),url("../assets/switch-off@2.svg"));
+  background-image: -gtk-scaled(url("../assets/switch-off.svg"),url("../assets/switch-off.svg"));
 
   &:disabled {
-    background-image: -gtk-scaled(url("../assets/switch-insensitive.svg"),url("../assets/switch-insensitive@2.svg"));
+    background-image: -gtk-scaled(url("../assets/switch-insensitive.svg"),url("../assets/switch-insensitive.svg"));
   }
 
   &, & slider {
@@ -24,15 +25,10 @@
     box-shadow: none; 
   }
 
-
-
-  
-
-  &:active,
   &:checked {
-    background-image: -gtk-scaled(url("../assets/switch-on.svg"),url("../assets/switch-on@2.svg"));
+    background-image: -gtk-scaled(url("../assets/switch-on.svg"),url("../assets/switch-on.svg"));
     slider {
-      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"),url("../assets/switch-slider-on@2.svg"));
+      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"),url("../assets/switch-slider-on@2.png"));
     }
   }
 
@@ -43,38 +39,13 @@
     background-repeat: no-repeat;
     background-position: left center;
     background-color: transparent;
-    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"),url("../assets/switch-slider-off@2.svg"));
+    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"),url("../assets/switch-slider-off@2.png"));
   }
 
-  &:checked slider { }
-
-  &:backdrop {
-  }
-
-  row:selected & {
-    @if $variant == 'light' {
-      box-shadow: none;
-      border-color: $selected_borders_color;
-
-      &:backdrop { border-color: $selected_borders_color; }
-
-      &.slider:dir(rtl) { border-left-color: $borders_color; }
-      &.slider:dir(ltr) { border-right-color: $borders_color; }
-
-      &.slider { &:checked, & { border-color: $selected_borders_color; } }
-    }
-  }
-
-  // Trough
-  trough {
-
-    &:active,
-    &:checked {
-      background-color: $selected_bg_color;
-
-      &:backdrop {
-        background-color: $backdrop_selected_bg_color;
-      }
+  row:selected &:checked {
+    background-image: -gtk-scaled(url("../assets/switch-off.svg"),url("../assets/switch-off.svg"));
+    slider {
+      background-image: -gtk-scaled(url("../assets/switch-slider-on-selected.svg"),url("../assets/switch-slider-on-selected@2.png"));
     }
   }
 }
