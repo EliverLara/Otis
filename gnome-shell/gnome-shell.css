@@ -30,18 +30,18 @@ stage {
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .icon-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active {
-    color: #cd7ebf;
-    background-color: rgba(36, 44, 59, 0.95);
-    border: 1px solid #151921;
-    text-shadow: none;
-    icon-shadow: none; }
   .button:hover, .icon-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     color: #fff;
     background-color: #364359;
     border: 1px solid #151921;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+    color: #fff;
+    background-color: #cd7ebf;
+    border: 1px solid #151921;
+    text-shadow: none;
+    icon-shadow: none; }
 
 .button {
   border-radius: 4px;
@@ -64,8 +64,8 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:active {
-    color: #cd7ebf;
-    background-color: rgba(36, 44, 59, 0.95);
+    color: #fff;
+    background-color: #cd7ebf;
     border: 1px solid #151921;
     text-shadow: none;
     icon-shadow: none; }
@@ -1343,8 +1343,8 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
-    color: #cd7ebf;
-    background-color: rgba(36, 44, 59, 0.95);
+    color: #fff;
+    background-color: #cd7ebf;
     border: 1px solid #151921;
     text-shadow: none;
     icon-shadow: none; }
@@ -1712,8 +1712,8 @@ StScrollBar {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .keyboard-key:active {
-    color: #cd7ebf;
-    background-color: rgba(36, 44, 59, 0.95);
+    color: #fff;
+    background-color: #cd7ebf;
     border: 1px solid #151921;
     text-shadow: none;
     icon-shadow: none; }
@@ -1736,7 +1736,7 @@ StScrollBar {
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black; }
     .keyboard-key.default-key:active {
-      color: #cd7ebf;
+      color: #fff;
       background-color: #2e394c;
       border: 1px solid #151921;
       text-shadow: none;
@@ -1835,7 +1835,7 @@ StScrollBar {
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
       .login-dialog .modal-dialog-button:default:active {
-        color: #cd7ebf;
+        color: #fff;
         background-color: #cd7ebf;
         border: 1px solid #151921;
         text-shadow: none;
@@ -2098,13 +2098,13 @@ StScrollBar {
   /* Move padding into the box; this is to allow menu arrows
      to extend to the border */ }
   .quick-toggle:checked {
-    color: #cd7ebf;
+    color: #fff;
     background-color: #38455c;
     border: 1px solid #151921;
     text-shadow: none;
     icon-shadow: none; }
     .quick-toggle:checked:hover {
-      color: #cd7ebf;
+      color: #fff;
       background-color: #3d4c65;
       border: 1px solid #151921;
       text-shadow: none;
@@ -2146,13 +2146,13 @@ StScrollBar {
   padding: 6px 10.5px;
   border-width: 0; }
   .quick-menu-toggle .quick-toggle-arrow:checked {
-    color: #cd7ebf;
+    color: #fff;
     background-color: #344056;
     border: 1px solid #151921;
     text-shadow: none;
     icon-shadow: none; }
     .quick-menu-toggle .quick-toggle-arrow:checked:hover {
-      color: #cd7ebf;
+      color: #fff;
       background-color: #3d4c65;
       border: 1px solid #151921;
       text-shadow: none;
@@ -2203,6 +2203,9 @@ StScrollBar {
   background-color: #ED878F; }
   .screenshot-ui-close-button:hover, .screenshot-ui-close-button:active {
     background-color: #ff65b4; }
+
+.screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+  text-shadow: none; }
 
 .screenshot-ui-window-selector {
   background-color: #242c3b; }

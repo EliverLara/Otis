@@ -21,10 +21,8 @@ stage {
   @include button(normal);
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
-  &:active { @include button(active); }
-  &:hover {
-    @include button(hover);
-  }
+  &:hover { @include button(hover); }
+  &:active, &:checked { @include button(active); }
 }
 .button {
   border-radius: 4px;
@@ -2383,6 +2381,7 @@ $base_padding: 6px;
 
 .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
   @extend %button;
+  text-shadow: none;
 }
 
 .screenshot-ui-window-selector {
