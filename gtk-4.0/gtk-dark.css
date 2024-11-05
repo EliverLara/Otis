@@ -5713,6 +5713,13 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   color: #1A2026;
   opacity: 1; }
 
+/******************************
+ * Gnome system monitor graph *
+******************************/
+#gnome-system-monitor .loadgraph {
+  background: #2a3344;
+  color: #d8dee9; }
+
 /********
  * Gala *
  *******/
