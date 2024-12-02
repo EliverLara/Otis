@@ -3286,7 +3286,7 @@ paned.vertical > separator {
     padding: 1px 12px; }
   #NautilusPathBar .current-dir image {
     background-color: #222a32;
-    box-shadow: 0px -1.5px inset #f8ab95; }
+    box-shadow: 0px -1.5px inset #79B4B7; }
   #NautilusPathBar button.current-dir:only-child image {
     margin-right: -6px;
     padding: 0px 0px 0px 12px;
