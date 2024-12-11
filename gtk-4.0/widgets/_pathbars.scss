@@ -30,8 +30,6 @@
 
 // Nautilus, filechooser(gnome 47) pathbar
 #NautilusPathBar {
-  margin-top: 7px;
-  margin-bottom: 7px;
   @include button(normal-header);
 
   .dim-label {
@@ -92,10 +90,8 @@
 
 // search entry
 #NautilusQueryEditor { 
-  margin-top: 8px;
   > menubutton > button {
     @include button(undecorated);
-    margin: 0;
     -gtk-icon-size: 12px;
     padding: 0 2px;
     image {
