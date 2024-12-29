@@ -3158,7 +3158,7 @@ paned.vertical > separator {
       #NautilusPathBar .flat.popup button:hover, #NautilusPathBar .flat.popup button:active, #NautilusPathBar .flat.popup button:checked {
         color: #fff;
         text-shadow: none;
-        background-color: rgba(140, 161, 165, 0.7); }
+        background-color: rgba(205, 126, 191, 0.7); }
   #NautilusPathBar .current-dir label {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
