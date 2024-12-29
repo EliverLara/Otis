@@ -2373,6 +2373,12 @@ GraniteWidgetsWelcome {
     .titlebar .path-bar-box widget > .text-button:last-child:only-child,
     headerbar .path-bar-box widget > .text-button:last-child:only-child {
       border-radius: 6px; }
+  .titlebar splitbutton.image-button button:not(.toggle),
+  headerbar splitbutton.image-button button:not(.toggle) {
+    border-radius: 6px 0px 0px 6px; }
+  .titlebar splitbutton.image-button .popup button,
+  headerbar splitbutton.image-button .popup button {
+    border-radius: 0px 6px 6px 0px; }
   .selection-mode.titlebar button:backdrop.flat:active, .selection-mode.titlebar button:backdrop.flat:checked, .selection-mode.titlebar button:backdrop:active, .selection-mode.titlebar button:backdrop:checked,
   headerbar.selection-mode button:backdrop.flat:active,
   headerbar.selection-mode button:backdrop.flat:checked,
@@ -3144,6 +3150,15 @@ paned.vertical > separator {
     border: none;
     margin: 0;
     padding: 0; }
+  #NautilusPathBar .flat.popup {
+    margin: 0; }
+    #NautilusPathBar .flat.popup button {
+      padding: 4px 6px;
+      border-radius: 0px 6px 6px 0px; }
+      #NautilusPathBar .flat.popup button:hover, #NautilusPathBar .flat.popup button:active, #NautilusPathBar .flat.popup button:checked {
+        color: #fff;
+        text-shadow: none;
+        background-color: rgba(140, 161, 165, 0.7); }
   #NautilusPathBar .current-dir label {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
