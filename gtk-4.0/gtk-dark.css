@@ -2510,7 +2510,8 @@ infobar {
 
 banner revealer widget {
   background: #79B4B7;
-  padding: 5px; }
+  padding: 5px;
+  color: #d8dee9; }
   banner revealer widget button {
     border-color: transparent;
     background-color: transparent;
@@ -2639,6 +2640,11 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
   background-color: rgba(140, 161, 165, 0.5); }
 row.activatable:selected:backdrop {
   background-color: rgba(140, 161, 165, 0.6); }
+row.activatable.button {
+  font-weight: normal;
+  color: #d8dee9;
+  background-color: #262f38;
+  text-shadow: none; }
 
 columnview > listview > row {
   padding: 0; }
@@ -2701,6 +2707,9 @@ columnview.complex.data-table > listview > row > cell {
   columnview.complex.data-table > listview > row > cell > * {
     padding-top: 2px;
     padding-bottom: 2px; }
+
+.boxed-list-separate {
+  background-color: transparent; }
 
 /*********
  * Menus *
