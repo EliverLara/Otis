@@ -28,6 +28,8 @@
   }
 }
 
+.pathbar button { &, &:backdrop { @include button(undecorated); }}
+
 // Nautilus, filechooser(gnome 47) pathbar
 #NautilusPathBar {
   @include button(normal-header);
