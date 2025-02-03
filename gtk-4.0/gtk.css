@@ -4117,10 +4117,10 @@ placessidebar {
 
 .bottom-bar {
   background-color: #212836; }
-  .bottom-bar button {
+  .bottom-bar button.toggle:not(.image-button) {
     background-color: transparent;
     border: none; }
-    .bottom-bar button .view, .bottom-bar button iconview {
+    .bottom-bar button.toggle:not(.image-button) .view, .bottom-bar button.toggle:not(.image-button) iconview {
       background-color: transparent; }
 
 /*****************
