@@ -5767,25 +5767,25 @@ radiobutton.color-button:active > radio {
   color: #d8dee9; }
 
 #XfceNotifyWindow {
-  background-color: #262e3e;
+  background-color: #161b20;
   border-radius: 12px;
   border-width: 1px;
-  border: 1px solid #1d232f;
+  border: 1px solid #0b0e11;
   color: #d8dee9;
   padding: 40px; }
   #XfceNotifyWindow:hover, #XfceNotifyWindow:focus {
-    background-color: #2a3344; }
+    background-color: #1A2026; }
   #XfceNotifyWindow label, #XfceNotifyWindow image {
     color: #d8dee9; }
   #XfceNotifyWindow button {
     font-weight: normal;
     color: #d8dee9;
-    background-color: #333e53;
+    background-color: #262f38;
     text-shadow: none; }
     #XfceNotifyWindow button:hover {
       color: #d8dee9;
       outline-color: rgba(216, 222, 233, 0.3);
-      background-color: #cd7ebf;
+      background-color: #8CA1A5;
       text-shadow: none; }
       #XfceNotifyWindow button:hover label {
         color: #fff; }
