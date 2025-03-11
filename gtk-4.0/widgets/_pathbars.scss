@@ -48,7 +48,7 @@
       border-right: 1px solid $borders_color;
     }
     &:hover, &:focus {
-      .dim-label {@include button(active-header); }
+      .dim-label { background-color: lighten($headerbar_color, 15%); }
     }
   }
   
@@ -57,6 +57,7 @@
     padding: 3px 0px 3px 12px; 
     border-right: none;
     margin-right: -6px;
+    border-radius: 6px 0px 0px 6px;
   }
 
   // Reset path buttons appearance
@@ -88,8 +89,13 @@
     }
 
     image { 
-      background-color: lighten($_sidebar_color, 7%);
-      box-shadow: 0px -1.5px inset #f8ab95;
+      background:
+      linear-gradient(to  right, #f8ab95, #f8ab95)
+      left 
+      bottom
+      lighten($_sidebar_color, 7%)
+      no-repeat; 
+      background-size: 100% 1.5px;
     }
   }
 
