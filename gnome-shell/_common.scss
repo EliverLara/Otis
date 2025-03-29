@@ -2286,10 +2286,13 @@ $base_padding: 6px;
 .quick-toggle {
   border-radius: 99px;
 
-  &:checked { 
+  &:checked, &:active { 
     @include button(active, lighten($base_color, 12%));
     &:hover { @include button(active, lighten($base_color, 14%)); }
-    &, &:hover { color: $selected_fg_color; }
+    &, &:hover { 
+      color: $selected_fg_color; 
+      border: none;
+    }
   }
 
   &, &:hover, &:checked, &:checked:hover { border: none; }
@@ -2307,7 +2310,7 @@ $base_padding: 6px;
   //.quick-toggle-icon, .quick-toggle-arrow { icon-size: $base_icon_size; }
 }
 
-.quick-menu-toggle {
+.quick-menu-toggle, .quick-toggle-has-menu {
   &:ltr > StBoxLayout { padding-right: 0; }
   &:rtl > StBoxLayout { padding-left: 0; }
 
@@ -2323,25 +2326,29 @@ $base_padding: 6px;
   }
 
 
-  & .quick-toggle-arrow {
-    background-color: lighten($base_color, 6%);
+  & .quick-toggle-arrow, & .quick-toggle-menu-button {
+    background-color: transparentize(lighten($bg_color, 8%), 0.3);
     padding: $base_padding $base_padding*1.75;
     border-width: 0;
     &:checked { 
-      @include button(active, lighten($base_color, 12%));
-      &:hover { @include button(active, lighten($base_color, 14%)); }
+      @include button(active, lighten($bg_color, 10%));
+      &:hover { @include button(active, lighten($bg_color, 12%)); }
       &, &:hover {
         color: $selected_fg_color;
         border-width: 0;
       }
     }
     &:hover {
-      background-color: lighten($base_color, 5%);
+      background-color: lighten($bg_color, 10%);
     }
   
     &:ltr { border-radius: 0 99px 99px 0; }
     &:rtl { border-radius: 99px 0 0 99px; }
   }
+
+  & .quick-toggle-menu-button { background-color: lighten($bg_color, 8%); }
+
+  & .quick-toggle-separator { width: 0; }
 }
 
 .quick-toggle-menu {
