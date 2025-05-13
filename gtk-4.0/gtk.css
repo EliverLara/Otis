@@ -3049,7 +3049,7 @@ tabbar:backdrop .box > .end-action {
   filter: opacity(1); }
 tabbar tabbox {
   background-color: #242d3c;
-  padding: 0px;
+  padding: 4px;
   color: #d8dee9; }
   tabbar tabbox > tab button.flat,
   tabbar tabbox > tabboxchild > tab button.flat {

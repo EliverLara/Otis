@@ -306,7 +306,7 @@ tabbar {
   }
   tabbox {
     background-color: darken($base_color, 5%);
-    padding: 0px;
+    padding: 4px;
     color: $fg_color;
 
     > tab,
