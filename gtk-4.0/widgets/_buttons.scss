@@ -225,7 +225,10 @@ button {
         //color: $b_color; //FIXME: does it work on the dark variant?
       }
 
-      &:hover { @include button(hover, darken($b_color, 5%), white); }
+      &:hover { 
+        @include button(hover, darken($b_color, 5%), white);
+        opacity: 0.85;
+      }
 
       &:active,
       &:checked { @include button(hover, darken($b_color, 10%), white); }
@@ -256,7 +259,7 @@ button {
 
       &:disabled {
         @include button(insensitive, lighten($b_color, 5%), white);
-
+        opacity: 0.75;
         &:active,
         &:checked { @include button(insensitive-active, $b_color, white); }
       }
