@@ -31,7 +31,7 @@
 .pathbar button { &, &:backdrop { @include button(undecorated); }}
 
 // Nautilus, filechooser(gnome 47) pathbar
-#NautilusPathBar {
+#NautilusPathBar, .pathbar {
   @include button(normal-header);
 
   .dim-label {
