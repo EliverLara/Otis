@@ -123,11 +123,11 @@ headerbar {
     }
   }
 
-  splitbutton.image-button {
-    button:not(.toggle) { 
+  & splitbutton.image-button {
+    > button:not(.toggle) { 
       border-radius: 6px 0px 0px 6px;
     }
-    .popup button {
+     menubutton.popup button.toggle {
       border-radius: 0px 6px 6px 0px ;
     }
   }
