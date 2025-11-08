@@ -2417,11 +2417,11 @@ GraniteWidgetsWelcome {
     .titlebar .path-bar-box widget > .text-button:last-child:only-child,
     headerbar .path-bar-box widget > .text-button:last-child:only-child {
       border-radius: 6px; }
-  .titlebar splitbutton.image-button button:not(.toggle),
-  headerbar splitbutton.image-button button:not(.toggle) {
+  .titlebar splitbutton.image-button > button:not(.toggle),
+  headerbar splitbutton.image-button > button:not(.toggle) {
     border-radius: 6px 0px 0px 6px; }
-  .titlebar splitbutton.image-button .popup button,
-  headerbar splitbutton.image-button .popup button {
+  .titlebar splitbutton.image-button menubutton.popup button.toggle,
+  headerbar splitbutton.image-button menubutton.popup button.toggle {
     border-radius: 0px 6px 6px 0px; }
   .selection-mode.titlebar button:backdrop.flat:active, .selection-mode.titlebar button:backdrop.flat:checked, .selection-mode.titlebar button:backdrop:active, .selection-mode.titlebar button:backdrop:checked,
   headerbar.selection-mode button:backdrop.flat:active,
