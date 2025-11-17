@@ -78,8 +78,8 @@
 windowcontrols {
   button {
     &.close, &.maximize, &.minimize {
-      min-width: 16px;
-      min-height: 16px;
+      min-width: 20px;
+      min-height: 20px;
       margin: 0;
       padding: 0 1px;
       background-position: center;
