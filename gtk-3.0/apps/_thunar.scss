@@ -45,9 +45,12 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     background: darken($_sidebar_color, 2%);
     padding: 1.5px;
     &:hover,  &:selected {
-        background: transparentize($selected_bg_color, 0.3);
-        color: $selected_fg_color;
-        border-radius: 0;
-        box-shadow: none;
+        background:
+            linear-gradient(to bottom, #79B4B7, #8CA1A5)
+            left 
+            bottom
+            lighten($_sidebar_color, 7%)
+            no-repeat; 
+         background-size: 2px 100%; 
     }
 }
