@@ -6224,10 +6224,8 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   background: #1d232f;
   padding: 1.5px; }
   .thunar scrolledwindow.sidebar treeview.view:hover, .thunar scrolledwindow.sidebar treeview.view:selected {
-    background: rgba(205, 126, 191, 0.7);
-    color: #fff;
-    border-radius: 0;
-    box-shadow: none; }
+    background: linear-gradient(to bottom, #f8ab95, #ee73c8) left bottom #2f384c no-repeat;
+    background-size: 2px 100%; }
 
 .caja-notebook .frame {
   border-width: 0 0 0px; }
