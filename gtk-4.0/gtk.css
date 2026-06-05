@@ -2297,43 +2297,6 @@ GraniteWidgetsWelcome {
   .titlebar entry,
   headerbar entry {
     min-height: 24px; }
-  .titlebar button,
-  headerbar button {
-    color: #d8dee9;
-    border-radius: 6px;
-    text-shadow: none;
-    box-shadow: none;
-    border: 1px solid #0b0e11;
-    background-color: #192126; }
-    .titlebar button:hover,
-    headerbar button:hover {
-      color: #fff;
-      text-shadow: none;
-      background-color: rgba(140, 161, 165, 0.7); }
-    .titlebar button:active, .titlebar button:checked,
-    headerbar button:active,
-    headerbar button:checked {
-      color: #fff;
-      outline-color: rgba(255, 255, 255, 0.3);
-      background-image: linear-gradient(to right, #79B4B7, #8CA1A5);
-      background-color: transparent;
-      text-shadow: none; }
-    .titlebar button:backdrop, .titlebar button:disabled, .titlebar button:backdrop:disabled,
-    headerbar button:backdrop,
-    headerbar button:disabled,
-    headerbar button:backdrop:disabled {
-      color: rgba(216, 222, 233, 0.2);
-      background-color: #161b20;
-      text-shadow: none;
-      box-shadow: none; }
-    .titlebar button:backdrop:hover, .titlebar button:backdrop:active, .titlebar button:backdrop:checked,
-    headerbar button:backdrop:hover,
-    headerbar button:backdrop:active,
-    headerbar button:backdrop:checked {
-      color: #8CA1A5;
-      background-color: rgba(140, 161, 165, 0.6);
-      text-shadow: none;
-      box-shadow: none; }
   .titlebar .linked > button, .titlebar .path-bar-box button,
   .titlebar headerbar .linked > button,
   headerbar .path-bar-box .titlebar button, .titlebar .linked > button:hover,

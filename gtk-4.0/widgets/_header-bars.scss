@@ -30,32 +30,7 @@ headerbar {
   }
  
   entry { min-height: 24px;}  
-  
-  button {
-    @include button(normal-header);
 
-    &:hover {
-      @include button(hover-header, $selected_bg_color, #fff);
-    }
-    &:active,
-    &:checked {
-      @include button(active, transparentize($selected_bg_color, 0.3), #fff);
-    }
-
-    &:backdrop,
-    &:disabled,
-    &:backdrop:disabled {
-      @include button(backdrop-header, $main_dark_color, transparentize($headerbar_fg_color, 0.8));
-    }
-
-    &:backdrop {
-      &:hover,
-      &:active,
-      &:checked {
-        @include button(backdrop-header, $backdrop_selected_bg_color, $selected_bg_color);
-      }
-    }
-  }
   %linked-header {
     border-radius: 0;
     border-right-style: none;
