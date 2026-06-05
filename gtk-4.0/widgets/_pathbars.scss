@@ -31,7 +31,7 @@
 .pathbar button { &, &:backdrop { @include button(undecorated); }}
 
 // Nautilus, filechooser(gnome 47) pathbar
-#NautilusPathBar, .pathbar {
+#NautilusPathBar, .pathbar, .nautilus-pathbar {
   @include button(normal-header);
 
   .dim-label {
@@ -109,7 +109,7 @@
 }
 
 // search entry
-#NautilusQueryEditor { 
+#NautilusQueryEditor, .nautilus-query-editor{ 
   > menubutton > button {
     @include button(undecorated);
     -gtk-icon-size: 12px;
